@@ -103,6 +103,8 @@ function lib:GetCategorySpells(categoryId)
     return lib.categories[categoryId]
 end
 
+---Gets all trade categories, id to a table of all the info.
+---@return table all the categories
 function lib:GetCategories()
     return lib.categories
 end
