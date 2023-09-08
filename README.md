@@ -6,10 +6,16 @@ Not all item's have a spell, nor all item spells have an effect. For instance, e
 If a trade skill is taught strictly by an NPC then there is no recipe. In some versions, some trade skills have multiple recipes,
 hence we use a table of recipes, although in general the result is an empty table or singleton. 
 
+## Usage
+For library usages in your TOC file:  
+  * Classic: `Libs\LibTradeSkillRecipes\lib-classic.xml`  
+  * TBC: `Libs\LibTradeSkillRecipes\lib-tbc.xml`  
+  * Wotlk: `Libs\LibTradeSkillRecipes\lib-wotlk.xml`  
+  * Retail: `Libs\LibTradeSkillRecipes\lib-retail.xml`  
+
 ## API
 
 ```
-
 ---Gets the name of the effect.
 ---@param effectId number id of the effect
 ---@return string name of the effect
