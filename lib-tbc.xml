@@ -1,5 +1,6 @@
 <Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
   <Script file="LibTradeSkillRecipes.lua"/>
+  <Script file="recipes\expansions.lua"/>
   <Script file="recipes\2\items.lua"/>
   <Script file="recipes\2\enchantments.lua"/>
 </Ui>

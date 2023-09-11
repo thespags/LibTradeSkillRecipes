@@ -25,7 +25,21 @@ lib.items = lib.items or {}
 lib.itemSpells = lib.itemSpells or {}
 lib.spellEffects = lib.spellEffects or {}
 lib.effects = lib.effects or {}
+lib.expansions = lib.expansions or {}
+lib.expansionSpells = lib.expansionSpells or {}
 
+---Adds the expansion a spell was added.
+---@param spellId number 
+---@param expansion number
+function lib:AddExpansion(spellId, expansion)
+    local expansions = getOrCreate(lib.expansions, expansion)
+    table.insert(expansions, expansion)
+    lib.expansionSpells[spellId] = expansion
+end
+
+---Adds the name of the enchantment.
+---@param id number 
+---@param name string
 function lib:AddEnchantment(id, name)
     lib.effects[id] = name
 end
@@ -109,48 +123,63 @@ function lib:GetCategories()
     return lib.categories
 end
 
----Given an recipe id, returns associated information for crafting.
----@param recipeId number
----@return number id of the category
----@return table list of ids for recipes
----@return number id of the spell to create the item or effect
----@return number id of the item, may be nil
----@return number id of the item if it creates a spell, may be nil
----@return number id of the effect of the spell or item spell, may be nill
+---Gets all the associated spells to the given expansion.
+---@param expansion number
+---@return table all sppells for that expansion
+function lib:GetExpansionSpells(expansion)
+    return lib.expansions[expansion]
+end
+
+---Gets all expansions, id to a table of all the spells
+---@return table expansions to spells
+function lib:GetExpansions()
+    return lib.expansions
+end
+
+---Given an recipe id, returns associated information for crafting.  
+---@param recipeId number  
+---@return number id of the category  
+---@return number expansion  
+---@return table list of ids for recipes  
+---@return number id of the spell to create the item or effect  
+---@return number id of the item, may be nil  
+---@return number id of the item if it creates a spell, may be nil  
+---@return number id of the effect of the spell or item spell, may be nil  
 function lib:GetInfoByRecipeId(recipeId)
     local spellId = lib.recipeSpells[recipeId]
-    local itemId = lib.spells[spellId]
-    local itemSpell = lib.itemSpells[itemId]
-    local spellEffect = lib.spellEffects[itemSpell]
-    return lib.categorySpells[spellId], lib.recipes[spellId] or {}, spellId, itemId, itemSpell, spellEffect
+    return lib:GetInfoBySpellId(spellId)
 end
 
----Given an item id, returns associated information for crafting.
----@param itemId number
----@return number id of the category
----@return table list of ids for recipes
----@return number id of the spell to create the item or effect
----@return number id of the item, may be nil
----@return number id of the item if it creates a spell, may be nil
----@return number id of the effect of the spell or item spell, may be nill
+---Given an item id, returns associated information for crafting.  
+---@param itemId number  
+---@return number id of the category  
+---@return number expansion  
+---@return table list of ids for recipes  
+---@return number id of the spell to create the item or effect  
+---@return number id of the item, may be nil  
+---@return number id of the item if it creates a spell, may be nil  
+---@return number id of the effect of the spell or item spell, may be nil  
 function lib:GetInfoByItemId(itemId)
     local spellId = lib.items[itemId]
-    local itemSpell = lib.itemSpells[itemId]
-    local spellEffect = lib.spellEffects[itemSpell]
-    return lib.categorySpells[spellId], lib.recipes[spellId] or {}, spellId, itemId, itemSpell, spellEffect
+    return lib:GetInfoBySpellId(spellId)
 end
 
----Given a spellId  id, returns associated information for crafting.
----@param spellId number
----@return number id of the category
----@return table list of ids for recipes
----@return number id of the spell to create the item or effect
----@return number id of the item, may be nil
----@return number id of the item if it creates a spell, may be nil
----@return number id of the effect of the spell or item spell, may be nill
+---Given a spellId  id, returns associated information for crafting.  
+---@param spellId number  
+---@return number id of the category  
+---@return number expansion  
+---@return table list of ids for recipes  
+---@return number id of the spell to create the item or effect  
+---@return number id of the item, may be nil  
+---@return number id of the item if it creates a spell, may be nil  
+---@return number id of the effect of the spell or item spell, may be nil  
 function lib:GetInfoBySpellId(spellId)
     local itemId = lib.spells[spellId]
+
+    local category = lib.categorySpells[spellId]
+    local expansion = lib.expansionSpells[spellId]
+    local recipes =  lib.recipes[spellId] or {}
     local itemSpell = lib.itemSpells[itemId]
     local spellEffect = lib.spellEffects[itemSpell or spellId]
-    return lib.categorySpells[spellId], lib.recipes[spellId] or {}, spellId, itemId, itemSpell, spellEffect
+    return category, expansion, recipes, spellId, itemId, itemSpell, spellEffect
 end
