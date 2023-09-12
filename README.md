@@ -58,7 +58,7 @@ Then reference via LibStub with
 ---@return number id of the effect of the spell or item spell, may be nil  
 **lib:GetInfoByItemId(itemId)**
 
----Given a spellId  id, returns associated information for crafting.  
+---Given a spellId id, returns associated information for crafting.  
 ---@param spellId number  
 ---@return number id of the category  
 ---@return number expansion  

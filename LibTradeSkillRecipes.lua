@@ -16,7 +16,7 @@ local function getOrCreate(tOfT, key)
     return t
 end
 
-lib.categories = lib.cateogories or {}
+lib.categories = lib.categories or {}
 lib.categorySpells = lib.categorySpells or {}
 lib.recipes = lib.recipes or {}
 lib.recipeSpells = lib.recipeSpells or {}
@@ -164,7 +164,7 @@ function lib:GetInfoByItemId(itemId)
     return lib:GetInfoBySpellId(spellId)
 end
 
----Given a spellId  id, returns associated information for crafting.  
+---Given a spellId id, returns associated information for crafting.  
 ---@param spellId number  
 ---@return number id of the category  
 ---@return number expansion  
