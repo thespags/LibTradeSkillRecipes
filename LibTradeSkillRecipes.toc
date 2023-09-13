@@ -1,7 +1,4 @@
 ## Interface: 100107
-## Interface-Classic: 11403
-## Interface-BCC: 20504
-## Interface-WOTLKC: 30402
 ## Title: LibTradeSkillRecipes
 ## Notes: Library providing mappings between trade skills, recipes, spells, items, and enchantments.
 ## Author: spags
@@ -11,15 +8,4 @@
 ## X-Category: Library
 
 LibStub\LibStub.lua
-@version-classic@
-lib-classic.xml
-@end-version-classic@
-@version-bcc@
-lib-tbc.xml
-@end-version-bcc@
-@version-wrath@
-lib-wotlk.xml
-@end-version-wrath@
-@version-retail@
 lib-retail.xml
-@end-version-retail@

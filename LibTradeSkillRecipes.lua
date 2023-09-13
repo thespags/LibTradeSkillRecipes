@@ -1,5 +1,5 @@
 local MAJOR = "LibTradeSkillRecipes"
-local MINOR = 3
+local MINOR = 4
 assert(LibStub, MAJOR .. " requires LibStub")
 
 local lib = LibStub:NewLibrary(MAJOR, MINOR)

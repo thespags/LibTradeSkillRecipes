@@ -1,4 +1,3 @@
 package-as: LibTradeSkillRecipes
 
 enable-nolib-creation: no
-enable-toc-creation: yes
