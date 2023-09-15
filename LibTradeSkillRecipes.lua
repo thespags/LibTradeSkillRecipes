@@ -165,7 +165,7 @@ end
 function lib:GetInfoByItemId(itemId)
     local spellIds = lib.items[itemId]
     local infos = {}
-    for _, spellId in pairs(spellIds) do
+    for _, spellId in pairs(spellIds or {}) do
         table.insert(infos, lib:GetInfoBySpellId(spellId))
     end
     return infos
@@ -175,6 +175,9 @@ end
 ---@param spellId number  
 ---@return table TradeSkillInfo  
 function lib:GetInfoBySpellId(spellId)
+    if not lib.categorySpells[spellId] then
+        return {}
+    end
     local itemId = lib.spells[spellId]
     local itemSpell = lib.itemSpells[itemId]
 
