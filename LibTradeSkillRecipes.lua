@@ -153,7 +153,7 @@ end
 
 ---Given an recipe id, returns associated information for crafting.  
 ---@param recipeId number  
----@return table TradeSkillInfo  
+---@return table? TradeSkillInfo  
 function lib:GetInfoByRecipeId(recipeId)
     local spellId = lib.recipeSpells[recipeId]
     return lib:GetInfoBySpellId(spellId)
@@ -161,11 +161,14 @@ end
 
 ---Given an item id, returns associated information for crafting.  
 ---@param itemId number  
----@return table TradeSkillInfos items can have multiple spells if there are different levels created  
+---@return table? TradeSkillInfos items can have multiple spells if there are different levels created  
 function lib:GetInfoByItemId(itemId)
     local spellIds = lib.items[itemId]
+    if not spellIds then
+        return nil
+    end
     local infos = {}
-    for _, spellId in pairs(spellIds or {}) do
+    for _, spellId in pairs(spellIds) do
         table.insert(infos, lib:GetInfoBySpellId(spellId))
     end
     return infos
@@ -173,10 +176,10 @@ end
 
 ---Given a spellId id, returns associated information for crafting.  
 ---@param spellId number  
----@return table TradeSkillInfo  
+---@return table? TradeSkillInfo  
 function lib:GetInfoBySpellId(spellId)
     if not lib.categorySpells[spellId] then
-        return {}
+        return nil
     end
     local itemId = lib.spells[spellId]
     local itemSpell = lib.itemSpells[itemId]

@@ -49,17 +49,17 @@ Then reference via LibStub with
 
 ---Given an recipe id, returns associated information for crafting.  
 ---@param recipeId number  
----@return table TradeSkillInfo  
+---@return table? TradeSkillInfo  
 **lib:GetInfoByRecipeId(recipeId)**  
 
 ---Given an item id, returns associated information for crafting.  
 ---@param itemId number  
----@return table TradeSkillInfos items can have multiple spells if there are different levels created  
+---@return table? TradeSkillInfos items can have multiple spells if there are different levels created  
 **lib:GetInfoByItemId(itemId)**
 
 ---Given a spellId id, returns associated information for crafting.  
 ---@param spellId number  
----@return table TradeSkillInfo  
+---@return table? TradeSkillInfo  
 **lib:GetInfoBySpellId(spellId)**
 
 Note: Expansion is a value `0` to `9`, e.g. Wotlk is `2`, Retail is `9`. While versions are represented `1-10` for tables, 

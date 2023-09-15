@@ -74,13 +74,13 @@ assertEquals(nil, info.itemSpellId)
 assertEquals(nil, info.spellEffectId)
 
 info = LibTradeSkillRecipes:GetInfoBySpellId(0)
-assertTableEquals({}, info)
+assertEquals(nil, info)
 
 info = LibTradeSkillRecipes:GetInfoByItemId(0)
-assertTableEquals({}, info)
+assertEquals(nil, info)
 
 info = LibTradeSkillRecipes:GetInfoByRecipeId(0)
-assertTableEquals({}, info)
+assertEquals(nil, info)
 
 local effectName = LibTradeSkillRecipes:GetEffect(15)
 assertEquals("Reinforced (+8 Armor)", effectName)
