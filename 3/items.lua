@@ -65,11 +65,11 @@ lib:AddRecipe(171, nil, 3171, 3383, 3166, nil) -- 1814 Elixir of Wisdom
 lib:AddRecipe(171, 3393, 3172, 3384, 2380, nil) -- 1815 Minor Magic Resistance Potion
 lib:AddRecipe(171, nil, 3173, 3385, 438, nil) -- 1816 Lesser Mana Potion
 lib:AddRecipe(171, 3394, 3174, 3386, 26677, nil) -- 1817 Potion of Curing
-lib:AddRecipe(171, nil, 3176, 3388, 3222, nil) -- 1819 Strong Troll's Blood Potion
+lib:AddRecipe(171, nil, 3176, 3388, 3222, nil) -- 1819 Strong Troll's Blood Elixir
 lib:AddRecipe(171, nil, 3177, 3389, 3220, nil) -- 1820 Elixir of Defense
 lib:AddRecipe(171, 3396, 2333, 3390, 3160, nil) -- 1821 Elixir of Lesser Agility
 lib:AddRecipe(171, 6211, 3188, 3391, 3164, nil) -- 1822 Elixir of Ogre's Strength
-lib:AddRecipe(171, nil, 3170, 3382, 3219, nil) -- 1832 Weak Troll's Blood Potion
+lib:AddRecipe(171, nil, 3170, 3382, 3219, nil) -- 1832 Weak Troll's Blood Elixir
 lib:AddRecipe(171, 2553, 3230, 2457, 2374, nil) -- 1833 Elixir of Minor Agility
 lib:AddRecipe(129, nil, 3275, 1251, 746, nil) -- 1838 Linen Bandage
 lib:AddRecipe(129, nil, 3276, 2581, 1159, nil) -- 1839 Heavy Linen Bandage
@@ -112,7 +112,7 @@ lib:AddRecipe(171, nil, 3447, 929, 441, nil) -- 1930 Healing Potion
 lib:AddRecipe(171, nil, 3448, 3823, 3680, nil) -- 1931 Lesser Invisibility Potion
 lib:AddRecipe(171, 6068, 3449, 3824, 3594, 25) -- 1932 Shadow Oil
 lib:AddRecipe(171, 3830, 3450, 3825, 3593, nil) -- 1933 Elixir of Fortitude
-lib:AddRecipe(171, 3831, 3451, 3826, 3223, nil) -- 1934 Mighty Troll's Blood Potion
+lib:AddRecipe(171, 3831, 3451, 3826, 3223, nil) -- 1934 Major Troll's Blood Elixir
 lib:AddRecipe(171, nil, 3452, 3827, 2023, nil) -- 1935 Mana Potion
 lib:AddRecipe(171, 3832, 3453, 3828, 6512, nil) -- 1936 Elixir of Detect Lesser Invisibility
 lib:AddRecipe(171, 14634, 3454, 3829, 3595, 26) -- 1937 Frost Oil
@@ -225,7 +225,7 @@ lib:AddRecipe(202, nil, 3925, 4362, nil, nil) -- 2420 Rough Boomstick
 lib:AddRecipe(202, nil, 3977, 4405, 3974, 30) -- 2421 Crude Scope
 lib:AddRecipe(202, nil, 3973, 4404, nil, nil) -- 2422 Silver Contact
 lib:AddRecipe(202, nil, 3926, 4363, nil, nil) -- 2423 Copper Modulator
-lib:AddRecipe(202, 4408, 3928, 4401, 4055, nil) -- 2424 Mechanical Squirrel
+lib:AddRecipe(202, 4408, 3928, 4401, 4055, nil) -- 2424 Mechanical Squirrel Box
 lib:AddRecipe(202, nil, 3929, 4364, nil, nil) -- 2425 Coarse Blasting Powder
 lib:AddRecipe(202, nil, 3930, 8068, nil, nil) -- 2426 Crafted Heavy Shot
 lib:AddRecipe(202, nil, 3931, 4365, 4061, nil) -- 2427 Coarse Dynamite
@@ -279,6 +279,7 @@ lib:AddRecipe(185, 5484, 6414, 5474, 5004, nil) -- 3928 Roasted Kodo Meat
 lib:AddRecipe(185, 5485, 6415, 5476, 5005, nil) -- 3929 Fillet of Frenzy
 lib:AddRecipe(185, 5486, 6416, 5477, 5005, nil) -- 3930 Strider Stew
 lib:AddRecipe(185, 5487, 6417, 5478, 435, nil) -- 3931 Dig Rat Stew
+lib:AddRecipe(185, 44977, 6417, 5478, 435, nil) -- 3931 Dig Rat Stew
 lib:AddRecipe(185, 5488, 6418, 5479, 5006, nil) -- 3932 Crispy Lizard Tail
 lib:AddRecipe(185, 5489, 6419, 5480, 5006, nil) -- 3933 Lean Venison
 lib:AddRecipe(202, nil, 6458, 5507, 12883, nil) -- 3945 Ornate Spyglass
@@ -295,7 +296,6 @@ lib:AddRecipe(197, nil, 3755, 4238, nil, nil) -- 4001 Linen Bag
 lib:AddRecipe(197, nil, 3757, 4240, nil, nil) -- 4002 Woolen Bag
 lib:AddRecipe(197, nil, 3813, 4245, nil, nil) -- 4003 Small Silk Pack
 lib:AddRecipe(171, 5642, 6624, 5634, 6615, nil) -- 4004 Free Action Potion
-lib:AddRecipe(171, 5641, 6619, 5632, nil, nil) -- 4005 Cowardly Flight Potion
 lib:AddRecipe(171, 5643, 6618, 5633, 6613, nil) -- 4006 Great Rage Potion
 lib:AddRecipe(171, 5640, 6617, 5631, 6612, nil) -- 4007 Rage Potion
 lib:AddRecipe(165, nil, 6661, 5739, nil, nil) -- 4010 Barbaric Harness
@@ -332,9 +332,6 @@ lib:AddRecipe(171, 6053, 7255, 6051, 7245, nil) -- 4211 Holy Protection Potion
 lib:AddRecipe(171, 6057, 7259, 6052, 7254, nil) -- 4212 Nature Protection Potion
 lib:AddRecipe(171, 6054, 7256, 6048, 7242, nil) -- 4213 Shadow Protection Potion
 lib:AddRecipe(164, nil, 7408, 6214, nil, nil) -- 4285 Heavy Copper Maul
-lib:AddEnchantmentRecipe(333, nil, 7411, 3) -- 4286 Enchanting
-lib:AddEnchantmentRecipe(333, nil, 7412, 3) -- 4287 Enchanting
-lib:AddEnchantmentRecipe(333, nil, 7413, 3) -- 4288 Enchanting
 lib:AddEnchantmentRecipe(333, nil, 7418, 41) -- 4289 Enchant Bracer - Minor Health
 lib:AddEnchantmentRecipe(333, nil, 7420, 41) -- 4290 Enchant Chest - Minor Health
 lib:AddRecipe(333, nil, 7421, 6218, nil, nil) -- 4291 Runed Copper Rod
@@ -380,6 +377,10 @@ lib:AddEnchantmentRecipe(333, nil, 7857, 254) -- 4399 Enchant Chest - Health
 lib:AddEnchantmentRecipe(333, 6375, 7859, 255) -- 4400 Enchant Bracer - Lesser Spirit
 lib:AddEnchantmentRecipe(333, nil, 7861, 256) -- 4401 Enchant Cloak - Lesser Fire Resistance
 lib:AddEnchantmentRecipe(333, 6376, 7863, 66) -- 4402 Enchant Boots - Minor Stamina
+lib:AddEnchantmentRecipe(333, 36840, 7867, 247) -- 4404 Enchant Boots - Minor Agility
+lib:AddEnchantmentRecipe(333, 36837, 7867, 247) -- 4404 Enchant Boots - Minor Agility
+lib:AddEnchantmentRecipe(333, 36838, 7867, 247) -- 4404 Enchant Boots - Minor Agility
+lib:AddEnchantmentRecipe(333, 36839, 7867, 247) -- 4404 Enchant Boots - Minor Agility
 lib:AddEnchantmentRecipe(333, 6377, 7867, 247) -- 4404 Enchant Boots - Minor Agility
 lib:AddRecipe(197, 6390, 7892, 6384, nil, nil) -- 4408 Stylish Blue Shirt
 lib:AddRecipe(197, 6391, 7893, 6385, nil, nil) -- 4409 Stylish Green Shirt
@@ -549,7 +550,6 @@ lib:AddRecipe(165, nil, 10647, 8349, nil, nil) -- 5701 Feathered Breastplate
 lib:AddRecipe(165, nil, 10650, 8367, 10618, nil) -- 5702 Dragonscale Breastplate
 lib:AddRecipe(129, 16113, 10840, 8544, 10838, nil) -- 5767 Mageweave Bandage
 lib:AddRecipe(129, nil, 10841, 8545, 10839, nil) -- 5768 Heavy Mageweave Bandage
-lib:AddRecipe(171, nil, 11447, 8827, nil, nil) -- 5996 Elixir of Waterwalking
 lib:AddRecipe(171, nil, 11449, 8949, 11328, nil) -- 5997 Elixir of Agility
 lib:AddRecipe(171, nil, 11450, 8951, 11349, nil) -- 5998 Elixir of Greater Defense
 lib:AddRecipe(171, nil, 11451, 8956, 11350, nil) -- 5999 Oil of Immolation
@@ -653,7 +653,6 @@ lib:AddRecipe(202, nil, 12716, 10577, 13237, nil) -- 6939 Goblin Mortar
 lib:AddRecipe(202, nil, 12717, 10542, nil, nil) -- 6940 Goblin Mining Helmet
 lib:AddRecipe(202, nil, 12718, 10543, 12561, nil) -- 6943 Goblin Construction Helmet
 lib:AddRecipe(202, nil, 12760, 10646, 13241, nil) -- 6944 Goblin Sapper Charge
-lib:AddRecipe(202, nil, 12719, 10579, nil, nil) -- 6945 Explosive Arrow
 lib:AddRecipe(202, nil, 12720, 10580, nil, nil) -- 6946 Goblin "Boom" Box
 lib:AddRecipe(202, nil, 12722, 10585, nil, nil) -- 6947 Goblin Radio
 lib:AddRecipe(202, nil, 12755, 10587, 23134, nil) -- 6948 Goblin Bomb Dispenser
@@ -688,7 +687,7 @@ lib:AddEnchantmentRecipe(333, nil, 13538, 63) -- 7457 Enchant Chest - Lesser Abs
 lib:AddEnchantmentRecipe(333, nil, 13607, 843) -- 7496 Enchant Chest - Mana
 lib:AddEnchantmentRecipe(333, 11150, 13612, 844) -- 7497 Enchant Gloves - Mining
 lib:AddEnchantmentRecipe(333, 11151, 13617, 845) -- 7498 Enchant Gloves - Herbalism
-lib:AddEnchantmentRecipe(333, 11152, 13620, 846) -- 7499 Enchant Gloves - Fishing
+lib:AddEnchantmentRecipe(333, 11152, 13620, 2603) -- 7499 Enchant Gloves - Fishing
 lib:AddEnchantmentRecipe(333, nil, 13622, 723) -- 7500 Enchant Bracer - Lesser Intellect
 lib:AddEnchantmentRecipe(333, nil, 13626, 847) -- 7501 Enchant Chest - Minor Stats
 lib:AddRecipe(333, nil, 13628, 11130, nil, nil) -- 7502 Runed Golden Rod
@@ -713,7 +712,6 @@ lib:AddEnchantmentRecipe(333, nil, 13695, 1897) -- 7530 Enchant 2H Weapon - Impa
 lib:AddEnchantmentRecipe(333, 11166, 13698, 865) -- 7531 Enchant Gloves - Skinning
 lib:AddEnchantmentRecipe(333, nil, 13700, 866) -- 7532 Enchant Chest - Lesser Stats
 lib:AddRecipe(333, nil, 13702, 11145, nil, nil) -- 7533 Runed Truesilver Rod
-lib:AddEnchantmentRecipe(333, nil, 13920, 3) -- 7656 Enchanting
 lib:AddEnchantmentRecipe(333, nil, 13746, 884) -- 7657 Enchant Cloak - Greater Defense
 lib:AddEnchantmentRecipe(333, nil, 13794, 903) -- 7658 Enchant Cloak - Resistance
 lib:AddEnchantmentRecipe(333, nil, 13815, 904) -- 7659 Enchant Gloves - Agility
@@ -757,6 +755,7 @@ lib:AddRecipe(164, 11610, 15292, 11608, nil, nil) -- 8218 Dark Iron Pulverizer
 lib:AddRecipe(164, 11611, 15294, 11607, nil, nil) -- 8219 Dark Iron Sunderer
 lib:AddRecipe(164, 11615, 15295, 11605, nil, nil) -- 8220 Dark Iron Shoulders
 lib:AddRecipe(333, 11813, 15596, 11811, nil, nil) -- 8440 Smoking Heart of the Mountain
+lib:AddRecipe(333, 45050, 15596, 11811, nil, nil) -- 8440 Smoking Heart of the Mountain
 lib:AddRecipe(202, 11827, 15633, 11826, 15049, nil) -- 8464 Lil' Smoky
 lib:AddRecipe(202, 11828, 15628, 11825, 15048, nil) -- 8465 Pet Bombling
 lib:AddRecipe(171, nil, 15833, 12190, 15822, nil) -- 8596 Dreamless Sleep Potion
@@ -764,6 +763,7 @@ lib:AddRecipe(185, 12226, 15935, 12224, 5004, nil) -- 8616 Crispy Bat Wing
 lib:AddRecipe(185, 12227, 15853, 12209, 5006, nil) -- 8617 Lean Wolf Steak
 lib:AddRecipe(185, 12228, 15855, 12210, 5007, nil) -- 8618 Roast Raptor
 lib:AddRecipe(185, 12229, 15856, 13851, 5007, nil) -- 8619 Hot Wolf Ribs
+lib:AddRecipe(185, 44851, 15856, 13851, 5007, nil) -- 8619 Hot Wolf Ribs
 lib:AddRecipe(185, 12231, 15861, 12212, 5007, nil) -- 8620 Jungle Stew
 lib:AddRecipe(185, 12232, 15863, 12213, 5007, nil) -- 8621 Carrion Surprise
 lib:AddRecipe(185, 12233, 15865, 12214, 5007, nil) -- 8622 Mystery Stew
@@ -773,7 +773,6 @@ lib:AddRecipe(185, 16111, 15915, 12216, 10256, nil) -- 8625 Spiced Chili Crab
 lib:AddRecipe(185, 16110, 15933, 12218, 10256, nil) -- 8626 Monster Omelet
 lib:AddRecipe(164, nil, 15972, 12259, nil, nil) -- 8636 Glinting Steel Dagger
 lib:AddRecipe(164, 12261, 15973, 12260, nil, nil) -- 8637 Searing Golden Blade
-lib:AddEnchantmentRecipe(185, nil, 818, 29784) -- 8676 Basic Campfire
 lib:AddRecipe(186, nil, 16153, 12359, nil, nil) -- 8796 Smelt Thorium
 lib:AddRecipe(164, nil, 16641, 12404, 16138, 1643) -- 9156 Dense Sharpening Stone
 lib:AddRecipe(164, nil, 16640, 12643, 16622, 1703) -- 9157 Dense Weightstone
@@ -797,7 +796,6 @@ lib:AddRecipe(164, 12698, 16660, 12625, nil, nil) -- 9174 Dawnbringer Shoulders
 lib:AddRecipe(164, 12699, 16655, 12631, nil, nil) -- 9175 Fiery Plate Gauntlets
 lib:AddRecipe(164, 12700, 16657, 12426, nil, nil) -- 9176 Imperial Plate Boots
 lib:AddRecipe(164, 12701, 16658, 12427, nil, nil) -- 9177 Imperial Plate Helm
-lib:AddRecipe(164, 12702, 16659, 12417, nil, nil) -- 9178 Radiant Circlet
 lib:AddRecipe(164, 12702, 16659, 12417, nil, nil) -- 9179 Radiant Circlet
 lib:AddRecipe(164, 12704, 16662, 12414, nil, nil) -- 9180 Thorium Leggings
 lib:AddRecipe(164, 12705, 16663, 12422, nil, nil) -- 9181 Imperial Plate Chest
@@ -847,6 +845,10 @@ lib:AddRecipe(171, 13477, 17553, 13443, 17530, nil) -- 9938 Superior Mana Potion
 lib:AddRecipe(171, 13478, 17554, 13445, 11348, nil) -- 9939 Elixir of Superior Defense
 lib:AddRecipe(171, 13479, 17555, 13447, 17535, nil) -- 9940 Elixir of the Sages
 lib:AddRecipe(171, 13480, 17556, 13446, 17534, nil) -- 9941 Major Healing Potion
+lib:AddRecipe(171, 36841, 17557, 13453, 17537, nil) -- 9942 Elixir of Brute Force
+lib:AddRecipe(171, 36842, 17557, 13453, 17537, nil) -- 9942 Elixir of Brute Force
+lib:AddRecipe(171, 36843, 17557, 13453, 17537, nil) -- 9942 Elixir of Brute Force
+lib:AddRecipe(171, 36844, 17557, 13453, 17537, nil) -- 9942 Elixir of Brute Force
 lib:AddRecipe(171, 13481, 17557, 13453, 17537, nil) -- 9942 Elixir of Brute Force
 lib:AddRecipe(171, 13482, 17559, 7078, nil, nil) -- 9943 Transmute: Air to Fire
 lib:AddRecipe(171, 13484, 17561, 7080, nil, nil) -- 9944 Transmute: Earth to Water
@@ -868,7 +870,7 @@ lib:AddRecipe(171, 13499, 17578, 13459, 17548, nil) -- 9959 Greater Shadow Prote
 lib:AddRecipe(171, 13500, 17579, 13460, nil, nil) -- 9960 Greater Holy Protection Potion
 lib:AddRecipe(171, 13501, 17580, 13444, 17531, nil) -- 9961 Major Mana Potion
 lib:AddRecipe(171, 13517, 17632, 13503, nil, nil) -- 9976 Alchemist's Stone
-lib:AddRecipe(171, 13518, 17634, 13506, 17624, nil) -- 9977 Flask of Petrification
+lib:AddRecipe(171, 13518, 17634, 13506, 17624, nil) -- 9977 Potion of Petrification
 lib:AddRecipe(171, 13519, 17635, 13510, 17626, nil) -- 9978 Flask of the Titans
 lib:AddRecipe(171, 31354, 17635, 13510, 17626, nil) -- 9978 Flask of the Titans
 lib:AddRecipe(171, 13520, 17636, 13511, 17627, nil) -- 9979 Flask of Distilled Wisdom
@@ -1028,7 +1030,7 @@ lib:AddEnchantmentRecipe(333, 16218, 20009, 1884) -- 11377 Enchant Bracer - Supe
 lib:AddEnchantmentRecipe(333, 16219, 20012, 1887) -- 11378 Enchant Gloves - Greater Agility
 lib:AddEnchantmentRecipe(333, 16220, 20024, 851) -- 11379 Enchant Boots - Spirit
 lib:AddEnchantmentRecipe(333, 16221, 20026, 1892) -- 11380 Enchant Chest - Major Health
-lib:AddEnchantmentRecipe(333, 16222, 20016, 1890) -- 11381 Enchant Shield - Superior Spirit
+lib:AddEnchantmentRecipe(333, 16222, 20016, 1890) -- 11381 Enchant Shield - Vitality
 lib:AddEnchantmentRecipe(333, 16223, 20029, 1894) -- 11382 Enchant Weapon - Icy Chill
 lib:AddEnchantmentRecipe(333, 16224, 20015, 1889) -- 11383 Enchant Cloak - Superior Defense
 lib:AddEnchantmentRecipe(333, 16242, 20028, 1893) -- 11384 Enchant Chest - Major Mana
@@ -1061,7 +1063,7 @@ lib:AddRecipe(164, 17052, 20876, 17013, nil, nil) -- 11864 Dark Iron Leggings
 lib:AddRecipe(164, 17053, 20873, 16988, nil, nil) -- 11865 Fiery Chain Shoulders
 lib:AddRecipe(164, 17060, 20897, 17016, nil, nil) -- 11866 Dark Iron Destroyer
 lib:AddRecipe(164, 17059, 20890, 17015, nil, nil) -- 11867 Dark Iron Reaver
-lib:AddRecipe(185, 17062, 20916, 8364, 1127, nil) -- 11873 Mithril Headed Trout
+lib:AddRecipe(185, 17062, 20916, 8364, 1127, nil) -- 11873 Mithril Head Trout
 lib:AddRecipe(185, 17201, 21144, 17198, 21149, nil) -- 11976 Egg Nog
 lib:AddRecipe(185, 17200, 21143, 17197, 5004, nil) -- 11977 Gingerbread Cookie
 lib:AddRecipe(164, 18592, 21161, 17193, nil, nil) -- 11979 Sulfuron Hammer
@@ -1078,7 +1080,7 @@ lib:AddRecipe(202, 18235, 22704, 18232, 22700, nil) -- 12296 Field Repair Bot 74
 lib:AddRecipe(165, 18239, 22711, 18238, nil, nil) -- 12297 Shadowskin Gloves
 lib:AddRecipe(165, 18252, 22727, 18251, 22725, 2503) -- 12298 Core Armor Kit
 lib:AddRecipe(171, 18257, 22732, 18253, 22729, nil) -- 12299 Major Rejuvenation Potion
-lib:AddEnchantmentRecipe(333, 18259, 22749, 2504) -- 12300 Enchant Weapon - Spell Power
+lib:AddEnchantmentRecipe(333, 18259, 22749, 2504) -- 12300 Enchant Weapon - Spellpower
 lib:AddEnchantmentRecipe(333, 18260, 22750, 2505) -- 12301 Enchant Weapon - Healing Power
 lib:AddRecipe(164, 18264, 22757, 18262, 22756, 2506) -- 12302 Elemental Sharpening Stone
 lib:AddRecipe(197, 18265, 22759, 18263, nil, nil) -- 12303 Flarecore Wraps
@@ -1101,7 +1103,6 @@ lib:AddRecipe(165, 18516, 22923, 18508, nil, nil) -- 12353 Swift Flight Bracers
 lib:AddRecipe(165, 18517, 22926, 18509, nil, nil) -- 12354 Chromatic Cloak
 lib:AddRecipe(165, 18518, 22927, 18510, nil, nil) -- 12355 Hide of the Wild
 lib:AddRecipe(165, 18519, 22928, 18511, nil, nil) -- 12356 Shifting Cloak
-lib:AddRecipe(186, nil, 22967, 17771, nil, nil) -- 12382 Smelt Elementium
 lib:AddRecipe(202, 18647, 23066, 9318, 6668, nil) -- 12420 Red Firework
 lib:AddRecipe(202, 18648, 23068, 9313, 11541, nil) -- 12421 Green Firework
 lib:AddRecipe(202, 18649, 23067, 9312, 11540, nil) -- 12422 Blue Firework
@@ -1114,7 +1115,7 @@ lib:AddRecipe(202, 18655, 23079, 18637, 23064, nil) -- 12428 Major Recombobulato
 lib:AddRecipe(202, 18656, 23080, 18594, 23008, nil) -- 12429 Powerful Seaforium Charge
 lib:AddRecipe(202, 18657, 23081, 18638, 23097, nil) -- 12430 Hyper-Radiant Flame Reflector
 lib:AddRecipe(202, 18658, 23082, 18639, 23132, nil) -- 12431 Ultra-Flash Shadow Reflector
-lib:AddRecipe(202, 18654, 23096, 18645, 23004, nil) -- 12432 Alarm-O-Bot
+lib:AddRecipe(202, 18654, 23096, 18645, 23004, nil) -- 12432 Gnomish Alarm-o-Bot
 lib:AddRecipe(202, 18661, 23129, 18660, 23126, nil) -- 12451 World Enlarger
 lib:AddRecipe(165, 18731, 23190, 18662, 23135, nil) -- 12516 Heavy Leather Ball
 lib:AddRecipe(165, 18949, 23399, 18948, nil, nil) -- 12559 Barbaric Bracers
@@ -1150,7 +1151,7 @@ lib:AddRecipe(129, 19442, 23787, 19440, 23786, nil) -- 12716 Powerful Anti-Venom
 lib:AddEnchantmentRecipe(333, 19444, 23799, 2563) -- 12717 Enchant Weapon - Strength
 lib:AddEnchantmentRecipe(333, 19445, 23800, 2564) -- 12718 Enchant Weapon - Agility
 lib:AddEnchantmentRecipe(333, 19446, 23801, 2565) -- 12719 Enchant Bracer - Mana Regeneration
-lib:AddEnchantmentRecipe(333, 19447, 23802, 2566) -- 12720 Enchant Bracer - Healing Power
+lib:AddEnchantmentRecipe(333, 19447, 23802, 2650) -- 12720 Enchant Bracer - Healing Power
 lib:AddEnchantmentRecipe(333, 19448, 23803, 2567) -- 12721 Enchant Weapon - Mighty Spirit
 lib:AddEnchantmentRecipe(333, 19449, 23804, 2568) -- 12722 Enchant Weapon - Mighty Intellect
 lib:AddRecipe(197, 19766, 24093, 19684, nil, nil) -- 12816 Bloodvine Boots
@@ -1170,10 +1171,10 @@ lib:AddRecipe(164, 19781, 24141, 19695, nil, nil) -- 12834 Darksoul Shoulders
 lib:AddRecipe(171, nil, 24266, 19931, 24264, nil) -- 12876 Gurubashi Mojo Madness
 lib:AddRecipe(202, 20000, 24356, 19999, nil, nil) -- 12890 Bloodvine Goggles
 lib:AddRecipe(202, 20001, 24357, 19998, nil, nil) -- 12891 Bloodvine Lens
-lib:AddRecipe(171, 20011, 24365, 20007, 24363, nil) -- 12892 Mageblood Potion
+lib:AddRecipe(171, 20011, 24365, 20007, 24363, nil) -- 12892 Mageblood Elixir
 lib:AddRecipe(171, 20012, 24366, 20002, 24360, nil) -- 12893 Greater Dreamless Sleep Potion
 lib:AddRecipe(171, 20013, 24367, 20008, 24364, nil) -- 12894 Living Action Potion
-lib:AddRecipe(171, 20014, 24368, 20004, 24361, nil) -- 12895 Major Troll's Blood Potion
+lib:AddRecipe(171, 20014, 24368, 20004, 24361, nil) -- 12895 Mighty Troll's Blood Elixir
 lib:AddRecipe(164, 20040, 24399, 20039, nil, nil) -- 12901 Dark Iron Boots
 lib:AddRecipe(185, 20075, 24418, 20074, 5007, nil) -- 12905 Heavy Crocolisk Stew
 lib:AddRecipe(165, nil, 24655, 20296, nil, nil) -- 13042 Green Dragonscale Gauntlets
@@ -1255,7 +1256,9 @@ lib:AddRecipe(197, 21371, 26087, 21342, nil, nil) -- 13399 Core Felcloth Bag
 lib:AddRecipe(165, 21548, 26279, 21278, nil, nil) -- 13416 Stormshroud Gloves
 lib:AddRecipe(171, 21547, 26277, 21546, 26276, nil) -- 13417 Elixir of Greater Firepower
 lib:AddRecipe(197, 21722, 26403, 21154, nil, nil) -- 13422 Festival Dress
+lib:AddRecipe(197, 44916, 26403, 21154, nil, nil) -- 13422 Festival Dress
 lib:AddRecipe(197, 21723, 26407, 21542, nil, nil) -- 13423 Festive Red Pant Suit
+lib:AddRecipe(197, 44917, 26407, 21542, nil, nil) -- 13423 Festive Red Pant Suit
 lib:AddRecipe(202, 21724, 26416, 21558, 26291, nil) -- 13424 Small Blue Rocket
 lib:AddRecipe(202, 21725, 26417, 21559, 26292, nil) -- 13425 Small Green Rocket
 lib:AddRecipe(202, 21726, 26418, 21557, 26286, nil) -- 13426 Small Red Rocket
@@ -1269,7 +1272,9 @@ lib:AddRecipe(202, 21733, 26426, 21714, 26488, nil) -- 13433 Large Blue Rocket C
 lib:AddRecipe(202, 21734, 26427, 21716, 26490, nil) -- 13434 Large Green Rocket Cluster
 lib:AddRecipe(202, 21735, 26428, 21718, 26517, nil) -- 13435 Large Red Rocket Cluster
 lib:AddRecipe(202, 21738, 26442, 21569, 26298, nil) -- 13436 Firework Launcher
+lib:AddRecipe(202, 44919, 26442, 21569, 26298, nil) -- 13436 Firework Launcher
 lib:AddRecipe(202, 21737, 26443, 21570, 26299, nil) -- 13437 Firework Cluster Launcher
+lib:AddRecipe(202, 44918, 26443, 21570, 26299, nil) -- 13437 Firework Cluster Launcher
 lib:AddRecipe(197, nil, 26745, 21840, nil, nil) -- 13463 Bolt of Netherweave
 lib:AddRecipe(197, nil, 26746, 21841, nil, nil) -- 13464 Netherweave Bag
 lib:AddRecipe(197, 21892, 26747, 21842, nil, nil) -- 13465 Bolt of Imbued Netherweave
@@ -1355,12 +1360,11 @@ lib:AddRecipe(164, 22390, 27830, 22384, nil, nil) -- 13842 Persuader
 lib:AddRecipe(164, 22388, 27829, 22385, nil, nil) -- 13843 Titanic Leggings
 lib:AddRecipe(164, 22389, 27832, 22383, nil, nil) -- 13844 Sageblade
 lib:AddEnchantmentRecipe(333, 22392, 27837, 2646) -- 13845 Enchant 2H Weapon - Agility
-lib:AddEnchantmentRecipe(333, nil, 28029, 3) -- 13859 Enchanting
 lib:AddEnchantmentRecipe(333, nil, 27899, 2647) -- 13860 Enchant Bracer - Brawn
 lib:AddEnchantmentRecipe(333, nil, 27905, 1891) -- 13861 Enchant Bracer - Stats
 lib:AddEnchantmentRecipe(333, 22530, 27906, 2648) -- 13862 Enchant Bracer - Major Defense
-lib:AddEnchantmentRecipe(333, 22531, 27911, 2617) -- 13863 Enchant Bracer - Superior Healing
-lib:AddEnchantmentRecipe(333, 24000, 27911, 2617) -- 13863 Enchant Bracer - Superior Healing
+lib:AddEnchantmentRecipe(333, 22531, 27911, 2650) -- 13863 Enchant Bracer - Superior Healing
+lib:AddEnchantmentRecipe(333, 24000, 27911, 2650) -- 13863 Enchant Bracer - Superior Healing
 lib:AddEnchantmentRecipe(333, 22532, 27913, 2679) -- 13864 Enchant Bracer - Restore Mana Prime
 lib:AddEnchantmentRecipe(333, 22533, 27914, 2649) -- 13865 Enchant Bracer - Fortitude
 lib:AddEnchantmentRecipe(333, 22534, 27917, 2650) -- 13866 Enchant Bracer - Spellpower
@@ -1379,7 +1383,7 @@ lib:AddEnchantmentRecipe(333, 22543, 27950, 2649) -- 13876 Enchant Boots - Forti
 lib:AddEnchantmentRecipe(333, 22544, 27951, 2657) -- 13877 Enchant Boots - Dexterity
 lib:AddEnchantmentRecipe(333, 22545, 27954, 2658) -- 13878 Enchant Boots - Surefooted
 lib:AddEnchantmentRecipe(333, nil, 27957, 2659) -- 13879 Enchant Chest - Exceptional Health
-lib:AddEnchantmentRecipe(333, 22546, 27958, 2660) -- 13880 Enchant Chest - Exceptional Mana
+lib:AddEnchantmentRecipe(333, nil, 27958, 3233) -- 13880 Enchant Chest - Exceptional Mana
 lib:AddEnchantmentRecipe(333, 22547, 27960, 2661) -- 13881 Enchant Chest - Exceptional Stats
 lib:AddEnchantmentRecipe(333, 24003, 27960, 2661) -- 13881 Enchant Chest - Exceptional Stats
 lib:AddEnchantmentRecipe(333, nil, 27961, 2662) -- 13882 Enchant Cloak - Major Armor
@@ -1432,8 +1436,8 @@ lib:AddRecipe(171, 22902, 28549, 22827, 28493, nil) -- 13965 Elixir of Major Fro
 lib:AddRecipe(171, 22903, 28550, 22828, 28494, nil) -- 13966 Insane Strength Potion
 lib:AddRecipe(171, 22904, 28552, 22830, 28496, nil) -- 13967 Elixir of the Searching Eye
 lib:AddRecipe(171, nil, 28551, 22829, 28495, nil) -- 13968 Super Healing Potion
-lib:AddRecipe(171, 22905, 28553, 22831, 28497, nil) -- 13969 Elixir of Major Agility
-lib:AddRecipe(171, 24001, 28553, 22831, 28497, nil) -- 13969 Elixir of Major Agility
+lib:AddRecipe(171, 22905, 28553, 22831, 54494, nil) -- 13969 Elixir of Major Agility
+lib:AddRecipe(171, 24001, 28553, 22831, 54494, nil) -- 13969 Elixir of Major Agility
 lib:AddRecipe(171, 22906, 28554, 22871, 28548, nil) -- 13970 Shrouding Potion
 lib:AddRecipe(171, 22907, 28555, 22832, 28499, nil) -- 13971 Super Mana Potion
 lib:AddRecipe(171, 22908, 28556, 22833, 28501, nil) -- 13972 Elixir of Major Firepower
@@ -1565,7 +1569,6 @@ lib:AddRecipe(164, 23636, 29699, 23555, nil, nil) -- 14238 Dirge
 lib:AddRecipe(164, 23637, 29700, 23556, nil, nil) -- 14239 Hand of Eternity
 lib:AddRecipe(164, 23638, 29728, 23575, 29507, nil) -- 14240 Lesser Ward of Shielding
 lib:AddRecipe(164, 23639, 29729, 23576, 29720, nil) -- 14241 Greater Ward of Shielding
-lib:AddRecipe(129, 23689, 30021, 23684, nil, nil) -- 14274 Crystal Infused Bandage
 lib:AddRecipe(202, nil, 30310, 23736, 30216, nil) -- 14348 Fel Iron Bomb
 lib:AddRecipe(202, nil, 30311, 23737, 30217, nil) -- 14349 Adamantite Grenade
 lib:AddRecipe(202, nil, 30312, 23742, nil, nil) -- 14350 Fel Iron Musket
@@ -1587,7 +1590,7 @@ lib:AddRecipe(202, 23814, 30344, 23771, 30264, nil) -- 14365 Green Smoke Flare
 lib:AddRecipe(202, nil, 30346, 23772, nil, nil) -- 14366 Fel Iron Shells
 lib:AddRecipe(202, 23815, 30347, 34504, 45171, nil) -- 14367 Adamantite Shell Machine
 lib:AddRecipe(202, 23816, 30348, 23774, nil, nil) -- 14368 Fel Iron Toolbox
-lib:AddRecipe(202, 23817, 30349, 23775, nil, nil) -- 14369 Khorium Toolbox
+lib:AddRecipe(202, 23817, 30349, 23775, nil, nil) -- 14369 Titanium Toolbox
 lib:AddRecipe(202, nil, 30303, 23781, nil, nil) -- 14370 Elemental Blasting Powder
 lib:AddRecipe(202, nil, 30304, 23782, nil, nil) -- 14371 Fel Iron Casing
 lib:AddRecipe(202, nil, 30305, 23783, nil, nil) -- 14372 Handful of Fel Iron Bolts
@@ -1598,10 +1601,10 @@ lib:AddRecipe(202, nil, 30309, 23787, nil, nil) -- 14376 Felsteel Stabilizer
 lib:AddRecipe(202, 23874, 30547, 23819, 30434, nil) -- 14391 Elemental Seaforium Charge
 lib:AddRecipe(202, 23888, 30548, 23821, 30427, nil) -- 14392 Zapthrottle Mote Extractor
 lib:AddRecipe(202, 23882, 30549, 23820, nil, nil) -- 14393 Critter Enlarger
-lib:AddRecipe(202, 23883, 30551, 33092, 28495, nil) -- 14394 Healing Potion Injector
-lib:AddRecipe(202, 35310, 30551, 33092, 28495, nil) -- 14394 Healing Potion Injector
-lib:AddRecipe(202, 23884, 30552, 33093, 28499, nil) -- 14395 Mana Potion Injector
-lib:AddRecipe(202, 35311, 30552, 33093, 28499, nil) -- 14395 Mana Potion Injector
+lib:AddRecipe(202, 23883, 30551, 33092, 67486, nil) -- 14394 Healing Potion Injector
+lib:AddRecipe(202, 35310, 30551, 33092, 67486, nil) -- 14394 Healing Potion Injector
+lib:AddRecipe(202, 23884, 30552, 33093, 67487, nil) -- 14395 Mana Potion Injector
+lib:AddRecipe(202, 35311, 30552, 33093, 67487, nil) -- 14395 Mana Potion Injector
 lib:AddRecipe(202, 23887, 30556, 23824, 51582, nil) -- 14397 Rocket Boots Xtreme
 lib:AddRecipe(202, nil, 30558, 23826, 30461, nil) -- 14398 The Bigger One
 lib:AddRecipe(202, nil, 30560, 23827, 30486, nil) -- 14399 Super Sapper Charge
@@ -1672,7 +1675,7 @@ lib:AddRecipe(755, 24168, 31070, 24114, 31025, nil) -- 14562 Braided Eternium Ch
 lib:AddRecipe(755, 24169, 31071, 24116, 31033, nil) -- 14563 Eye of the Night
 lib:AddRecipe(755, 24170, 31072, 24117, 31026, nil) -- 14564 Embrace of the Dawn
 lib:AddRecipe(755, 24171, 31076, 24121, 31035, nil) -- 14565 Chain of the Twilight Owl
-lib:AddRecipe(755, 24172, 31077, 24122, nil, nil) -- 14566 Coronet of the Verdant Flame
+lib:AddRecipe(755, 24172, 31077, 24122, nil, nil) -- 14566 Coronet of Verdant Flame
 lib:AddRecipe(755, 24173, 31078, 24123, nil, nil) -- 14567 Circlet of Arcane Might
 lib:AddRecipe(755, 24179, 31079, 24124, 31038, nil) -- 14568 Figurine - Felsteel Boar
 lib:AddRecipe(755, 24180, 31080, 24125, 31039, nil) -- 14569 Figurine - Dawnstone Crab
@@ -1758,8 +1761,6 @@ lib:AddRecipe(165, 25742, 32502, 25692, nil, nil) -- 14886 Netherfury Leggings
 lib:AddRecipe(165, 29219, 32502, 25692, nil, nil) -- 14886 Netherfury Leggings
 lib:AddRecipe(165, 25743, 32503, 25693, nil, nil) -- 14887 Netherfury Boots
 lib:AddRecipe(165, 29218, 32503, 25693, nil, nil) -- 14887 Netherfury Boots
-lib:AddEnchantmentRecipe(182, nil, 32605, 1) -- 14898 Herb Gathering
-lib:AddEnchantmentRecipe(186, nil, 32606, 2) -- 14899 Mining
 lib:AddRecipe(164, nil, 32655, 25843, nil, nil) -- 14900 Fel Iron Rod
 lib:AddRecipe(164, 25846, 32656, 25844, nil, nil) -- 14901 Adamantite Rod
 lib:AddRecipe(164, 25847, 32657, 25845, nil, nil) -- 14902 Eternium Rod
@@ -1803,14 +1804,14 @@ lib:AddRecipe(185, 27699, 33295, 27666, 33269, nil) -- 15016 Golden Fish Sticks
 lib:AddRecipe(185, 27700, 33296, 27667, 33258, nil) -- 15017 Spicy Crawdad
 lib:AddRecipe(171, nil, 33732, 28100, 17534, nil) -- 15043 Volatile Healing Potion
 lib:AddRecipe(171, nil, 33738, 28102, 33720, nil) -- 15044 Onslaught Elixir
-lib:AddRecipe(171, nil, 33740, 28103, 33721, nil) -- 15045 Adept's Elixir
+lib:AddRecipe(171, nil, 33740, 28103, 54452, nil) -- 15045 Adept's Elixir
 lib:AddRecipe(171, nil, 33733, 28101, 17531, nil) -- 15046 Unstable Mana Potion
 lib:AddRecipe(171, nil, 33741, 28104, 33726, nil) -- 15047 Elixir of Mastery
 lib:AddEnchantmentRecipe(333, nil, 33990, 1144) -- 15122 Enchant Chest - Major Spirit
 lib:AddEnchantmentRecipe(333, nil, 33991, 3150) -- 15123 Enchant Chest - Restore Mana Prime
 lib:AddEnchantmentRecipe(333, 28270, 33992, 2933) -- 15124 Enchant Chest - Major Resilience
 lib:AddEnchantmentRecipe(333, nil, 33993, 2934) -- 15125 Enchant Gloves - Blasting
-lib:AddEnchantmentRecipe(333, 28271, 33994, 2935) -- 15126 Enchant Gloves - Spell Strike
+lib:AddEnchantmentRecipe(333, 28271, 33994, 2935) -- 15126 Enchant Gloves - Precise Strikes
 lib:AddEnchantmentRecipe(333, nil, 33995, 684) -- 15127 Enchant Gloves - Major Strength
 lib:AddEnchantmentRecipe(333, nil, 33996, 1594) -- 15128 Enchant Gloves - Assault
 lib:AddEnchantmentRecipe(333, 28272, 33997, 2937) -- 15129 Enchant Gloves - Major Spellpower
@@ -1826,7 +1827,7 @@ lib:AddEnchantmentRecipe(333, 35299, 34007, 2939) -- 15137 Enchant Boots - Cat's
 lib:AddEnchantmentRecipe(333, 28280, 34008, 2940) -- 15138 Enchant Boots - Boar's Speed
 lib:AddEnchantmentRecipe(333, 35297, 34008, 2940) -- 15138 Enchant Boots - Boar's Speed
 lib:AddEnchantmentRecipe(333, 28282, 34009, 1071) -- 15139 Enchant Shield - Major Stamina
-lib:AddEnchantmentRecipe(333, 28281, 34010, 2343) -- 15140 Enchant Weapon - Major Healing
+lib:AddEnchantmentRecipe(333, 28281, 34010, 3846) -- 15140 Enchant Weapon - Major Healing
 lib:AddRecipe(755, 28291, 34069, 28290, nil, nil) -- 15146 Smooth Golden Draenite
 lib:AddRecipe(333, nil, 28027, 22460, nil, nil) -- 15155 Prismatic Sphere
 lib:AddRecipe(333, nil, 28028, 22459, nil, nil) -- 15156 Void Sphere
@@ -2090,7 +2091,6 @@ lib:AddRecipe(755, 33622, 39961, 32409, nil, nil) -- 15810 Relentless Earthstorm
 lib:AddRecipe(202, nil, 39971, 32423, nil, nil) -- 15812 Icy Blasting Primers
 lib:AddRecipe(202, nil, 39973, 32413, 39965, nil) -- 15813 Frost Grenades
 lib:AddRecipe(165, 32429, 39997, 32398, nil, nil) -- 15814 Boots of Shackled Souls
-lib:AddRecipe(165, 32430, 40000, 32399, nil, nil) -- 15815 Bracers of Shackled Souls
 lib:AddRecipe(165, 32431, 40001, 32400, nil, nil) -- 15816 Greaves of Shackled Souls
 lib:AddRecipe(165, 32432, 40002, 32397, nil, nil) -- 15817 Waistguard of Shackled Souls
 lib:AddRecipe(165, 32436, 40006, 32393, nil, nil) -- 15818 Redeemed Soul Cinch
@@ -2196,7 +2196,49 @@ lib:AddRecipe(165, nil, 44344, 34100, nil, nil) -- 16023 Knothide Quiver
 lib:AddRecipe(165, nil, 44343, 34099, nil, nil) -- 16024 Knothide Ammo Pouch
 lib:AddEnchantmentRecipe(333, nil, 44383, 3229) -- 16033 Enchant Shield - Resilience
 lib:AddRecipe(202, 34114, 44391, 34113, 44389, nil) -- 16034 Field Repair Bot 110G
-lib:AddRecipe(165, nil, 44359, 34105, nil, nil) -- 16143 Quiver of a Thousand Feathers
+lib:AddEnchantmentRecipe(333, 37332, 44483, 3230) -- 16085 Enchant Cloak - Superior Frost Resistance
+lib:AddEnchantmentRecipe(333, nil, 44484, 3231) -- 16086 Enchant Gloves - Expertise
+lib:AddEnchantmentRecipe(333, nil, 44488, 3234) -- 16088 Enchant Gloves - Precision
+lib:AddEnchantmentRecipe(333, nil, 44489, 1952) -- 16089 Enchant Shield - Defense
+lib:AddEnchantmentRecipe(333, nil, 44492, 3236) -- 16090 Enchant Chest - Mighty Health
+lib:AddEnchantmentRecipe(333, 37333, 44494, 1400) -- 16091 Enchant Cloak - Superior Nature Resistance
+lib:AddEnchantmentRecipe(333, nil, 44508, 1147) -- 16094 Enchant Boots - Greater Spirit
+lib:AddEnchantmentRecipe(333, 37335, 44500, 983) -- 16095 Enchant Cloak - Superior Agility
+lib:AddEnchantmentRecipe(333, nil, 44506, 3238) -- 16096 Enchant Gloves - Gatherer
+lib:AddEnchantmentRecipe(333, nil, 44509, 2381) -- 16097 Enchant Chest - Greater Mana Restoration
+lib:AddEnchantmentRecipe(333, 37329, 44510, 3844) -- 16098 Enchant Weapon - Exceptional Spirit
+lib:AddEnchantmentRecipe(333, nil, 44528, 1075) -- 16099 Enchant Boots - Greater Fortitude
+lib:AddEnchantmentRecipe(333, 37345, 44513, 3829) -- 16102 Enchant Gloves - Greater Assault
+lib:AddEnchantmentRecipe(333, 37344, 44524, 3239) -- 16103 Enchant Weapon - Icebreaker
+lib:AddEnchantmentRecipe(333, nil, 44555, 1119) -- 16104 Enchant Bracers - Exceptional Intellect
+lib:AddEnchantmentRecipe(333, 37331, 44556, 1354) -- 16105 Enchant Cloak - Superior Fire Resistance
+lib:AddEnchantmentRecipe(333, nil, 44529, 3222) -- 16106 Enchant Gloves - Major Agility
+lib:AddEnchantmentRecipe(333, 44484, 44575, 3845) -- 16107 Enchant Bracers - Greater Assault
+lib:AddEnchantmentRecipe(333, 44494, 44576, 3241) -- 16109 Enchant Weapon - Lifeward
+lib:AddEnchantmentRecipe(333, nil, 44584, 3244) -- 16110 Enchant Boots - Greater Vitality
+lib:AddEnchantmentRecipe(333, nil, 44582, 3243) -- 16111 Enchant Cloak - Spell Piercing
+lib:AddEnchantmentRecipe(333, 37341, 44589, 983) -- 16113 Enchant Boots - Superior Agility
+lib:AddEnchantmentRecipe(333, 37340, 44588, 3245) -- 16114 Enchant Chest - Exceptional Resilience
+lib:AddEnchantmentRecipe(333, 37334, 44590, 1446) -- 16115 Enchant Cloak - Superior Shadow Resistance
+lib:AddEnchantmentRecipe(333, 37326, 44593, 1147) -- 16116 Enchant Bracers - Major Spirit
+lib:AddEnchantmentRecipe(333, 37347, 44591, 1951) -- 16117 Enchant Cloak - Titanweave
+lib:AddEnchantmentRecipe(333, 37342, 44612, 3249) -- 16118 Enchant Gloves - Greater Blasting
+lib:AddEnchantmentRecipe(333, nil, 44592, 3246) -- 16119 Enchant Gloves - Exceptional Spellpower
+lib:AddEnchantmentRecipe(333, 44473, 44595, 3247) -- 16120 Enchant 2H Weapon - Scourgebane
+lib:AddEnchantmentRecipe(333, 37346, 44598, 3231) -- 16121 Enchant Bracers - Expertise
+lib:AddEnchantmentRecipe(333, 37330, 44596, 1262) -- 16122 Enchant Cloak - Superior Arcane Resistance
+lib:AddEnchantmentRecipe(333, 37337, 44616, 2661) -- 16125 Enchant Bracers - Greater Stats
+lib:AddEnchantmentRecipe(333, 37339, 44621, 3251) -- 16126 Enchant Weapon - Giant Slayer
+lib:AddEnchantmentRecipe(333, nil, 44623, 3252) -- 16127 Enchant Chest - Super Stats
+lib:AddEnchantmentRecipe(333, 44485, 44625, 3253) -- 16128 Enchant Gloves - Armsman
+lib:AddEnchantmentRecipe(333, 37338, 44630, 3828) -- 16129 Enchant 2H Weapon - Greater Savagery
+lib:AddEnchantmentRecipe(333, nil, 44629, 3830) -- 16130 Enchant Weapon - Exceptional Spellpower
+lib:AddEnchantmentRecipe(333, 37349, 44631, 3256) -- 16131 Enchant Cloak - Shadow Armor
+lib:AddEnchantmentRecipe(333, 37343, 44633, 1103) -- 16132 Enchant Weapon - Exceptional Agility
+lib:AddEnchantmentRecipe(333, nil, 44635, 2326) -- 16135 Enchant Bracers - Greater Spellpower
+lib:AddEnchantmentRecipe(333, nil, 44645, 3839) -- 16136 Enchant Ring - Assault
+lib:AddEnchantmentRecipe(333, nil, 44636, 3840) -- 16138 Enchant Ring - Greater Spellpower
+lib:AddRecipe(165, 34200, 44359, 34105, nil, nil) -- 16143 Quiver of a Thousand Feathers
 lib:AddRecipe(165, 34201, 44768, 34106, nil, nil) -- 16144 Netherscale Ammo Pouch
 lib:AddRecipe(165, 34218, 44768, 34106, nil, nil) -- 16144 Netherscale Ammo Pouch
 lib:AddRecipe(165, nil, 44770, 34207, 44769, 3260) -- 16145 Glove Reinforcements
@@ -2209,9 +2251,16 @@ lib:AddRecipe(197, 34261, 44950, 34087, nil, nil) -- 16155 Green Winter Clothes
 lib:AddRecipe(165, 34262, 44953, 34086, nil, nil) -- 16156 Winter Boots
 lib:AddRecipe(185, 34413, 45022, 34411, 45020, nil) -- 16157 Hot Apple Cider
 lib:AddRecipe(165, nil, 45100, 34482, nil, nil) -- 16158 Leatherworker's Satchel
-lib:AddRecipe(185, 33875, 43772, 33874, 43771, nil) -- 16160 Kibler's Bits
+lib:AddRecipe(185, 33875, 43772, 33874, 65247, nil) -- 16160 Kibler's Bits
 lib:AddRecipe(165, 34491, 45117, 34490, nil, nil) -- 16162 Bag of Many Hides
+lib:AddRecipe(165, 38593, 45117, 34490, nil, nil) -- 16162 Bag of Many Hides
+lib:AddRecipe(165, 38594, 45117, 34490, nil, nil) -- 16162 Bag of Many Hides
+lib:AddRecipe(165, 38595, 45117, 34490, nil, nil) -- 16162 Bag of Many Hides
+lib:AddRecipe(165, 38596, 45117, 34490, nil, nil) -- 16162 Bag of Many Hides
+lib:AddRecipe(773, nil, 45382, 1180, 8099, nil) -- 16195 Scroll of Stamina
 lib:AddRecipe(185, nil, 13028, 10841, 1133, nil) -- 16198 Goldthorn Tea
+lib:AddRecipe(129, nil, 45545, 34721, 45543, nil) -- 16202 Frostweave Bandage
+lib:AddRecipe(129, 39152, 45546, 34722, 45544, nil) -- 16203 Heavy Frostweave Bandage
 lib:AddRecipe(185, 34834, 45695, 34832, 45694, nil) -- 16228 Captain Rumsey's Lager
 lib:AddRecipe(333, 34872, 45765, 22449, nil, nil) -- 16240 Void Shatter
 lib:AddRecipe(202, 35186, 46111, 34847, 12883, nil) -- 16248 Annihilator Holo-Gogs
@@ -2274,7 +2323,7 @@ lib:AddRecipe(755, 35322, 46403, 35315, nil, nil) -- 16284 Quick Dawnstone
 lib:AddRecipe(755, 35323, 46404, 35316, nil, nil) -- 16285 Reckless Noble Topaz
 lib:AddRecipe(755, 35325, 46405, 35318, nil, nil) -- 16286 Forceful Talasite
 lib:AddEnchantmentRecipe(333, 35498, 46578, 3273) -- 16287 Enchant Weapon - Deathfrost
-lib:AddEnchantmentRecipe(333, 35500, 46594, 1950) -- 16288 Enchant Chest - Defense
+lib:AddEnchantmentRecipe(333, 35500, 46594, 1951) -- 16288 Enchant Chest - Defense
 lib:AddRecipe(755, 35502, 46597, 35501, nil, nil) -- 16289 Eternal Earthstorm Diamond
 lib:AddRecipe(755, 35505, 46601, 35503, nil, nil) -- 16290 Ember Skyfire Diamond
 lib:AddRecipe(185, 35564, 46684, 35563, 46898, nil) -- 16292 Charred Bear Kabobs
@@ -2300,11 +2349,1394 @@ lib:AddRecipe(755, 35767, 47055, 35760, nil, nil) -- 16365 Reckless Pyrestone
 lib:AddRecipe(755, 35763, 47056, 35761, nil, nil) -- 16366 Quick Lionseye
 lib:AddRecipe(755, 35768, 47056, 35761, nil, nil) -- 16366 Quick Lionseye
 lib:AddRecipe(755, nil, 47280, 191061, nil, nil) -- 16387 Brilliant Glass
+lib:AddEnchantmentRecipe(333, 44471, 47672, 3294) -- 16429 Enchant Cloak - Mighty Armor
+lib:AddEnchantmentRecipe(333, 44472, 47898, 3831) -- 16490 Enchant Cloak - Greater Speed
+lib:AddEnchantmentRecipe(333, 37348, 47898, 3831) -- 16490 Enchant Cloak - Greater Speed
+lib:AddEnchantmentRecipe(333, 44488, 47899, 3296) -- 16491 Enchant Cloak - Wisdom
+lib:AddEnchantmentRecipe(333, 44491, 47901, 3232) -- 16492 Enchant Boots - Tuskarr's Vitality
+lib:AddRecipe(773, nil, 48114, 955, 8096, nil) -- 16542 Scroll of Intellect
+lib:AddRecipe(773, nil, 48116, 1181, 8112, nil) -- 16543 Scroll of Spirit
+lib:AddRecipe(773, nil, 48247, 37168, nil, nil) -- 16602 Mysterious Tarot
 lib:AddRecipe(755, 37504, 48789, 37503, nil, nil) -- 16704 Purified Shadowsong Amethyst
+lib:AddRecipe(186, nil, 49252, 36916, nil, nil) -- 16973 Smelt Cobalt
+lib:AddRecipe(186, nil, 49258, 36913, nil, nil) -- 16976 Smelt Saronite
 lib:AddRecipe(197, 37915, 49677, 6836, nil, nil) -- 17153 Dress Shoes
 lib:AddRecipe(197, 38229, 50194, 38225, nil, nil) -- 17420 Mycah's Botanical Bag
+lib:AddRecipe(773, nil, 50612, 1711, 8100, nil) -- 17486 Scroll of Stamina II
+lib:AddRecipe(773, nil, 50614, 4422, 8101, nil) -- 17487 Scroll of Stamina III
+lib:AddRecipe(773, nil, 50616, 10307, 12178, nil) -- 17488 Scroll of Stamina IV
+lib:AddRecipe(773, nil, 50617, 27502, 33081, nil) -- 17489 Scroll of Stamina V
+lib:AddRecipe(773, nil, 50618, 33461, 43198, nil) -- 17490 Scroll of Stamina VI
+lib:AddRecipe(773, nil, 50619, 37093, 48101, nil) -- 17491 Scroll of Stamina VII
+lib:AddRecipe(773, nil, 50620, 37094, 48102, nil) -- 17492 Scroll of Stamina VIII
+lib:AddRecipe(773, nil, 50598, 2290, 8097, nil) -- 17493 Scroll of Intellect II
+lib:AddRecipe(773, nil, 50599, 4419, 8098, nil) -- 17494 Scroll of Intellect III
+lib:AddRecipe(773, nil, 50600, 10308, 12176, nil) -- 17495 Scroll of Intellect IV
+lib:AddRecipe(773, nil, 50601, 27499, 33078, nil) -- 17496 Scroll of Intellect V
+lib:AddRecipe(773, nil, 50602, 33458, 43195, nil) -- 17497 Scroll of Intellect VI
+lib:AddRecipe(773, nil, 50603, 37091, 48099, nil) -- 17498 Scroll of Intellect VII
+lib:AddRecipe(773, nil, 50604, 37092, 48100, nil) -- 17499 Scroll of Intellect VIII
+lib:AddRecipe(773, nil, 50605, 1712, 8113, nil) -- 17500 Scroll of Spirit II
+lib:AddRecipe(773, nil, 50606, 4424, 8114, nil) -- 17501 Scroll of Spirit III
+lib:AddRecipe(773, nil, 50607, 10306, 12177, nil) -- 17502 Scroll of Spirit IV
+lib:AddRecipe(773, nil, 50608, 27501, 33080, nil) -- 17503 Scroll of Spirit V
+lib:AddRecipe(773, nil, 50609, 33460, 43197, nil) -- 17504 Scroll of Spirit VI
+lib:AddRecipe(773, nil, 50610, 37097, 48103, nil) -- 17505 Scroll of Spirit VII
+lib:AddRecipe(773, nil, 50611, 37098, 48104, nil) -- 17506 Scroll of Spirit VIII
 lib:AddRecipe(197, 38327, 50644, 38277, nil, nil) -- 17513 Haliscan Jacket
 lib:AddRecipe(197, 38328, 50647, 38278, nil, nil) -- 17514 Haliscan Pantaloons
+lib:AddRecipe(165, nil, 50936, 38425, nil, nil) -- 17558 Heavy Borean Leather
+lib:AddRecipe(165, nil, 50962, 38375, 50906, 3329) -- 17580 Borean Armor Kit
+lib:AddRecipe(165, nil, 50949, 38405, nil, nil) -- 17581 Arctic Belt
+lib:AddRecipe(165, nil, 50955, 38412, nil, nil) -- 17582 Frostscale Belt
+lib:AddRecipe(165, nil, 50943, 38406, nil, nil) -- 17583 Iceborne Belt
+lib:AddRecipe(165, nil, 50963, 38376, 50909, 3330) -- 17672 Heavy Borean Armor Kit
+lib:AddRecipe(165, nil, 50948, 38404, nil, nil) -- 17673 Arctic Boots
+lib:AddRecipe(165, nil, 50944, 38400, nil, nil) -- 17674 Arctic Chestpiece
+lib:AddRecipe(165, nil, 50945, 38401, nil, nil) -- 17675 Arctic Leggings
+lib:AddRecipe(165, nil, 50947, 38403, nil, nil) -- 17676 Arctic Gloves
+lib:AddRecipe(165, nil, 50946, 38402, nil, nil) -- 17677 Arctic Shoulderpads
+lib:AddRecipe(165, nil, 51571, 38433, nil, nil) -- 17690 Arctic Wristguards
+lib:AddRecipe(129, nil, 3276, 2581, 1159, nil) -- 17871 Heavy Linen Bandage
+lib:AddRecipe(129, nil, 7934, 6452, 7932, nil) -- 17872 Anti-Venom
+lib:AddRecipe(129, nil, 3277, 3530, 3267, nil) -- 17873 Wool Bandage
+lib:AddRecipe(129, nil, 3278, 3531, 3268, nil) -- 17874 Heavy Wool Bandage
+lib:AddRecipe(129, nil, 7928, 6450, 7926, nil) -- 17875 Silk Bandage
+lib:AddRecipe(129, 16112, 7929, 6451, 7927, nil) -- 17876 Heavy Silk Bandage
+lib:AddRecipe(129, 16113, 10840, 8544, 10838, nil) -- 17877 Mageweave Bandage
+lib:AddRecipe(129, nil, 10841, 8545, 10839, nil) -- 17878 Heavy Mageweave Bandage
+lib:AddRecipe(129, nil, 18629, 14529, 18608, nil) -- 17879 Runecloth Bandage
+lib:AddRecipe(164, nil, 52568, 39087, nil, nil) -- 17883 Cobalt Belt
+lib:AddRecipe(164, nil, 52569, 39088, nil, nil) -- 17884 Cobalt Boots
+lib:AddRecipe(164, nil, 52570, 39085, nil, nil) -- 17885 Cobalt Chestpiece
+lib:AddRecipe(164, nil, 52567, 39086, nil, nil) -- 17886 Cobalt Legplates
+lib:AddRecipe(164, nil, 52571, 39084, nil, nil) -- 17887 Cobalt Helm
+lib:AddRecipe(164, nil, 52572, 39083, nil, nil) -- 17888 Cobalt Shoulders
+lib:AddRecipe(165, 32430, 52733, 32399, nil, nil) -- 17894 Bracers of Shackled Souls
+lib:AddRecipe(773, nil, 52738, 37101, nil, nil) -- 17895 Ivory Ink
+lib:AddRecipe(773, nil, 52739, 38682, nil, nil) -- 17896 Armor Vellum
+lib:AddRecipe(773, nil, 48248, 37118, 48129, nil) -- 17957 Scroll of Recall
+lib:AddRecipe(773, nil, 52840, 39349, nil, nil) -- 17958 Weapon Vellum
+lib:AddRecipe(773, nil, 52843, 39469, nil, nil) -- 17960 Moonglow Ink
+lib:AddRecipe(185, 39644, 53056, 39520, 52911, nil) -- 17986 Kungaloosh
+lib:AddRecipe(202, nil, 53281, 39690, nil, nil) -- 18024 Volatile Blasting Trigger
+lib:AddRecipe(773, nil, 53462, 39774, nil, nil) -- 18133 Midnight Ink
+lib:AddRecipe(171, nil, 53812, 40195, 53808, nil) -- 18323 Pygmy Oil
+lib:AddRecipe(171, nil, 53836, 33447, 43185, nil) -- 18325 Runic Healing Potion
+lib:AddRecipe(171, nil, 53837, 33448, 43186, nil) -- 18326 Runic Mana Potion
+lib:AddRecipe(171, nil, 53838, 39671, 28495, nil) -- 18327 Resurgent Healing Potion
+lib:AddRecipe(171, nil, 53840, 39666, 28497, nil) -- 18328 Elixir of Mighty Agility
+lib:AddRecipe(171, nil, 53842, 40070, 33721, nil) -- 18329 Spellpower Elixir
+lib:AddRecipe(171, nil, 53847, 40072, 53747, nil) -- 18330 Elixir of Spirit
+lib:AddRecipe(171, nil, 53895, 40077, 53750, nil) -- 18331 Crazy Alchemist's Potion
+lib:AddRecipe(171, nil, 53898, 40078, 53751, nil) -- 18332 Elixir of Mighty Fortitude
+lib:AddRecipe(171, nil, 53900, 40081, 53753, nil) -- 18333 Potion of Nightmares
+lib:AddRecipe(171, nil, 53905, 40093, 53762, nil) -- 18334 Indestructible Potion
+lib:AddRecipe(171, nil, 53904, 40087, 53761, nil) -- 18335 Powerful Rejuvenation Potion
+lib:AddRecipe(171, nil, 53903, 46377, 53760, nil) -- 18336 Flask of Endless Rage
+lib:AddRecipe(171, nil, 53902, 46379, 53758, nil) -- 18337 Flask of Stoneblood
+lib:AddRecipe(171, nil, 53901, 46376, 53755, nil) -- 18338 Flask of the Frost Wyrm
+lib:AddRecipe(171, nil, 53899, 40079, 53752, nil) -- 18339 Lesser Flask of Toughness
+lib:AddRecipe(171, nil, 53848, 40076, 53749, nil) -- 18340 Guru's Elixir
+lib:AddRecipe(171, nil, 53841, 40068, 53746, nil) -- 18342 Wrath Elixir
+lib:AddRecipe(171, nil, 53839, 40067, 28499, nil) -- 18343 Icy Mana Potion
+lib:AddRecipe(171, nil, 53777, 35624, 56041, nil) -- 18344 Transmute: Eternal Air to Earth
+lib:AddRecipe(171, nil, 53776, 35622, 56040, nil) -- 18345 Transmute: Eternal Air to Water
+lib:AddRecipe(171, nil, 53781, 35623, 56045, nil) -- 18346 Transmute: Eternal Earth to Air
+lib:AddRecipe(171, nil, 53782, 35627, 56044, nil) -- 18347 Transmute: Eternal Earth to Shadow
+lib:AddRecipe(171, nil, 53775, 35625, 56043, nil) -- 18348 Transmute: Eternal Fire to Life
+lib:AddRecipe(171, nil, 53774, 35622, 56040, nil) -- 18349 Transmute: Eternal Fire to Water
+lib:AddRecipe(171, nil, 53773, 36860, 56042, nil) -- 18350 Transmute: Eternal Life to Fire
+lib:AddRecipe(171, nil, 53771, 35627, 56044, nil) -- 18351 Transmute: Eternal Life to Shadow
+lib:AddRecipe(171, nil, 53779, 35624, 56041, nil) -- 18352 Transmute: Eternal Shadow to Earth
+lib:AddRecipe(171, nil, 53780, 35625, 56043, nil) -- 18353 Transmute: Eternal Shadow to Life
+lib:AddRecipe(171, nil, 53783, 35623, 56045, nil) -- 18354 Transmute: Eternal Water to Air
+lib:AddRecipe(171, nil, 53784, 36860, 56042, nil) -- 18355 Transmute: Eternal Water to Fire
+lib:AddRecipe(171, 44567, 53942, 40216, 53914, nil) -- 18356 Mighty Nature Protection Potion
+lib:AddRecipe(171, 44564, 53936, 40213, 53910, nil) -- 18357 Mighty Arcane Protection Potion
+lib:AddRecipe(171, 44566, 53937, 40215, 53913, nil) -- 18358 Mighty Frost Protection Potion
+lib:AddRecipe(171, 44568, 53938, 40217, 53915, nil) -- 18359 Mighty Shadow Protection Potion
+lib:AddRecipe(171, 44565, 53939, 40214, 53911, nil) -- 18360 Mighty Fire Protection Potion
+lib:AddRecipe(755, nil, 53831, 39900, nil, nil) -- 18362 Bold Bloodstone
+lib:AddRecipe(755, nil, 53832, 39905, nil, nil) -- 18363 Delicate Bloodstone
+lib:AddRecipe(755, nil, 53834, 39911, nil, nil) -- 18364 Runed Bloodstone
+lib:AddRecipe(755, nil, 53835, 39906, nil, nil) -- 18365 Bright Bloodstone
+lib:AddRecipe(755, nil, 53843, 39907, nil, nil) -- 18366 Subtle Bloodstone
+lib:AddRecipe(755, nil, 53844, 39908, nil, nil) -- 18367 Flashing Bloodstone
+lib:AddRecipe(755, nil, 53845, 39909, nil, nil) -- 18368 Fractured Bloodstone
+lib:AddRecipe(755, nil, 54017, 39910, nil, nil) -- 18369 Precise Bloodstone
+lib:AddRecipe(755, nil, 53934, 39919, nil, nil) -- 18370 Solid Chalcedony
+lib:AddRecipe(755, nil, 53940, 39920, nil, nil) -- 18371 Sparkling Chalcedony
+lib:AddRecipe(755, nil, 53941, 39927, nil, nil) -- 18372 Lustrous Chalcedony
+lib:AddRecipe(755, 41560, 53943, 39932, nil, nil) -- 18373 Stormy Chalcedony
+lib:AddRecipe(755, nil, 53852, 39912, nil, nil) -- 18374 Brilliant Sun Crystal
+lib:AddRecipe(755, nil, 53853, 39914, nil, nil) -- 18375 Smooth Sun Crystal
+lib:AddRecipe(755, nil, 53854, 39915, nil, nil) -- 18376 Rigid Sun Crystal
+lib:AddRecipe(755, nil, 53855, 39916, nil, nil) -- 18377 Thick Sun Crystal
+lib:AddRecipe(755, 41559, 53857, 39917, nil, nil) -- 18378 Mystic Sun Crystal
+lib:AddRecipe(755, nil, 53856, 39918, nil, nil) -- 18379 Quick Sun Crystal
+lib:AddRecipe(755, nil, 53859, 39934, nil, nil) -- 18380 Sovereign Shadow Crystal
+lib:AddRecipe(755, nil, 53860, 39935, nil, nil) -- 18381 Shifting Shadow Crystal
+lib:AddRecipe(755, nil, 53861, 39942, nil, nil) -- 18382 Tenuous Shadow Crystal
+lib:AddRecipe(755, nil, 53862, 39936, nil, nil) -- 18383 Glowing Shadow Crystal
+lib:AddRecipe(755, nil, 53863, 39941, nil, nil) -- 18384 Purified Shadow Crystal
+lib:AddRecipe(755, nil, 53864, 39943, nil, nil) -- 18385 Royal Shadow Crystal
+lib:AddRecipe(755, 41575, 53865, 39945, nil, nil) -- 18386 Mysterious Shadow Crystal
+lib:AddRecipe(755, nil, 53866, 39937, nil, nil) -- 18387 Balanced Shadow Crystal
+lib:AddRecipe(755, nil, 53867, 39944, nil, nil) -- 18388 Infused Shadow Crystal
+lib:AddRecipe(755, nil, 53868, 39938, nil, nil) -- 18389 Regal Shadow Crystal
+lib:AddRecipe(755, 41574, 53869, 39939, nil, nil) -- 18390 Defender's Shadow Crystal
+lib:AddRecipe(755, nil, 53870, 39933, nil, nil) -- 18391 Puissant Shadow Crystal
+lib:AddRecipe(755, nil, 53871, 39940, nil, nil) -- 18392 Guardian's Shadow Crystal
+lib:AddRecipe(755, nil, 53872, 39947, nil, nil) -- 18393 Inscribed Huge Citrine
+lib:AddRecipe(755, nil, 53873, 39948, nil, nil) -- 18394 Etched Huge Citrine
+lib:AddRecipe(755, nil, 53874, 39949, nil, nil) -- 18395 Champion's Huge Citrine
+lib:AddRecipe(755, 41566, 53875, 39950, nil, nil) -- 18396 Resplendent Huge Citrine
+lib:AddRecipe(755, nil, 53876, 39951, nil, nil) -- 18397 Fierce Huge Citrine
+lib:AddRecipe(755, 41562, 53877, 39952, nil, nil) -- 18398 Deadly Huge Citrine
+lib:AddRecipe(755, nil, 53878, 39953, nil, nil) -- 18399 Glinting Huge Citrine
+lib:AddRecipe(755, 41565, 53879, 39954, nil, nil) -- 18400 Lucent Huge Citrine
+lib:AddRecipe(755, nil, 53880, 39955, nil, nil) -- 18401 Deft Huge Citrine
+lib:AddRecipe(755, nil, 53881, 39946, nil, nil) -- 18402 Luminous Huge Citrine
+lib:AddRecipe(755, nil, 53882, 39956, nil, nil) -- 18403 Potent Huge Citrine
+lib:AddRecipe(755, nil, 53883, 39957, nil, nil) -- 18404 Veiled Huge Citrine
+lib:AddRecipe(755, 41563, 53884, 39958, nil, nil) -- 18405 Durable Huge Citrine
+lib:AddRecipe(755, 41561, 53885, 39959, nil, nil) -- 18406 Reckless Huge Citrine
+lib:AddRecipe(755, nil, 53886, 39960, nil, nil) -- 18407 Wicked Huge Citrine
+lib:AddRecipe(755, nil, 53887, 39961, nil, nil) -- 18408 Pristine Huge Citrine
+lib:AddRecipe(755, 41564, 53888, 39962, nil, nil) -- 18409 Empowered Huge Citrine
+lib:AddRecipe(755, nil, 53889, 39963, nil, nil) -- 18410 Stark Huge Citrine
+lib:AddRecipe(755, nil, 53890, 39964, nil, nil) -- 18411 Stalwart Huge Citrine
+lib:AddRecipe(755, nil, 53891, 39965, nil, nil) -- 18412 Glimmering Huge Citrine
+lib:AddRecipe(755, nil, 53892, 39966, nil, nil) -- 18413 Accurate Huge Citrine
+lib:AddRecipe(755, nil, 53893, 39967, nil, nil) -- 18414 Resolute Huge Citrine
+lib:AddRecipe(755, nil, 53894, 39968, nil, nil) -- 18415 Timeless Dark Jade
+lib:AddRecipe(755, nil, 53916, 39974, nil, nil) -- 18416 Jagged Dark Jade
+lib:AddRecipe(755, 41567, 53917, 39975, nil, nil) -- 18417 Vivid Dark Jade
+lib:AddRecipe(755, nil, 53918, 39976, nil, nil) -- 18418 Enduring Dark Jade
+lib:AddRecipe(755, 41572, 53919, 39977, nil, nil) -- 18419 Steady Dark Jade
+lib:AddRecipe(755, nil, 53920, 39978, nil, nil) -- 18420 Forceful Dark Jade
+lib:AddRecipe(755, 41568, 53921, 39979, nil, nil) -- 18421 Seer's Dark Jade
+lib:AddRecipe(755, nil, 53922, 39980, nil, nil) -- 18422 Misty Dark Jade
+lib:AddRecipe(755, nil, 53923, 39981, nil, nil) -- 18423 Shining Dark Jade
+lib:AddRecipe(755, 41571, 53924, 39982, nil, nil) -- 18424 Turbid Dark Jade
+lib:AddRecipe(755, nil, 53925, 39983, nil, nil) -- 18425 Intricate Dark Jade
+lib:AddRecipe(755, nil, 53926, 39984, nil, nil) -- 18426 Dazzling Dark Jade
+lib:AddRecipe(755, nil, 53927, 39985, nil, nil) -- 18427 Sundered Dark Jade
+lib:AddRecipe(755, nil, 53928, 39986, nil, nil) -- 18428 Lambent Dark Jade
+lib:AddRecipe(755, 41573, 53929, 39988, nil, nil) -- 18429 Opaque Dark Jade
+lib:AddRecipe(755, nil, 53930, 39989, nil, nil) -- 18430 Energized Dark Jade
+lib:AddRecipe(755, nil, 53931, 39990, nil, nil) -- 18431 Radiant Dark Jade
+lib:AddRecipe(755, 41570, 53932, 39991, nil, nil) -- 18432 Tense Dark Jade
+lib:AddRecipe(755, 41569, 53933, 39992, nil, nil) -- 18433 Shattered Dark Jade
+lib:AddRecipe(755, 41576, 53830, 39996, nil, nil) -- 18434 Bold Scarlet Ruby
+lib:AddRecipe(755, 41577, 53945, 39997, nil, nil) -- 18435 Delicate Scarlet Ruby
+lib:AddRecipe(755, 41718, 53946, 39998, nil, nil) -- 18436 Runed Scarlet Ruby
+lib:AddRecipe(755, nil, 53947, 39999, nil, nil) -- 18437 Bright Scarlet Ruby
+lib:AddRecipe(755, 41719, 53948, 40000, nil, nil) -- 18438 Subtle Scarlet Ruby
+lib:AddRecipe(755, 41578, 53949, 40001, nil, nil) -- 18439 Flashing Scarlet Ruby
+lib:AddRecipe(755, 41817, 53950, 40002, nil, nil) -- 18440 Fractured Scarlet Ruby
+lib:AddRecipe(755, 41790, 53951, 40003, nil, nil) -- 18441 Precise Scarlet Ruby
+lib:AddRecipe(755, 42138, 53952, 40008, nil, nil) -- 18442 Solid Sky Sapphire
+lib:AddRecipe(755, nil, 53953, 40009, nil, nil) -- 18443 Sparkling Sky Sapphire
+lib:AddRecipe(755, 41581, 53954, 40010, nil, nil) -- 18444 Lustrous Sky Sapphire
+lib:AddRecipe(755, 41728, 53955, 40011, nil, nil) -- 18445 Stormy Sky Sapphire
+lib:AddRecipe(755, nil, 53956, 40012, nil, nil) -- 18446 Brilliant Autumn's Glow
+lib:AddRecipe(755, 41720, 53957, 40013, nil, nil) -- 18447 Smooth Autumn's Glow
+lib:AddRecipe(755, 41580, 53958, 40014, nil, nil) -- 18448 Rigid Autumn's Glow
+lib:AddRecipe(755, 41791, 53959, 40015, nil, nil) -- 18449 Thick Autumn's Glow
+lib:AddRecipe(755, 41727, 53960, 40016, nil, nil) -- 18450 Mystic Autumn's Glow
+lib:AddRecipe(755, 41579, 53961, 40017, nil, nil) -- 18451 Quick Autumn's Glow
+lib:AddRecipe(755, 41784, 53962, 40022, nil, nil) -- 18452 Sovereign Twilight Opal
+lib:AddRecipe(755, 41747, 53963, 40023, nil, nil) -- 18453 Shifting Twilight Opal
+lib:AddRecipe(755, 41785, 53964, 40024, nil, nil) -- 18454 Tenuous Twilight Opal
+lib:AddRecipe(755, 41725, 53965, 40025, nil, nil) -- 18455 Glowing Twilight Opal
+lib:AddRecipe(755, 41783, 53966, 40026, nil, nil) -- 18456 Purified Twilight Opal
+lib:AddRecipe(755, 41701, 53967, 40027, nil, nil) -- 18457 Royal Twilight Opal
+lib:AddRecipe(755, 41740, 53968, 40028, nil, nil) -- 18458 Mysterious Twilight Opal
+lib:AddRecipe(755, nil, 53969, 40029, nil, nil) -- 18459 Balanced Twilight Opal
+lib:AddRecipe(755, 41796, 53970, 40030, nil, nil) -- 18460 Infused Twilight Opal
+lib:AddRecipe(755, 41703, 53971, 40031, nil, nil) -- 18461 Regal Twilight Opal
+lib:AddRecipe(755, 41820, 53972, 40032, nil, nil) -- 18462 Defender's Twilight Opal
+lib:AddRecipe(755, 41702, 53973, 40033, nil, nil) -- 18463 Puissant Twilight Opal
+lib:AddRecipe(755, 41726, 53974, 40034, nil, nil) -- 18464 Guardian's Twilight Opal
+lib:AddRecipe(755, 41789, 53975, 40037, nil, nil) -- 18465 Inscribed Monarch Topaz
+lib:AddRecipe(755, 41777, 53976, 40038, nil, nil) -- 18466 Etched Monarch Topaz
+lib:AddRecipe(755, 41780, 53977, 40039, nil, nil) -- 18467 Champion's Monarch Topaz
+lib:AddRecipe(755, 41734, 53978, 40040, nil, nil) -- 18468 Resplendent Monarch Topaz
+lib:AddRecipe(755, 41794, 53979, 40043, nil, nil) -- 18470 Deadly Monarch Topaz
+lib:AddRecipe(755, 41582, 53980, 40044, nil, nil) -- 18471 Glinting Monarch Topaz
+lib:AddRecipe(755, 41733, 53981, 40045, nil, nil) -- 18472 Lucent Monarch Topaz
+lib:AddRecipe(755, 41792, 53982, 40046, nil, nil) -- 18473 Deft Monarch Topaz
+lib:AddRecipe(755, 41689, 53983, 40047, nil, nil) -- 18474 Luminous Monarch Topaz
+lib:AddRecipe(755, 41686, 53984, 40048, nil, nil) -- 18475 Potent Monarch Topaz
+lib:AddRecipe(755, 41688, 53985, 40049, nil, nil) -- 18476 Veiled Monarch Topaz
+lib:AddRecipe(755, 41730, 53986, 40050, nil, nil) -- 18477 Durable Monarch Topaz
+lib:AddRecipe(755, 41690, 53987, 40051, nil, nil) -- 18478 Reckless Monarch Topaz
+lib:AddRecipe(755, 41721, 53988, 40052, nil, nil) -- 18479 Wicked Monarch Topaz
+lib:AddRecipe(755, nil, 53989, 40053, nil, nil) -- 18480 Pristine Monarch Topaz
+lib:AddRecipe(755, 41732, 53990, 40054, nil, nil) -- 18481 Empowered Monarch Topaz
+lib:AddRecipe(755, 41687, 53991, 40055, nil, nil) -- 18482 Stark Monarch Topaz
+lib:AddRecipe(755, 41779, 53992, 40056, nil, nil) -- 18483 Stalwart Monarch Topaz
+lib:AddRecipe(755, 41722, 53993, 40057, nil, nil) -- 18484 Glimmering Monarch Topaz
+lib:AddRecipe(755, 41818, 53994, 40058, nil, nil) -- 18485 Accurate Monarch Topaz
+lib:AddRecipe(171, nil, 54020, 40248, nil, nil) -- 18487 Transmute: Eternal Might
+lib:AddRecipe(755, 41793, 54019, 40041, nil, nil) -- 18489 Fierce Monarch Topaz
+lib:AddRecipe(755, 41778, 54023, 40059, nil, nil) -- 18490 Resolute Monarch Topaz
+lib:AddRecipe(755, 41739, 54010, 40103, nil, nil) -- 18491 Opaque Forest Emerald
+lib:AddRecipe(755, 41692, 54011, 40105, nil, nil) -- 18492 Energized Forest Emerald
+lib:AddRecipe(755, 41819, 54012, 40098, nil, nil) -- 18493 Radiant Forest Emerald
+lib:AddRecipe(755, 41736, 54013, 40101, nil, nil) -- 18494 Tense Forest Emerald
+lib:AddRecipe(755, 41735, 54014, 40106, nil, nil) -- 18495 Shattered Forest Emerald
+lib:AddRecipe(755, 41795, 53995, 40085, nil, nil) -- 18496 Timeless Forest Emerald
+lib:AddRecipe(755, 41723, 53996, 40086, nil, nil) -- 18497 Jagged Forest Emerald
+lib:AddRecipe(755, 41698, 53997, 40088, nil, nil) -- 18498 Vivid Forest Emerald
+lib:AddRecipe(755, 41697, 53998, 40089, nil, nil) -- 18499 Enduring Forest Emerald
+lib:AddRecipe(755, 41738, 54000, 40090, nil, nil) -- 18500 Steady Forest Emerald
+lib:AddRecipe(755, 41693, 54001, 40091, nil, nil) -- 18501 Forceful Forest Emerald
+lib:AddRecipe(755, 41699, 54002, 40092, nil, nil) -- 18502 Seer's Forest Emerald
+lib:AddRecipe(755, 41781, 54003, 40095, nil, nil) -- 18503 Misty Forest Emerald
+lib:AddRecipe(755, 41782, 54004, 40099, nil, nil) -- 18504 Shining Forest Emerald
+lib:AddRecipe(755, 41737, 54005, 40102, nil, nil) -- 18505 Turbid Forest Emerald
+lib:AddRecipe(755, 41694, 54006, 40104, nil, nil) -- 18506 Intricate Forest Emerald
+lib:AddRecipe(755, nil, 54007, 40094, nil, nil) -- 18507 Dazzling Forest Emerald
+lib:AddRecipe(755, 41724, 54008, 40096, nil, nil) -- 18508 Sundered Forest Emerald
+lib:AddRecipe(755, 41696, 54009, 40100, nil, nil) -- 18509 Lambent Forest Emerald
+lib:AddRecipe(171, nil, 54213, 46378, 54212, nil) -- 18531 Flask of Pure Mojo
+lib:AddRecipe(171, nil, 54218, 40073, 53748, nil) -- 18532 Elixir of Mighty Strength
+lib:AddRecipe(171, nil, 54220, 40097, 53763, nil) -- 18533 Elixir of Protection
+lib:AddRecipe(171, nil, 54221, 40211, 53908, nil) -- 18534 Potion of Speed
+lib:AddRecipe(171, nil, 54222, 40212, 53909, nil) -- 18535 Potion of Wild Magic
+lib:AddRecipe(202, nil, 54353, 39688, nil, nil) -- 18537 Mark "S" Boomstick
+lib:AddRecipe(164, nil, 54550, 40668, nil, nil) -- 18896 Cobalt Triangle Shield
+lib:AddRecipe(164, nil, 54551, 40669, nil, nil) -- 18897 Tempered Saronite Belt
+lib:AddRecipe(164, nil, 54552, 40671, nil, nil) -- 18898 Tempered Saronite Boots
+lib:AddRecipe(164, nil, 54553, 40672, nil, nil) -- 18899 Tempered Saronite Breastplate
+lib:AddRecipe(164, nil, 54554, 40674, nil, nil) -- 18900 Tempered Saronite Legplates
+lib:AddRecipe(164, nil, 54555, 40673, nil, nil) -- 18901 Tempered Saronite Helm
+lib:AddRecipe(164, nil, 54556, 40675, nil, nil) -- 18902 Tempered Saronite Shoulders
+lib:AddRecipe(164, nil, 54557, 40670, nil, nil) -- 18903 Saronite Defender
+lib:AddRecipe(164, nil, 54917, 40942, nil, nil) -- 19163 Spiked Cobalt Helm
+lib:AddRecipe(164, nil, 54918, 40949, nil, nil) -- 19164 Spiked Cobalt Boots
+lib:AddRecipe(164, nil, 54941, 40950, nil, nil) -- 19165 Spiked Cobalt Shoulders
+lib:AddRecipe(164, nil, 54944, 40951, nil, nil) -- 19166 Spiked Cobalt Chestpiece
+lib:AddRecipe(164, nil, 54945, 40952, nil, nil) -- 19167 Spiked Cobalt Gauntlets
+lib:AddRecipe(164, nil, 54946, 40953, nil, nil) -- 19168 Spiked Cobalt Belt
+lib:AddRecipe(164, nil, 54947, 40943, nil, nil) -- 19169 Spiked Cobalt Legplates
+lib:AddRecipe(164, nil, 54948, 40954, nil, nil) -- 19170 Spiked Cobalt Bracers
+lib:AddRecipe(164, nil, 54949, 40955, nil, nil) -- 19171 Horned Cobalt Helm
+lib:AddRecipe(164, 41124, 54978, 40956, nil, nil) -- 19172 Reinforced Cobalt Shoulders
+lib:AddRecipe(164, 41123, 54979, 40957, nil, nil) -- 19173 Reinforced Cobalt Helm
+lib:AddRecipe(164, 41120, 54980, 40958, nil, nil) -- 19174 Reinforced Cobalt Legplates
+lib:AddRecipe(164, 41122, 54981, 40959, nil, nil) -- 19175 Reinforced Cobalt Chestpiece
+lib:AddRecipe(164, nil, 55013, 41117, nil, nil) -- 19176 Saronite Protector
+lib:AddRecipe(164, nil, 55017, 41116, nil, nil) -- 19177 Tempered Saronite Bracers
+lib:AddRecipe(164, nil, 55014, 41113, nil, nil) -- 19178 Saronite Bulwark
+lib:AddRecipe(164, nil, 55015, 41114, nil, nil) -- 19179 Tempered Saronite Gauntlets
+lib:AddRecipe(164, nil, 55055, 41126, nil, nil) -- 19185 Brilliant Saronite Legplates
+lib:AddRecipe(164, nil, 55056, 41127, nil, nil) -- 19186 Brilliant Saronite Gauntlets
+lib:AddRecipe(164, nil, 55057, 41128, nil, nil) -- 19187 Brilliant Saronite Boots
+lib:AddRecipe(164, nil, 55058, 41129, nil, nil) -- 19188 Brilliant Saronite Breastplate
+lib:AddRecipe(164, nil, 55174, 41181, nil, nil) -- 19214 Honed Cobalt Cleaver
+lib:AddRecipe(164, nil, 55177, 41182, nil, nil) -- 19215 Savage Cobalt Slicer
+lib:AddRecipe(164, nil, 55179, 41183, nil, nil) -- 19216 Saronite Ambusher
+lib:AddRecipe(164, nil, 55181, 41184, nil, nil) -- 19217 Saronite Shiv
+lib:AddRecipe(164, nil, 55182, 41185, nil, nil) -- 19218 Furious Saronite Beatstick
+lib:AddRecipe(164, nil, 55183, 41186, nil, nil) -- 19219 Corroded Saronite Edge
+lib:AddRecipe(164, nil, 55184, 41187, nil, nil) -- 19220 Corroded Saronite Woundbringer
+lib:AddRecipe(164, nil, 55185, 41188, nil, nil) -- 19221 Saronite Mindcrusher
+lib:AddRecipe(164, nil, 55186, 41189, nil, nil) -- 19222 Chestplate of Conquest
+lib:AddRecipe(164, nil, 55187, 41190, nil, nil) -- 19223 Legplates of Conquest
+lib:AddRecipe(165, nil, 55199, 41238, nil, nil) -- 19238 Cloak of Tormented Skies
+lib:AddRecipe(164, nil, 55200, 41239, nil, nil) -- 19239 Sturdy Cobalt Quickblade
+lib:AddRecipe(164, nil, 55201, 41240, nil, nil) -- 19240 Cobalt Tenderizer
+lib:AddRecipe(164, nil, 55203, 41242, nil, nil) -- 19241 Forged Cobalt Claymore
+lib:AddRecipe(164, nil, 55204, 41243, nil, nil) -- 19242 Notched Cobalt War Axe
+lib:AddRecipe(164, nil, 55202, 41241, nil, nil) -- 19243 Sure-fire Shuriken
+lib:AddRecipe(164, nil, 55206, 41245, nil, nil) -- 19244 Deadly Saronite Dirk
+lib:AddRecipe(186, nil, 55208, 37663, nil, nil) -- 19245 Smelt Titansteel
+lib:AddRecipe(186, nil, 55211, 41163, nil, nil) -- 19246 Smelt Titanium
+lib:AddRecipe(165, nil, 55243, 41264, nil, nil) -- 19258 Bracers of Deflection
+lib:AddRecipe(202, nil, 55252, 40769, 54711, nil) -- 19261 Scrapbot Construction Kit
+lib:AddRecipe(164, nil, 55298, 41355, nil, nil) -- 19273 Vengeance Bindings
+lib:AddRecipe(164, nil, 55300, 41356, nil, nil) -- 19274 Righteous Gauntlets
+lib:AddRecipe(164, nil, 55301, 41357, nil, nil) -- 19275 Daunting Handguards
+lib:AddRecipe(164, nil, 55302, 41344, nil, nil) -- 19276 Helm of Command
+lib:AddRecipe(164, nil, 55303, 41345, nil, nil) -- 19277 Daunting Legplates
+lib:AddRecipe(164, nil, 55304, 41346, nil, nil) -- 19278 Righteous Greaves
+lib:AddRecipe(164, nil, 55305, 41354, nil, nil) -- 19279 Savage Saronite Bracers
+lib:AddRecipe(164, nil, 55306, 41351, nil, nil) -- 19280 Savage Saronite Pauldrons
+lib:AddRecipe(164, nil, 55307, 41352, nil, nil) -- 19281 Savage Saronite Waistguard
+lib:AddRecipe(164, nil, 55308, 41348, nil, nil) -- 19282 Savage Saronite Walkers
+lib:AddRecipe(164, nil, 55309, 41349, nil, nil) -- 19283 Savage Saronite Gauntlets
+lib:AddRecipe(164, nil, 55311, 41353, nil, nil) -- 19284 Savage Saronite Hauberk
+lib:AddRecipe(164, nil, 55310, 41347, nil, nil) -- 19285 Savage Saronite Legplates
+lib:AddRecipe(164, nil, 55312, 41350, nil, nil) -- 19286 Savage Saronite Skullshield
+lib:AddRecipe(164, nil, 55371, 41384, nil, nil) -- 19297 Titansteel Guardian
+lib:AddRecipe(164, nil, 55372, 41386, nil, nil) -- 19298 Spiked Titansteel Helm
+lib:AddRecipe(164, nil, 55373, 41387, nil, nil) -- 19299 Tempered Titansteel Helm
+lib:AddRecipe(164, nil, 55374, 41388, nil, nil) -- 19301 Brilliant Titansteel Helm
+lib:AddRecipe(164, nil, 55375, 41391, nil, nil) -- 19302 Spiked Titansteel Treads
+lib:AddRecipe(164, nil, 55376, 41392, nil, nil) -- 19303 Tempered Titansteel Treads
+lib:AddRecipe(164, nil, 55369, 41257, nil, nil) -- 19304 Titansteel Destroyer
+lib:AddRecipe(164, nil, 55370, 41383, nil, nil) -- 19305 Titansteel Bonecrusher
+lib:AddRecipe(164, nil, 55377, 41394, nil, nil) -- 19306 Brilliant Titansteel Treads
+lib:AddRecipe(755, 41705, 55384, 41377, nil, nil) -- 19308 Effulgent Skyflare Diamond
+lib:AddRecipe(755, 41414, 55384, 41377, nil, nil) -- 19308 Effulgent Skyflare Diamond
+lib:AddRecipe(755, 41415, 55386, 41375, nil, nil) -- 19309 Tireless Skyflare Diamond
+lib:AddRecipe(755, 41743, 55387, 41378, nil, nil) -- 19310 Forlorn Skyflare Diamond
+lib:AddRecipe(755, 41416, 55387, 41378, nil, nil) -- 19310 Forlorn Skyflare Diamond
+lib:AddRecipe(755, 41744, 55388, 41379, nil, nil) -- 19311 Impassive Skyflare Diamond
+lib:AddRecipe(755, 41417, 55388, 41379, nil, nil) -- 19311 Impassive Skyflare Diamond
+lib:AddRecipe(755, 41786, 55390, 41307, nil, nil) -- 19313 Destructive Skyflare Diamond
+lib:AddRecipe(755, 41419, 55390, 41307, nil, nil) -- 19313 Destructive Skyflare Diamond
+lib:AddRecipe(755, 41706, 55392, 41333, nil, nil) -- 19314 Ember Skyflare Diamond
+lib:AddRecipe(755, 41420, 55392, 41333, nil, nil) -- 19314 Ember Skyflare Diamond
+lib:AddRecipe(755, 41742, 55393, 41335, nil, nil) -- 19315 Enigmatic Skyflare Diamond
+lib:AddRecipe(755, 41421, 55393, 41335, nil, nil) -- 19315 Enigmatic Skyflare Diamond
+lib:AddRecipe(755, 41422, 55394, 41339, nil, nil) -- 19316 Swift Skyflare Diamond
+lib:AddRecipe(755, 41787, 55395, 41400, nil, nil) -- 19317 Thundering Skyflare Diamond
+lib:AddRecipe(755, 41423, 55395, 41400, nil, nil) -- 19317 Thundering Skyflare Diamond
+lib:AddRecipe(755, 41707, 55407, 41376, nil, nil) -- 19318 Revitalizing Skyflare Diamond
+lib:AddRecipe(755, 41413, 55407, 41376, nil, nil) -- 19318 Revitalizing Skyflare Diamond
+lib:AddRecipe(755, 41708, 55396, 41401, nil, nil) -- 19319 Insightful Earthsiege Diamond
+lib:AddRecipe(755, 41403, 55396, 41401, nil, nil) -- 19319 Insightful Earthsiege Diamond
+lib:AddRecipe(755, 41798, 55397, 41395, nil, nil) -- 19320 Bracing Earthsiege Diamond
+lib:AddRecipe(755, 41404, 55397, 41395, nil, nil) -- 19320 Bracing Earthsiege Diamond
+lib:AddRecipe(755, 41799, 55398, 41396, nil, nil) -- 19321 Eternal Earthsiege Diamond
+lib:AddRecipe(755, 41405, 55398, 41396, nil, nil) -- 19321 Eternal Earthsiege Diamond
+lib:AddRecipe(755, 41406, 55399, 41397, nil, nil) -- 19322 Powerful Earthsiege Diamond
+lib:AddRecipe(755, 41710, 55400, 41398, nil, nil) -- 19323 Relentless Earthsiege Diamond
+lib:AddRecipe(755, 41407, 55400, 41398, nil, nil) -- 19323 Relentless Earthsiege Diamond
+lib:AddRecipe(755, 41797, 55401, 41380, nil, nil) -- 19324 Austere Earthsiege Diamond
+lib:AddRecipe(755, 41408, 55401, 41380, nil, nil) -- 19324 Austere Earthsiege Diamond
+lib:AddRecipe(755, 41409, 55402, 41381, nil, nil) -- 19325 Persistent Earthsiege Diamond
+lib:AddRecipe(755, 41711, 55403, 41382, nil, nil) -- 19326 Trenchant Earthsiege Diamond
+lib:AddRecipe(755, 41410, 55403, 41382, nil, nil) -- 19326 Trenchant Earthsiege Diamond
+lib:AddRecipe(755, 41709, 55404, 41385, nil, nil) -- 19327 Invigorating Earthsiege Diamond
+lib:AddRecipe(755, 41411, 55404, 41385, nil, nil) -- 19327 Invigorating Earthsiege Diamond
+lib:AddRecipe(755, 41788, 55405, 41389, nil, nil) -- 19328 Beaming Earthsiege Diamond
+lib:AddRecipe(755, 41412, 55405, 41389, nil, nil) -- 19328 Beaming Earthsiege Diamond
+lib:AddRecipe(755, 41704, 55389, 41285, nil, nil) -- 19361 Chaotic Skyflare Diamond
+lib:AddRecipe(755, 41418, 55389, 41285, nil, nil) -- 19361 Chaotic Skyflare Diamond
+lib:AddEnchantmentRecipe(164, nil, 55628, 3717) -- 19376 Socket Bracer
+lib:AddEnchantmentRecipe(164, nil, 55641, 3723) -- 19378 Socket Gloves
+lib:AddEnchantmentRecipe(197, nil, 55642, 3722) -- 19379 Lightweave Embroidery
+lib:AddRecipe(164, nil, 55656, 41611, 55655, 3729) -- 19380 Eternal Belt Buckle
+lib:AddRecipe(164, nil, 55732, 41745, nil, nil) -- 19403 Titanium Rod
+lib:AddEnchantmentRecipe(333, 37336, 47766, 1953) -- 19404 Enchant Chest - Greater Defense
+lib:AddEnchantmentRecipe(197, nil, 55769, 3728) -- 19411 Darkglow Embroidery
+lib:AddEnchantmentRecipe(197, nil, 55777, 3730) -- 19412 Swordguard Embroidery
+lib:AddRecipe(164, nil, 55834, 41974, nil, nil) -- 19415 Cobalt Bracers
+lib:AddRecipe(164, nil, 55835, 41975, nil, nil) -- 19416 Cobalt Gauntlets
+lib:AddRecipe(164, nil, 55839, 41976, 55836, 3731) -- 19421 Titanium Weapon Chain
+lib:AddRecipe(197, nil, 55898, 41509, 55536, nil) -- 19422 Frostweave Net
+lib:AddRecipe(197, nil, 55899, 41510, nil, nil) -- 19423 Bolt of Frostweave
+lib:AddRecipe(197, nil, 55900, 41511, nil, nil) -- 19424 Bolt of Imbued Frostweave
+lib:AddRecipe(197, nil, 55902, 41513, nil, nil) -- 19426 Frostwoven Shoulders
+lib:AddRecipe(197, nil, 55903, 41515, nil, nil) -- 19427 Frostwoven Robe
+lib:AddRecipe(197, nil, 55904, 44211, nil, nil) -- 19428 Frostwoven Gloves
+lib:AddRecipe(197, nil, 56030, 41519, nil, nil) -- 19429 Frostwoven Leggings
+lib:AddRecipe(197, nil, 55906, 41520, nil, nil) -- 19430 Frostwoven Boots
+lib:AddRecipe(197, nil, 55907, 41521, nil, nil) -- 19431 Frostwoven Cowl
+lib:AddRecipe(197, nil, 55908, 41522, nil, nil) -- 19432 Frostwoven Belt
+lib:AddRecipe(197, nil, 55910, 41523, nil, nil) -- 19433 Mystic Frostwoven Shoulders
+lib:AddRecipe(197, nil, 55911, 41525, nil, nil) -- 19434 Mystic Frostwoven Robe
+lib:AddRecipe(197, nil, 55913, 41528, nil, nil) -- 19435 Mystic Frostwoven Wristwraps
+lib:AddRecipe(197, nil, 55901, 41548, nil, nil) -- 19436 Duskweave Leggings
+lib:AddRecipe(197, nil, 55914, 41543, nil, nil) -- 19437 Duskweave Belt
+lib:AddRecipe(197, nil, 55921, 41549, nil, nil) -- 19438 Duskweave Robe
+lib:AddRecipe(197, nil, 55922, 41545, nil, nil) -- 19439 Duskweave Gloves
+lib:AddRecipe(197, nil, 55919, 41546, nil, nil) -- 19440 Duskweave Cowl
+lib:AddRecipe(197, nil, 55924, 41544, nil, nil) -- 19441 Duskweave Boots
+lib:AddRecipe(197, nil, 55925, 41553, nil, nil) -- 19442 Black Duskweave Leggings
+lib:AddRecipe(197, nil, 55920, 41551, nil, nil) -- 19443 Duskweave Wristwraps
+lib:AddRecipe(197, nil, 55923, 41550, nil, nil) -- 19444 Duskweave Shoulders
+lib:AddRecipe(197, nil, 55941, 41554, nil, nil) -- 19445 Black Duskweave Robe
+lib:AddRecipe(197, nil, 55943, 41555, nil, nil) -- 19446 Black Duskweave Wristwraps
+lib:AddRecipe(197, 42172, 55993, 41248, nil, nil) -- 19447 Red Lumberjack Shirt
+lib:AddRecipe(197, 42173, 55994, 41249, nil, nil) -- 19448 Blue Lumberjack Shirt
+lib:AddRecipe(197, 42174, 55995, 41251, nil, nil) -- 19449 Yellow Lumberjack Shirt
+lib:AddRecipe(197, 42175, 55996, 41250, nil, nil) -- 19450 Green Lumberjack Shirt
+lib:AddRecipe(197, 42177, 55997, 41252, nil, nil) -- 19451 Red Workman's Shirt
+lib:AddRecipe(197, 42176, 55998, 41253, nil, nil) -- 19452 Blue Workman's Shirt
+lib:AddRecipe(197, 42178, 55999, 41254, nil, nil) -- 19453 Rustic Workman's Shirt
+lib:AddRecipe(197, 42179, 56000, 41255, nil, nil) -- 19454 Green Workman's Shirt
+lib:AddRecipe(197, 42180, 56002, 41593, nil, nil) -- 19455 Ebonweave
+lib:AddRecipe(197, 42181, 56001, 41594, nil, nil) -- 19456 Moonshroud
+lib:AddRecipe(197, 42182, 56003, 41595, nil, nil) -- 19457 Spellweave
+lib:AddRecipe(197, 42183, 56004, 41597, nil, nil) -- 19458 Abyssal Bag
+lib:AddRecipe(197, 42184, 56005, 41600, nil, nil) -- 19459 Glacial Bag
+lib:AddRecipe(197, 42185, 56006, 41598, nil, nil) -- 19460 Mysterious Bag
+lib:AddRecipe(197, 42186, 56007, 41599, nil, nil) -- 19461 Frostweave Bag
+lib:AddRecipe(197, nil, 56008, 41601, 55630, 3718) -- 19462 Shining Spellthread
+lib:AddRecipe(197, 42187, 56009, 41602, 55631, 3719) -- 19463 Brilliant Spellthread
+lib:AddRecipe(197, nil, 56010, 41603, 55632, 3720) -- 19464 Azure Spellthread
+lib:AddRecipe(197, 42188, 56011, 41604, 55634, 3721) -- 19465 Sapphire Spellthread
+lib:AddRecipe(197, nil, 56014, 41607, nil, nil) -- 19468 Cloak of the Moon
+lib:AddRecipe(197, nil, 56015, 41608, nil, nil) -- 19469 Cloak of Frozen Spirits
+lib:AddRecipe(197, 42190, 56017, 41610, nil, nil) -- 19470 Deathchill Cloak
+lib:AddRecipe(197, 42189, 56016, 41609, nil, nil) -- 19471 Wispcloak
+lib:AddRecipe(197, 42191, 56018, 41984, nil, nil) -- 19472 Hat of Wintry Doom
+lib:AddRecipe(197, 42192, 56019, 41985, nil, nil) -- 19473 Silky Iceshard Boots
+lib:AddRecipe(197, 42193, 56020, 41986, nil, nil) -- 19475 Deep Frozen Cord
+lib:AddRecipe(197, 42194, 56021, 42093, nil, nil) -- 19476 Frostmoon Pants
+lib:AddRecipe(197, 42195, 56022, 42095, nil, nil) -- 19477 Light Blessed Mittens
+lib:AddRecipe(197, 42196, 56023, 42096, nil, nil) -- 19478 Aurora Slippers
+lib:AddRecipe(197, 42197, 56024, 42100, nil, nil) -- 19479 Moonshroud Robe
+lib:AddRecipe(197, 42198, 56025, 42103, nil, nil) -- 19480 Moonshroud Gloves
+lib:AddRecipe(197, 42199, 56026, 42101, nil, nil) -- 19481 Ebonweave Robe
+lib:AddRecipe(197, 42200, 56027, 42111, nil, nil) -- 19482 Ebonweave Gloves
+lib:AddRecipe(197, 42201, 56028, 42102, nil, nil) -- 19483 Spellweave Robe
+lib:AddRecipe(197, 42202, 56029, 42113, nil, nil) -- 19484 Spellweave Gloves
+lib:AddRecipe(197, nil, 56031, 41512, nil, nil) -- 19485 Frostwoven Wristwraps
+lib:AddEnchantmentRecipe(197, nil, 56034, 3873) -- 19486 Master's Spellthread
+lib:AddEnchantmentRecipe(197, nil, 56039, 3872) -- 19487 Sanctified Spellthread
+lib:AddRecipe(197, nil, 56048, 41544, nil, nil) -- 19488 Duskweave Boots
+lib:AddRecipe(755, 42298, 56049, 42142, nil, nil) -- 19495 Bold Dragon's Eye
+lib:AddRecipe(755, 42301, 56052, 42143, nil, nil) -- 19496 Delicate Dragon's Eye
+lib:AddRecipe(755, 42309, 56053, 42144, nil, nil) -- 19497 Runed Dragon's Eye
+lib:AddRecipe(755, 42299, 56054, 36766, nil, nil) -- 19498 Bright Dragon's Eye
+lib:AddRecipe(755, 42314, 56055, 42151, nil, nil) -- 19500 Subtle Dragon's Eye
+lib:AddRecipe(755, 42302, 56056, 42152, nil, nil) -- 19501 Flashing Dragon's Eye
+lib:AddRecipe(755, 42300, 56074, 42148, nil, nil) -- 19502 Brilliant Dragon's Eye
+lib:AddRecipe(755, 42303, 56076, 42153, nil, nil) -- 19503 Fractured Dragon's Eye
+lib:AddRecipe(755, 42304, 56077, 42146, nil, nil) -- 19504 Lustrous Dragon's Eye
+lib:AddRecipe(755, 42305, 56079, 42158, nil, nil) -- 19505 Mystic Dragon's Eye
+lib:AddRecipe(755, 42306, 56081, 42154, nil, nil) -- 19506 Precise Dragon's Eye
+lib:AddRecipe(755, 42307, 56083, 42150, nil, nil) -- 19507 Quick Dragon's Eye
+lib:AddRecipe(755, 42308, 56084, 42156, nil, nil) -- 19508 Rigid Dragon's Eye
+lib:AddRecipe(755, 42310, 56085, 42149, nil, nil) -- 19509 Smooth Dragon's Eye
+lib:AddRecipe(755, 42312, 56087, 42145, nil, nil) -- 19510 Sparkling Dragon's Eye
+lib:AddRecipe(755, 42313, 56088, 42155, nil, nil) -- 19511 Stormy Dragon's Eye
+lib:AddRecipe(755, 42315, 56089, 42157, nil, nil) -- 19512 Thick Dragon's Eye
+lib:AddRecipe(755, 42311, 56086, 36767, nil, nil) -- 19513 Solid Dragon's Eye
+lib:AddRecipe(755, nil, 56193, 42336, nil, nil) -- 19515 Bloodstone Band
+lib:AddRecipe(755, nil, 56194, 42337, nil, nil) -- 19516 Sun Rock Ring
+lib:AddRecipe(755, nil, 56195, 42338, nil, nil) -- 19517 Jade Dagger Pendant
+lib:AddRecipe(755, nil, 56196, 42339, nil, nil) -- 19518 Blood Sun Necklace
+lib:AddRecipe(755, nil, 56197, 42340, nil, nil) -- 19519 Dream Signet
+lib:AddRecipe(755, nil, 56199, 42341, 56121, nil) -- 19520 Ruby Hare
+lib:AddRecipe(755, nil, 56201, 42395, 56184, nil) -- 19521 Twilight Serpent
+lib:AddRecipe(755, nil, 56202, 42413, 56186, nil) -- 19522 Sapphire Owl
+lib:AddRecipe(755, nil, 56203, 42418, 56188, nil) -- 19523 Emerald Boar
+lib:AddRecipe(755, nil, 56205, 41367, 55346, nil) -- 19524 Dark Jade Focusing Lens
+lib:AddRecipe(755, nil, 56206, 42420, 56190, nil) -- 19525 Shadow Crystal Focusing Lens
+lib:AddRecipe(755, nil, 56208, 42421, 56191, nil) -- 19526 Shadow Jade Focusing Lens
+lib:AddRecipe(164, nil, 56234, 42435, nil, nil) -- 19533 Titansteel Shanker
+lib:AddRecipe(164, nil, 56280, 42443, nil, nil) -- 19536 Cudgel of Saronite Justice
+lib:AddRecipe(202, nil, 56349, 39681, nil, nil) -- 19538 Handful of Cobalt Bolts
+lib:AddEnchantmentRecipe(202, nil, 54736, 3599) -- 19539 Personal Electromagnetic Pulse Generator
+lib:AddRecipe(164, nil, 56357, 42500, 56353, 3748) -- 19540 Titanium Shield Spike
+lib:AddEnchantmentRecipe(202, nil, 54998, 3603) -- 19541 Hand-Mounted Pyro Rocket
+lib:AddEnchantmentRecipe(202, nil, 54999, 3604) -- 19542 Hyperspeed Accelerators
+lib:AddEnchantmentRecipe(202, nil, 55002, 3605) -- 19543 Flexweave Underlay
+lib:AddEnchantmentRecipe(202, nil, 54793, 3601) -- 19544 Frag Belt
+lib:AddEnchantmentRecipe(202, nil, 55016, 3606) -- 19545 Nitro Boosts
+lib:AddRecipe(164, nil, 56400, 42508, nil, nil) -- 19546 Titansteel Shield Wall
+lib:AddRecipe(755, 42648, 56496, 42642, nil, nil) -- 19547 Titanium Impact Band
+lib:AddRecipe(755, 42649, 56497, 42643, nil, nil) -- 19548 Titanium Earthguard Ring
+lib:AddRecipe(755, 42650, 56498, 42644, nil, nil) -- 19549 Titanium Spellshock Ring
+lib:AddRecipe(755, 42651, 56499, 42645, nil, nil) -- 19550 Titanium Impact Choker
+lib:AddRecipe(755, 42652, 56500, 42646, nil, nil) -- 19551 Titanium Earthguard Chain
+lib:AddRecipe(755, 42653, 56501, 42647, nil, nil) -- 19552 Titanium Spellshock Necklace
+lib:AddRecipe(202, nil, 56460, 40771, 67769, nil) -- 19553 Cobalt Frag Bomb
+lib:AddRecipe(202, nil, 56459, 40892, nil, nil) -- 19554 Hammer Pick
+lib:AddRecipe(202, nil, 56461, 40893, nil, nil) -- 19555 Bladed Pickaxe
+lib:AddRecipe(202, nil, 56464, 39682, nil, nil) -- 19556 Overcharged Capacitor
+lib:AddRecipe(202, nil, 56463, 40536, 54359, nil) -- 19557 Explosive Decoy
+lib:AddRecipe(202, nil, 56465, 41112, nil, nil) -- 19559 Mechanized Snow Goggles
+lib:AddRecipe(202, nil, 56471, 39683, nil, nil) -- 19560 Froststeel Tube
+lib:AddRecipe(202, nil, 56466, 40767, nil, nil) -- 19561 Sonic Booster
+lib:AddRecipe(202, nil, 56467, 40865, nil, nil) -- 19562 Noise Machine
+lib:AddRecipe(202, nil, 56468, 44951, nil, nil) -- 19563 Box of Bombs
+lib:AddRecipe(202, nil, 56470, 41146, 55076, 3607) -- 19564 Sun Scope
+lib:AddRecipe(202, nil, 56472, 40768, 54710, nil) -- 19565 MOLL-E
+lib:AddRecipe(202, nil, 56514, 42641, 56488, nil) -- 19566 Global Thermal Sapper Charge
+lib:AddRecipe(202, nil, 56473, 40895, nil, nil) -- 19567 Gnomish X-Ray Specs
+lib:AddRecipe(202, nil, 56474, 41164, nil, nil) -- 19568 Mammoth Cutters
+lib:AddRecipe(202, nil, 56475, 41165, nil, nil) -- 19569 Saronite Razorheads
+lib:AddRecipe(202, nil, 56462, 40772, 54732, nil) -- 19570 Gnomish Army Knife
+lib:AddRecipe(202, nil, 56476, 37567, 48807, nil) -- 19571 Healing Injector Kit
+lib:AddRecipe(202, nil, 56477, 42546, 56403, nil) -- 19572 Mana Injector Kit
+lib:AddRecipe(202, nil, 56469, 41121, 55039, nil) -- 19573 Gnomish Lightning Generator
+lib:AddRecipe(202, nil, 56478, 41167, 55135, 3608) -- 19574 Heartseeker Scope
+lib:AddRecipe(202, nil, 56479, 41168, nil, nil) -- 19575 Armor Plated Combat Shotgun
+lib:AddRecipe(202, nil, 56480, 42549, 12883, nil) -- 19576 Armored Titanium Goggles
+lib:AddRecipe(171, nil, 56519, 40109, 53764, nil) -- 19577 Elixir of Mighty Mageblood
+lib:AddRecipe(755, nil, 56530, 42701, nil, nil) -- 19578 Enchanted Pearl
+lib:AddRecipe(755, nil, 56531, 42702, nil, nil) -- 19579 Enchanted Tear
+lib:AddRecipe(164, nil, 56549, 42723, nil, nil) -- 19580 Ornate Saronite Bracers
+lib:AddRecipe(164, nil, 56550, 42727, nil, nil) -- 19581 Ornate Saronite Pauldrons
+lib:AddRecipe(164, nil, 56551, 42729, nil, nil) -- 19582 Ornate Saronite Waistguard
+lib:AddRecipe(164, nil, 56552, 42730, nil, nil) -- 19583 Ornate Saronite Walkers
+lib:AddRecipe(164, nil, 56553, 42724, nil, nil) -- 19584 Ornate Saronite Gauntlets
+lib:AddRecipe(164, nil, 56554, 42726, nil, nil) -- 19585 Ornate Saronite Legplates
+lib:AddRecipe(164, nil, 56555, 42725, nil, nil) -- 19586 Ornate Saronite Hauberk
+lib:AddRecipe(164, nil, 56556, 42728, nil, nil) -- 19587 Ornate Saronite Skullshield
+lib:AddRecipe(202, nil, 56481, 42550, 12883, nil) -- 19588 Weakness Spectralizers
+lib:AddRecipe(202, nil, 56574, 42551, 12883, nil) -- 19589 Truesight Ice Blinders
+lib:AddRecipe(202, nil, 56483, 42552, 12883, nil) -- 19590 Charged Titanium Specs
+lib:AddRecipe(202, nil, 56484, 42553, 12883, nil) -- 19591 Visage Liquification Goggles
+lib:AddRecipe(202, nil, 56486, 42554, 12883, nil) -- 19592 Greensight Gogs
+lib:AddRecipe(202, nil, 56487, 42555, 12883, nil) -- 19593 Electroflux Sight Enhancers
+lib:AddRecipe(773, nil, 57207, 43533, 58705, nil) -- 19675 Glyph of Anti-Magic Shell
+lib:AddRecipe(773, nil, 57208, 43534, 58706, nil) -- 19676 Glyph of Heart Strike
+lib:AddRecipe(773, nil, 57209, 43535, 58707, nil) -- 19677 Glyph of Blood Tap
+lib:AddRecipe(773, nil, 57210, 43536, 58708, nil) -- 19678 Glyph of Bone Shield
+lib:AddRecipe(773, nil, 57211, 43537, 58709, nil) -- 19679 Glyph of Chains of Ice
+lib:AddRecipe(773, nil, 57212, 43538, 58614, nil) -- 19680 Glyph of Dark Command
+lib:AddRecipe(773, nil, 57213, 43541, 58713, nil) -- 19681 Glyph of Death Grip
+lib:AddRecipe(773, nil, 57214, 43542, 58710, nil) -- 19682 Glyph of Death and Decay
+lib:AddRecipe(773, nil, 57215, 43539, 58711, nil) -- 19683 Glyph of Death's Embrace
+lib:AddRecipe(773, nil, 57216, 43543, 58715, nil) -- 19684 Glyph of Frost Strike
+lib:AddRecipe(773, nil, 57217, 43544, 58716, nil) -- 19685 Glyph of Horn of Winter
+lib:AddRecipe(773, nil, 57218, 43545, 58717, nil) -- 19686 Glyph of Icebound Fortitude
+lib:AddRecipe(773, nil, 57219, 43546, 58718, nil) -- 19687 Glyph of Icy Touch
+lib:AddRecipe(773, nil, 57220, 43547, 58719, nil) -- 19688 Glyph of Obliterate
+lib:AddRecipe(773, nil, 57221, 43548, 58720, nil) -- 19689 Glyph of Plague Strike
+lib:AddRecipe(773, nil, 57222, 43549, 58721, nil) -- 19690 Glyph of the Ghoul
+lib:AddRecipe(773, nil, 57223, 43550, 58722, nil) -- 19691 Glyph of Rune Strike
+lib:AddRecipe(773, nil, 57224, 43551, 58723, nil) -- 19692 Glyph of Scourge Strike
+lib:AddRecipe(773, nil, 57225, 43552, 58724, nil) -- 19693 Glyph of Strangulate
+lib:AddRecipe(773, nil, 57226, 43553, 58725, nil) -- 19694 Glyph of Unbreakable Armor
+lib:AddRecipe(773, nil, 57227, 43554, 58726, nil) -- 19695 Glyph of Vampiric Blood
+lib:AddRecipe(773, nil, 57228, 43673, 59313, nil) -- 19696 Glyph of Raise Dead
+lib:AddRecipe(773, nil, 57229, 43671, 59312, nil) -- 19697 Glyph of Corpse Explosion
+lib:AddRecipe(773, nil, 57230, 43672, 59311, nil) -- 19698 Glyph of Pestilence
+lib:AddRecipe(773, nil, 57231, 42897, 56869, nil) -- 19699 Death Knight Glyph 25
+lib:AddRecipe(171, nil, 57425, 41266, nil, nil) -- 19710 Transmute: Skyflare Diamond
+lib:AddRecipe(171, nil, 57427, 41334, nil, nil) -- 19711 Transmute: Earthsiege Diamond
+lib:AddRecipe(185, nil, 45560, 34759, 57070, nil) -- 19712 Smoked Rockfin
+lib:AddRecipe(185, nil, 45561, 34760, 57070, nil) -- 19713 Grilled Bonescale
+lib:AddRecipe(185, nil, 45562, 34761, 57070, nil) -- 19714 Sauteed Goby
+lib:AddRecipe(185, nil, 45563, 34762, 57085, nil) -- 19715 Grilled Sculpin
+lib:AddRecipe(185, nil, 45564, 34763, 57096, nil) -- 19716 Smoked Salmon
+lib:AddRecipe(185, nil, 45565, 34764, 57098, nil) -- 19717 Poached Nettlefish
+lib:AddRecipe(185, nil, 45569, 42942, 57101, nil) -- 19718 Baked Manta Ray
+lib:AddRecipe(185, nil, 45566, 34765, 57106, nil) -- 19719 Pickled Fangtooth
+lib:AddRecipe(185, nil, 57421, 34747, 45548, nil) -- 19720 Northern Stew
+lib:AddRecipe(185, nil, 45549, 34748, 57110, nil) -- 19721 Mammoth Meal
+lib:AddRecipe(185, nil, 45550, 34749, 57138, nil) -- 19722 Shoveltusk Steak
+lib:AddRecipe(185, nil, 45551, 34750, 57285, nil) -- 19723 Worm Delight
+lib:AddRecipe(185, nil, 45552, 34751, 57287, nil) -- 19724 Roasted Worg
+lib:AddRecipe(185, nil, 45553, 34752, 57289, nil) -- 19725 Rhino Dogs
+lib:AddRecipe(185, nil, 45554, 34753, 57301, nil) -- 19726 Great Feast
+lib:AddRecipe(185, 43017, 57423, 43015, 57426, nil) -- 19727 Fish Feast
+lib:AddRecipe(185, 43018, 45555, 34754, 57324, nil) -- 19728 Mega Mammoth Meal
+lib:AddRecipe(185, 43019, 45556, 34755, 57326, nil) -- 19729 Tender Shoveltusk Steak
+lib:AddRecipe(185, 43020, 45557, 34756, 57328, nil) -- 19730 Spiced Worm Burger
+lib:AddRecipe(185, 43021, 45558, 34757, 57331, nil) -- 19731 Very Burnt Worg
+lib:AddRecipe(185, 43022, 45559, 34758, 57333, nil) -- 19732 Mighty Rhino Dogs
+lib:AddRecipe(185, 43023, 45567, 34766, 57335, nil) -- 19733 Poached Northern Sculpin
+lib:AddRecipe(185, 43024, 45568, 34767, 57341, nil) -- 19734 Firecracker Salmon
+lib:AddRecipe(185, 43025, 45571, 34768, 57343, nil) -- 19735 Spicy Blue Nettlefish
+lib:AddRecipe(185, 43026, 45570, 34769, 57344, nil) -- 19736 Imperial Manta Steak
+lib:AddRecipe(185, 43027, 57433, 42993, 57354, nil) -- 19737 Spicy Fried Herring
+lib:AddRecipe(185, 43028, 57434, 42994, 57355, nil) -- 19738 Rhinolicious Wormsteak
+lib:AddRecipe(185, 43029, 57435, 43004, 57388, nil) -- 19739 Critter Bites
+lib:AddRecipe(185, 43030, 57436, 42995, 57357, nil) -- 19740 Hearty Rhino
+lib:AddRecipe(185, 43031, 57437, 42996, 57359, nil) -- 19741 Snapper Extreme
+lib:AddRecipe(185, 43032, 57438, 42997, 57362, nil) -- 19742 Blackened Worg Steak
+lib:AddRecipe(185, 43033, 57439, 42998, 57364, nil) -- 19743 Cuttlesteak
+lib:AddRecipe(185, 43034, 57440, 43005, 43771, nil) -- 19744 Spiced Mammoth Treats
+lib:AddRecipe(185, 43035, 57441, 42999, 57366, nil) -- 19745 Blackened Dragonfin
+lib:AddRecipe(185, 43036, 57442, 43000, 57370, nil) -- 19746 Dragonfin Filet
+lib:AddRecipe(185, 43037, 57443, 43001, 57372, nil) -- 19747 Tracker Snacks
+lib:AddEnchantmentRecipe(165, nil, 57683, 3756) -- 19767 Fur Lining - Attack Power
+lib:AddEnchantmentRecipe(165, 44562, 57699, 3762) -- 19768 Fur Lining - Nature Resist
+lib:AddEnchantmentRecipe(165, nil, 57691, 3758) -- 19770 Fur Lining - Spell Power
+lib:AddEnchantmentRecipe(165, 44560, 57694, 3760) -- 19771 Fur Lining - Frost Resist
+lib:AddEnchantmentRecipe(165, 44559, 57692, 3759) -- 19772 Fur Lining - Fire Resist
+lib:AddEnchantmentRecipe(165, nil, 57690, 3757) -- 19773 Fur Lining - Stamina
+lib:AddEnchantmentRecipe(165, 44563, 57701, 3763) -- 19774 Fur Lining - Arcane Resist
+lib:AddEnchantmentRecipe(165, 44561, 57696, 3761) -- 19775 Fur Lining - Shadow Resist
+lib:AddRecipe(773, nil, 57703, 43115, nil, nil) -- 19777 Hunter's Ink
+lib:AddRecipe(773, nil, 57704, 43116, nil, nil) -- 19778 Lion's Ink
+lib:AddRecipe(773, nil, 57706, 43117, nil, nil) -- 19779 Dawnstar Ink
+lib:AddRecipe(773, nil, 57707, 43118, nil, nil) -- 19780 Jadefire Ink
+lib:AddRecipe(773, nil, 57708, 43119, nil, nil) -- 19781 Royal Ink
+lib:AddRecipe(773, nil, 57709, 43120, nil, nil) -- 19782 Celestial Ink
+lib:AddRecipe(773, nil, 57710, 43121, nil, nil) -- 19783 Fiery Ink
+lib:AddRecipe(773, nil, 57711, 43122, nil, nil) -- 19784 Shimmering Ink
+lib:AddRecipe(773, nil, 57712, 43123, nil, nil) -- 19785 Ink of the Sky
+lib:AddRecipe(773, nil, 57713, 43124, nil, nil) -- 19786 Ethereal Ink
+lib:AddRecipe(773, nil, 57714, 43125, nil, nil) -- 19787 Darkflame Ink
+lib:AddRecipe(773, nil, 57715, 43126, nil, nil) -- 19788 Ink of the Sea
+lib:AddRecipe(773, nil, 57716, 43127, nil, nil) -- 19789 Snowfall Ink
+lib:AddRecipe(773, nil, 56955, 40913, 54868, nil) -- 19794 Glyph of Rejuvenation
+lib:AddRecipe(773, nil, 56963, 40922, 54875, nil) -- 19795 Glyph of Wrath
+lib:AddRecipe(773, nil, 56961, 40897, 54858, nil) -- 19796 Glyph of Maul
+lib:AddRecipe(773, nil, 48121, 40924, 54877, nil) -- 19797 Glyph of Entangling Roots
+lib:AddRecipe(773, nil, 56945, 40914, 54869, nil) -- 19798 Glyph of Healing Touch
+lib:AddRecipe(773, nil, 56951, 40923, 54876, nil) -- 19799 Glyph of Moonfire
+lib:AddRecipe(773, nil, 56948, 40919, 54872, nil) -- 19800 Glyph of Insect Swarm
+lib:AddRecipe(773, nil, 56953, 40909, 54866, nil) -- 19801 Glyph of Rebirth
+lib:AddRecipe(773, nil, 56956, 40902, 54860, nil) -- 19802 Glyph of Rip
+lib:AddRecipe(773, nil, 56959, 40916, 54871, nil) -- 19803 Glyph of Starfire
+lib:AddRecipe(773, nil, 56957, 40901, 54859, nil) -- 19804 Glyph of Shred
+lib:AddRecipe(773, nil, 56952, 40903, 54863, nil) -- 19805 Glyph of Rake
+lib:AddRecipe(773, nil, 56943, 40896, 54854, nil) -- 19806 Glyph of Frenzied Regeneration
+lib:AddRecipe(773, nil, 56946, 40920, 54873, nil) -- 19807 Glyph of Hurricane
+lib:AddRecipe(773, nil, 56947, 40908, 54865, nil) -- 19808 Glyph of Innervate
+lib:AddRecipe(773, nil, 56960, 40906, 54864, nil) -- 19809 Glyph of Swiftmend
+lib:AddRecipe(773, nil, 56950, 40900, 54857, nil) -- 19810 Glyph of Mangle
+lib:AddRecipe(773, nil, 56944, 40899, 54856, nil) -- 19811 Glyph of Growl
+lib:AddRecipe(773, nil, 56954, 40912, 54867, nil) -- 19812 Glyph of Regrowth
+lib:AddRecipe(773, nil, 56958, 40921, 54874, nil) -- 19813 Glyph of Starfall
+lib:AddRecipe(773, nil, 56949, 40915, 54870, nil) -- 19814 Glyph of Lifebloom
+lib:AddRecipe(773, nil, 57004, 42907, 56879, nil) -- 19815 Glyph of Hunter's Mark
+lib:AddRecipe(773, nil, 57009, 42912, 56884, nil) -- 19816 Glyph of Serpent Sting
+lib:AddRecipe(773, nil, 56995, 42898, 56870, nil) -- 19817 Glyph of Arcane Shot
+lib:AddRecipe(773, nil, 56997, 42900, 56872, nil) -- 19818 Glyph of Mending
+lib:AddRecipe(773, nil, 57005, 42908, 56880, nil) -- 19819 Glyph of Immolation Trap
+lib:AddRecipe(773, nil, 57007, 42910, 56882, nil) -- 19820 Glyph of Multi-Shot
+lib:AddRecipe(773, nil, 56994, 42897, 56869, nil) -- 19821 Glyph of Aimed Shot
+lib:AddRecipe(773, nil, 57000, 42903, 56875, nil) -- 19822 Glyph of Deterrence
+lib:AddRecipe(773, nil, 57001, 42904, 56876, nil) -- 19823 Glyph of Disengage
+lib:AddRecipe(773, nil, 57002, 42905, 56877, nil) -- 19824 Glyph of Freezing Trap
+lib:AddRecipe(773, nil, 57008, 42911, 56883, nil) -- 19825 Glyph of Rapid Fire
+lib:AddRecipe(773, nil, 57003, 42906, 56878, nil) -- 19826 Glyph of Frost Trap
+lib:AddRecipe(773, nil, 56996, 42899, 56871, nil) -- 19827 Glyph of the Beast
+lib:AddRecipe(773, nil, 56999, 42902, 56874, nil) -- 19828 Glyph of Bestial Wrath
+lib:AddRecipe(773, nil, 57012, 42915, 56887, nil) -- 19829 Glyph of Trueshot Aura
+lib:AddRecipe(773, nil, 57013, 42916, 56888, nil) -- 19830 Glyph of Volley
+lib:AddRecipe(773, nil, 57006, 42909, 56881, nil) -- 19831 Glyph of the Hawk
+lib:AddRecipe(773, nil, 57011, 42914, 56886, nil) -- 19832 Glyph of Steady Shot
+lib:AddRecipe(773, nil, 56998, 42901, 56873, nil) -- 19833 Glyph of Aspect of the Viper
+lib:AddRecipe(773, nil, 57010, 42913, 56885, nil) -- 19834 Glyph of Snake Trap
+lib:AddRecipe(773, nil, 56976, 42741, 56589, nil) -- 19835 Glyph of Frost Nova
+lib:AddRecipe(773, nil, 56978, 42743, 56591, nil) -- 19836 Glyph of Ice Armor
+lib:AddRecipe(773, nil, 56968, 42734, 56540, nil) -- 19837 Glyph of Arcane Explosion
+lib:AddRecipe(773, nil, 56971, 42735, 56542, nil) -- 19838 Glyph of Arcane Missiles
+lib:AddRecipe(773, nil, 56973, 42737, 56546, nil) -- 19839 Glyph of Blink
+lib:AddRecipe(773, nil, 56974, 42738, 56547, nil) -- 19840 Glyph of Evocation
+lib:AddRecipe(773, nil, 56981, 42746, 56594, nil) -- 19841 Glyph of Icy Veins
+lib:AddRecipe(773, nil, 56982, 42747, 56595, nil) -- 19842 Glyph of Scorch
+lib:AddRecipe(773, nil, 56979, 42744, 56592, nil) -- 19843 Glyph of Ice Block
+lib:AddRecipe(773, nil, 56985, 42750, 56598, nil) -- 19844 Glyph of Mana Gem
+lib:AddRecipe(773, nil, 56984, 42749, 56597, nil) -- 19845 Glyph of Mage Armor
+lib:AddRecipe(773, nil, 56972, 42736, 56544, nil) -- 19846 Glyph of Arcane Power
+lib:AddRecipe(773, nil, 56989, 42754, 56602, nil) -- 19847 Glyph of Water Elemental
+lib:AddRecipe(773, nil, 56986, 42751, 56599, nil) -- 19848 Glyph of Molten Armor
+lib:AddRecipe(773, nil, 56980, 42745, 56593, nil) -- 19849 Glyph of Ice Lance
+lib:AddRecipe(773, nil, 56983, 42748, 56596, nil) -- 19850 Glyph of Invisibility
+lib:AddRecipe(773, nil, 57719, 42740, 56588, nil) -- 19851 Glyph of Fire Blast
+lib:AddRecipe(773, nil, 56975, 42739, 56587, nil) -- 19852 Glyph of Fireball
+lib:AddRecipe(773, nil, 56977, 42742, 56590, nil) -- 19853 Glyph of Frostbolt
+lib:AddRecipe(773, nil, 56987, 42752, 56600, nil) -- 19854 Glyph of Polymorph
+lib:AddRecipe(773, nil, 56988, 42753, 56601, nil) -- 19855 Glyph of Remove Curse
+lib:AddRecipe(773, nil, 57022, 41096, 55111, nil) -- 19856 Glyph of Spiritual Attunement
+lib:AddRecipe(773, nil, 57027, 41095, 55110, nil) -- 19857 Glyph of Hammer of Justice
+lib:AddRecipe(773, nil, 57029, 41106, 55121, nil) -- 19858 Glyph of Holy Light
+lib:AddRecipe(773, nil, 57030, 41092, 55003, nil) -- 19859 Glyph of Judgement
+lib:AddRecipe(773, nil, 57031, 41108, 55123, nil) -- 19860 Glyph of Divinity
+lib:AddRecipe(773, nil, 57032, 41100, 55115, nil) -- 19861 Glyph of Righteous Defense
+lib:AddRecipe(773, nil, 57020, 41104, 55119, nil) -- 19862 Glyph of Cleansing
+lib:AddRecipe(773, nil, 57023, 41099, 55114, nil) -- 19863 Glyph of Consecration
+lib:AddRecipe(773, nil, 57024, 41098, 55113, nil) -- 19864 Glyph of Crusader Strike
+lib:AddRecipe(773, nil, 57025, 41103, 55118, nil) -- 19865 Glyph of Exorcism
+lib:AddRecipe(773, nil, 57026, 41105, 55120, nil) -- 19866 Glyph of Flash of Light
+lib:AddRecipe(773, nil, 57033, 41094, 55109, nil) -- 19867 Glyph of Seal of Command
+lib:AddRecipe(773, nil, 57036, 41102, 55117, nil) -- 19868 Glyph of Turn Evil
+lib:AddRecipe(773, nil, 57034, 41110, 55125, nil) -- 19869 Glyph of Seal of Light
+lib:AddRecipe(773, nil, 57035, 41109, 55124, nil) -- 19870 Glyph of Seal of Wisdom
+lib:AddRecipe(773, nil, 57021, 41107, 55122, nil) -- 19871 Glyph of Avenging Wrath
+lib:AddRecipe(773, nil, 57028, 41097, 55112, nil) -- 19872 Glyph of Hammer of Wrath
+lib:AddRecipe(773, nil, 57019, 41101, 55116, nil) -- 19873 Glyph of Avenger's Shield
+lib:AddRecipe(773, nil, 57194, 42408, 56175, nil) -- 19874 Glyph of Power Word: Shield
+lib:AddRecipe(773, nil, 57196, 42410, 56177, nil) -- 19875 Glyph of Psychic Scream
+lib:AddRecipe(773, nil, 57184, 42398, 56164, nil) -- 19876 Glyph of Fade
+lib:AddRecipe(773, nil, 57186, 42400, 56166, nil) -- 19877 Glyph of Flash Heal
+lib:AddRecipe(773, nil, 57188, 42402, 56168, nil) -- 19878 Glyph of Inner Fire
+lib:AddRecipe(773, nil, 57197, 42411, 56178, nil) -- 19879 Glyph of Renew
+lib:AddRecipe(773, nil, 57200, 42415, 56181, nil) -- 19880 Glyph of Mind Flay
+lib:AddRecipe(773, nil, 57201, 42416, 56182, nil) -- 19881 Glyph of Smite
+lib:AddRecipe(773, nil, 57183, 42397, 56163, nil) -- 19882 Glyph of Dispel Magic
+lib:AddRecipe(773, nil, 57185, 42399, 56165, nil) -- 19883 Glyph of Fear Ward
+lib:AddRecipe(773, nil, 57187, 42401, 56167, nil) -- 19884 Glyph of Holy Nova
+lib:AddRecipe(773, nil, 57192, 42406, 56172, nil) -- 19885 Glyph of Shadow Word: Pain
+lib:AddRecipe(773, nil, 57193, 42407, 56174, nil) -- 19886 Glyph of Shadow
+lib:AddRecipe(773, nil, 57198, 42412, 56179, nil) -- 19887 Glyph of Scourge Imprisonment
+lib:AddRecipe(773, nil, 57191, 42405, 56171, nil) -- 19888 Glyph of Mind Control
+lib:AddRecipe(773, nil, 57195, 42409, 56176, nil) -- 19889 Glyph of Prayer of Healing
+lib:AddRecipe(773, nil, 57202, 42417, 56183, nil) -- 19890 Glyph of Spirit of Redemption
+lib:AddRecipe(773, nil, 57189, 42403, 56169, nil) -- 19891 Glyph of Lightwell
+lib:AddRecipe(773, nil, 57181, 42396, 56162, nil) -- 19892 Glyph of Circle of Healing
+lib:AddRecipe(773, nil, 57199, 42414, 56180, nil) -- 19893 Glyph of Shadow Word: Death
+lib:AddRecipe(773, nil, 57190, 42404, 56170, nil) -- 19894 Glyph of Mass Dispel
+lib:AddRecipe(773, nil, 57114, 42956, 57141, nil) -- 19895 Glyph of Backstab
+lib:AddRecipe(773, nil, 57119, 42960, 57146, nil) -- 19896 Glyph of Evasion
+lib:AddRecipe(773, nil, 57120, 42961, 57147, nil) -- 19897 Glyph of Eviscerate
+lib:AddRecipe(773, nil, 57121, 42962, 57148, nil) -- 19898 Glyph of Expose Armor
+lib:AddRecipe(773, nil, 57123, 42964, 57150, nil) -- 19899 Glyph of Garrote
+lib:AddRecipe(773, nil, 57125, 42966, 57295, nil) -- 19900 Glyph of Gouge
+lib:AddRecipe(773, nil, 57129, 42970, 57299, nil) -- 19901 Glyph of Sap
+lib:AddRecipe(773, nil, 57131, 42972, 57302, nil) -- 19902 Glyph of Sinister Strike
+lib:AddRecipe(773, nil, 57132, 42973, 57303, nil) -- 19903 Glyph of Slice and Dice
+lib:AddRecipe(773, nil, 57133, 42974, 57304, nil) -- 19904 Glyph of Sprint
+lib:AddRecipe(773, nil, 57122, 42963, 57149, nil) -- 19905 Glyph of Feint
+lib:AddRecipe(773, nil, 57113, 42955, 57140, nil) -- 19906 Glyph of Ambush
+lib:AddRecipe(773, nil, 57116, 42958, 57144, nil) -- 19907 Glyph of Crippling Poison
+lib:AddRecipe(773, nil, 57124, 42965, 57293, nil) -- 19908 Glyph of Ghostly Strike
+lib:AddRecipe(773, nil, 57128, 42969, 57298, nil) -- 19909 Glyph of Rupture
+lib:AddRecipe(773, nil, 57115, 42957, 57142, nil) -- 19910 Glyph of Blade Flurry
+lib:AddRecipe(773, nil, 57126, 42967, 57296, nil) -- 19911 Glyph of Hemorrhage
+lib:AddRecipe(773, nil, 57127, 42968, 57297, nil) -- 19912 Glyph of Preparation
+lib:AddRecipe(773, nil, 57112, 42954, 57109, nil) -- 19913 Glyph of Adrenaline Rush
+lib:AddRecipe(773, nil, 57117, 42959, 57145, nil) -- 19914 Glyph of Deadly Throw
+lib:AddRecipe(773, nil, 57130, 42971, 57300, nil) -- 19915 Glyph of Vigor
+lib:AddRecipe(773, nil, 57239, 41531, 55545, nil) -- 19916 Glyph of Flame Shock
+lib:AddRecipe(773, nil, 57246, 41537, 55553, nil) -- 19917 Glyph of Lightning Shield
+lib:AddRecipe(773, nil, 57238, 41530, 55544, nil) -- 19918 Glyph of Fire Nova
+lib:AddRecipe(773, nil, 57240, 41532, 55546, nil) -- 19919 Glyph of Flametongue Weapon
+lib:AddRecipe(773, nil, 57245, 41536, 55554, nil) -- 19920 Glyph of Lightning Bolt
+lib:AddRecipe(773, nil, 57249, 41540, 55560, nil) -- 19921 Glyph of Lava Lash
+lib:AddRecipe(773, nil, 57241, 41547, 55547, nil) -- 19922 Glyph of Frost Shock
+lib:AddRecipe(773, nil, 57242, 41533, 55548, nil) -- 19923 Glyph of Healing Stream Totem
+lib:AddRecipe(773, nil, 57244, 41535, 55552, nil) -- 19924 Glyph of Lesser Healing Wave
+lib:AddRecipe(773, nil, 57251, 41541, 55535, nil) -- 19925 Glyph of Water Mastery
+lib:AddRecipe(773, nil, 57236, 41527, 55541, nil) -- 19926 Glyph of Earthliving Weapon
+lib:AddRecipe(773, nil, 57252, 41542, 55562, nil) -- 19927 Glyph of Windfury Weapon
+lib:AddRecipe(773, nil, 57233, 41518, 55538, nil) -- 19928 Glyph of Chain Lightning
+lib:AddRecipe(773, nil, 57232, 41517, 55537, nil) -- 19929 Glyph of Chain Heal
+lib:AddRecipe(773, nil, 57247, 41538, 55558, nil) -- 19930 Glyph of Mana Tide Totem
+lib:AddRecipe(773, nil, 57248, 41539, 55559, nil) -- 19931 Glyph of Stormstrike
+lib:AddRecipe(773, nil, 57235, 41526, 55540, nil) -- 19932 Glyph of Shocking
+lib:AddRecipe(773, nil, 57243, 41534, 55551, nil) -- 19933 Glyph of Healing Wave
+lib:AddRecipe(773, nil, 57250, 41552, 55561, nil) -- 19934 Glyph of Elemental Mastery
+lib:AddRecipe(773, nil, 57234, 41524, 55539, nil) -- 19935 Glyph of Lava
+lib:AddRecipe(773, nil, 57237, 41529, 55542, nil) -- 19936 Glyph of Fire Elemental Totem
+lib:AddRecipe(773, nil, 57259, 42455, 56271, nil) -- 19937 Glyph of Corruption
+lib:AddRecipe(773, nil, 57266, 42462, 56289, nil) -- 19938 Glyph of Healthstone
+lib:AddRecipe(773, nil, 57265, 42461, 56288, nil) -- 19939 Glyph of Health Funnel
+lib:AddRecipe(773, nil, 57262, 42458, 56284, nil) -- 19940 Glyph of Fear
+lib:AddRecipe(773, nil, 57269, 42465, 56292, nil) -- 19941 Glyph of Imp
+lib:AddRecipe(773, nil, 57271, 42467, 56294, nil) -- 19942 Glyph of Shadow Bolt
+lib:AddRecipe(773, nil, 57277, 42473, 56302, nil) -- 19943 Glyph of Voidwalker
+lib:AddRecipe(773, nil, 57270, 42466, 56293, nil) -- 19944 Glyph of Searing Pain
+lib:AddRecipe(773, nil, 57274, 42470, 56297, nil) -- 19945 Glyph of Soulstone
+lib:AddRecipe(773, nil, 57272, 42468, 56295, nil) -- 19946 Glyph of Shadowburn
+lib:AddRecipe(773, nil, 57275, 42471, 56299, nil) -- 19947 Glyph of Succubus
+lib:AddRecipe(773, nil, 57257, 42453, 56268, nil) -- 19948 Glyph of Incinerate
+lib:AddRecipe(773, nil, 57264, 42460, 56286, nil) -- 19949 Glyph of Felhunter
+lib:AddRecipe(773, nil, 57273, 42469, 56296, nil) -- 19950 Glyph of Siphon Life
+lib:AddRecipe(773, nil, 57258, 42454, 56270, nil) -- 19951 Glyph of Conflagrate
+lib:AddRecipe(773, nil, 57267, 42463, 56290, nil) -- 19952 Glyph of Howl of Terror
+lib:AddRecipe(773, nil, 57260, 42456, 56282, nil) -- 19953 Glyph of Curse of Agony
+lib:AddRecipe(773, nil, 57268, 42464, 56291, nil) -- 19954 Glyph of Immolate
+lib:AddRecipe(773, nil, 57261, 42457, 56283, nil) -- 19955 Glyph of Death Coil
+lib:AddRecipe(773, nil, 57263, 42459, 56285, nil) -- 19956 Glyph of Felguard
+lib:AddRecipe(773, nil, 57276, 42472, 56301, nil) -- 19957 Glyph of Unstable Affliction
+lib:AddRecipe(185, nil, 58065, 43268, 58067, nil) -- 19969 Dalaran Clam Chowder
+lib:AddRecipe(755, nil, 58141, 43244, nil, nil) -- 19970 Crystal Citrine Necklace
+lib:AddRecipe(755, nil, 58142, 43245, nil, nil) -- 19971 Crystal Chalcedony Amulet
+lib:AddRecipe(755, nil, 58143, 43246, nil, nil) -- 19972 Earthshadow Ring
+lib:AddRecipe(755, nil, 58144, 43247, nil, nil) -- 19973 Jade Ring of Slaying
+lib:AddRecipe(755, nil, 58145, 43248, nil, nil) -- 19974 Stoneguard Band
+lib:AddRecipe(755, nil, 58146, 43249, nil, nil) -- 19975 Shadowmight Ring
+lib:AddRecipe(755, 43317, 58147, 43250, nil, nil) -- 19976 Ring of Earthen Might
+lib:AddRecipe(755, 43318, 58148, 43251, nil, nil) -- 19977 Ring of Scarlet Shadows
+lib:AddRecipe(755, 43319, 58149, 43252, nil, nil) -- 19978 Windfire Band
+lib:AddRecipe(755, 43320, 58150, 43253, nil, nil) -- 19979 Ring of Northern Tears
+lib:AddRecipe(773, nil, 58484, 954, 8118, nil) -- 20005 Scroll of Strength
+lib:AddRecipe(773, nil, 58485, 2289, 8119, nil) -- 20006 Scroll of Strength II
+lib:AddRecipe(773, nil, 58486, 4426, 8120, nil) -- 20007 Scroll of Strength III
+lib:AddRecipe(773, nil, 58487, 10310, 12179, nil) -- 20008 Scroll of Strength IV
+lib:AddRecipe(773, nil, 58488, 27503, 33082, nil) -- 20009 Scroll of Strength V
+lib:AddRecipe(773, nil, 58489, 33462, 43199, nil) -- 20010 Scroll of Strength VI
+lib:AddRecipe(773, nil, 58490, 43465, 58448, nil) -- 20011 Scroll of Strength VII
+lib:AddRecipe(773, nil, 58491, 43466, 58449, nil) -- 20012 Scroll of Strength VIII
+lib:AddRecipe(773, nil, 58472, 3012, 8115, nil) -- 20013 Scroll of Agility
+lib:AddRecipe(773, nil, 58473, 1477, 8116, nil) -- 20014 Scroll of Agility II
+lib:AddRecipe(773, nil, 58476, 4425, 8117, nil) -- 20015 Scroll of Agility III
+lib:AddRecipe(773, nil, 58478, 10309, 12174, nil) -- 20016 Scroll of Agility IV
+lib:AddRecipe(773, nil, 58480, 27498, 33077, nil) -- 20017 Scroll of Agility V
+lib:AddRecipe(773, nil, 58481, 33457, 43194, nil) -- 20018 Scroll of Agility VI
+lib:AddRecipe(773, nil, 58482, 43463, 58450, nil) -- 20019 Scroll of Agility VII
+lib:AddRecipe(773, nil, 58483, 43464, 58451, nil) -- 20020 Scroll of Agility VIII
+lib:AddRecipe(185, 43507, 58512, 43490, 58499, nil) -- 20021 Tasty Cupcake
+lib:AddRecipe(185, 43508, 58521, 43488, 58496, nil) -- 20022 Last Week's Mammoth
+lib:AddRecipe(185, 43509, 58523, 43491, 58500, nil) -- 20023 Bad Clams
+lib:AddRecipe(185, 43510, 58525, 43492, 58502, nil) -- 20024 Haunted Herring
+lib:AddRecipe(185, 43505, 58527, 43478, 58465, nil) -- 20025 Gigantic Feast
+lib:AddRecipe(185, 43506, 58528, 43480, 58474, nil) -- 20026 Small Feast
+lib:AddRecipe(773, nil, 58565, 43515, nil, nil) -- 20027 Mystic Tome
+lib:AddRecipe(171, nil, 58868, 43570, 28499, nil) -- 20096 Endless Mana Potion
+lib:AddRecipe(171, nil, 58871, 43569, 28495, nil) -- 20097 Endless Healing Potion
+lib:AddRecipe(755, 43497, 58507, 43498, nil, nil) -- 20098 Savage Titanium Band
+lib:AddRecipe(755, 43485, 58492, 43482, nil, nil) -- 20099 Savage Titanium Ring
+lib:AddRecipe(755, 43597, 58954, 43582, nil, nil) -- 20112 Titanium Frostguard Ring
+lib:AddRecipe(164, nil, 59405, 43854, 59404, nil) -- 20157 Cobalt Skeleton Key
+lib:AddRecipe(164, nil, 59406, 43853, 59403, nil) -- 20158 Titanium Skeleton Key
+lib:AddRecipe(164, nil, 59436, 43860, nil, nil) -- 20164 Brilliant Saronite Belt
+lib:AddRecipe(164, nil, 59438, 43864, nil, nil) -- 20165 Brilliant Saronite Bracers
+lib:AddRecipe(164, nil, 59440, 43865, nil, nil) -- 20166 Brilliant Saronite Pauldrons
+lib:AddRecipe(164, nil, 59441, 43870, nil, nil) -- 20167 Brilliant Saronite Helm
+lib:AddRecipe(164, nil, 59442, 43871, nil, nil) -- 20168 Saronite Spellblade
+lib:AddRecipe(197, nil, 59582, 43969, nil, nil) -- 20192 Frostsavage Belt
+lib:AddRecipe(197, nil, 59583, 43974, nil, nil) -- 20193 Frostsavage Bracers
+lib:AddRecipe(197, nil, 59584, 43973, nil, nil) -- 20194 Frostsavage Shoulders
+lib:AddRecipe(197, nil, 59585, 43970, nil, nil) -- 20195 Frostsavage Boots
+lib:AddRecipe(197, nil, 59586, 41516, nil, nil) -- 20196 Frostsavage Gloves
+lib:AddRecipe(197, nil, 59587, 43972, nil, nil) -- 20197 Frostsavage Robe
+lib:AddRecipe(197, nil, 59588, 43975, nil, nil) -- 20198 Frostsavage Leggings
+lib:AddRecipe(197, nil, 59589, 43971, nil, nil) -- 20199 Frostsavage Cowl
+lib:AddRecipe(755, nil, 59759, 44063, 59757, nil) -- 20206 Monarch Crab
+lib:AddRecipe(773, nil, 59480, 44142, nil, nil) -- 20240 Strange Tarot
+lib:AddRecipe(773, nil, 59487, 44161, nil, nil) -- 20241 Arcane Tarot
+lib:AddRecipe(773, nil, 59491, 44163, nil, nil) -- 20242 Shadowy Tarot
+lib:AddRecipe(773, nil, 59502, 44316, nil, nil) -- 20267 Darkmoon Card
+lib:AddRecipe(773, nil, 59503, 44317, nil, nil) -- 20268 Greater Darkmoon Card
+lib:AddRecipe(773, nil, 59504, 44318, nil, nil) -- 20269 Darkmoon Card of the North
+lib:AddRecipe(171, nil, 60403, 44323, nil, nil) -- 20272 Indestructible Alchemist Stone
+lib:AddRecipe(171, nil, 60396, 44322, nil, nil) -- 20273 Mercurial Alchemist Stone
+lib:AddRecipe(171, nil, 60405, 44324, nil, nil) -- 20274 Mighty Alchemist Stone
+lib:AddRecipe(171, nil, 60354, 44325, 60340, nil) -- 20275 Elixir of Accuracy
+lib:AddRecipe(171, nil, 60355, 44327, 60341, nil) -- 20276 Elixir of Deadly Strikes
+lib:AddRecipe(171, nil, 60356, 44328, 60343, nil) -- 20277 Elixir of Mighty Defense
+lib:AddRecipe(171, nil, 60357, 44329, 60344, nil) -- 20278 Elixir of Expertise
+lib:AddRecipe(171, nil, 60365, 44330, 60345, nil) -- 20279 Elixir of Armor Piercing
+lib:AddRecipe(171, nil, 60366, 44331, 60346, nil) -- 20280 Elixir of Lightning Speed
+lib:AddRecipe(171, nil, 60367, 44332, 60347, nil) -- 20281 Elixir of Mighty Thoughts
+lib:AddRecipe(171, nil, 60350, 41163, nil, nil) -- 20282 Transmute: Titanium
+lib:AddEnchantmentRecipe(165, nil, 60583, 3327) -- 20284 Jormungar Leg Reinforcements
+lib:AddEnchantmentRecipe(165, nil, 60584, 3328) -- 20285 Nerubian Leg Reinforcements
+lib:AddRecipe(165, nil, 50967, 38374, 60582, 3823) -- 20286 Icescale Leg Armor
+lib:AddRecipe(165, nil, 50965, 38373, 60581, 3822) -- 20287 Frosthide Leg Armor
+lib:AddRecipe(202, 44503, 60867, 44413, 60424, nil) -- 20289 Mekgineer's Chopper
+lib:AddRecipe(202, 44502, 60866, 41508, 55531, nil) -- 20290 Mechano-hog
+lib:AddRecipe(202, nil, 60874, 44504, nil, nil) -- 20291 Nesingwary 4000
+lib:AddRecipe(165, nil, 51572, 38437, nil, nil) -- 20292 Arctic Helm
+lib:AddRecipe(165, 38599, 51570, 38592, nil, nil) -- 20293 Dark Arctic Chestpiece
+lib:AddRecipe(165, 38598, 51569, 38591, nil, nil) -- 20294 Dark Arctic Leggings
+lib:AddRecipe(165, 38597, 51568, 38590, nil, nil) -- 20295 Black Chitinguard Boots
+lib:AddRecipe(165, nil, 50951, 38416, nil, nil) -- 20296 Frostscale Leggings
+lib:AddRecipe(165, nil, 50950, 38414, nil, nil) -- 20297 Frostscale Chestguard
+lib:AddRecipe(165, nil, 50952, 38424, nil, nil) -- 20298 Frostscale Shoulders
+lib:AddRecipe(165, nil, 50953, 38415, nil, nil) -- 20299 Frostscale Gloves
+lib:AddRecipe(165, nil, 50954, 38413, nil, nil) -- 20300 Frostscale Boots
+lib:AddRecipe(165, nil, 60599, 38436, nil, nil) -- 20301 Frostscale Bracers
+lib:AddRecipe(165, nil, 60600, 38440, nil, nil) -- 20302 Frostscale Helm
+lib:AddRecipe(165, nil, 60601, 44436, nil, nil) -- 20303 Dark Frostscale Leggings
+lib:AddRecipe(165, nil, 60604, 44437, nil, nil) -- 20304 Dark Frostscale Breastplate
+lib:AddRecipe(165, nil, 60605, 44438, nil, nil) -- 20305 Dragonstompers
+lib:AddRecipe(165, nil, 50941, 38409, nil, nil) -- 20306 Iceborne Gloves
+lib:AddRecipe(165, nil, 50939, 38410, nil, nil) -- 20307 Iceborne Leggings
+lib:AddRecipe(165, nil, 50938, 38408, nil, nil) -- 20308 Iceborne Chestguard
+lib:AddRecipe(165, nil, 50942, 38407, nil, nil) -- 20309 Iceborne Boots
+lib:AddRecipe(165, nil, 50940, 38411, nil, nil) -- 20311 Iceborne Shoulderpads
+lib:AddRecipe(165, nil, 60607, 38434, nil, nil) -- 20312 Iceborne Wristguards
+lib:AddRecipe(165, nil, 60608, 38438, nil, nil) -- 20313 Iceborne Helm
+lib:AddRecipe(165, nil, 60611, 44440, nil, nil) -- 20314 Dark Iceborne Leggings
+lib:AddRecipe(165, nil, 60613, 44441, nil, nil) -- 20315 Dark Iceborne Chestguard
+lib:AddRecipe(165, nil, 60620, 44442, nil, nil) -- 20316 Bugsquashers
+lib:AddRecipe(165, nil, 50957, 38422, nil, nil) -- 20317 Nerubian Legguards
+lib:AddRecipe(165, nil, 50959, 38421, nil, nil) -- 20318 Nerubian Gloves
+lib:AddRecipe(165, nil, 50956, 38420, nil, nil) -- 20319 Nerubian Chestguard
+lib:AddRecipe(165, nil, 50961, 38418, nil, nil) -- 20320 Nerubian Belt
+lib:AddRecipe(165, nil, 50960, 38419, nil, nil) -- 20321 Nerubian Boots
+lib:AddRecipe(165, nil, 50958, 38417, nil, nil) -- 20322 Nerubian Shoulders
+lib:AddRecipe(165, nil, 60622, 38435, nil, nil) -- 20323 Nerubian Bracers
+lib:AddRecipe(165, nil, 60624, 38439, nil, nil) -- 20324 Nerubian Helm
+lib:AddRecipe(165, nil, 60627, 44443, nil, nil) -- 20325 Dark Nerubian Leggings
+lib:AddRecipe(165, nil, 60629, 44444, nil, nil) -- 20326 Dark Nerubian Chestpiece
+lib:AddRecipe(165, nil, 60630, 44445, nil, nil) -- 20327 Scaled Icewalkers
+lib:AddRecipe(165, nil, 60631, 38441, nil, nil) -- 20328 Cloak of Harsh Winds
+lib:AddRecipe(165, nil, 60637, 43566, nil, nil) -- 20329 Ice Striker's Cloak
+lib:AddRecipe(165, nil, 60640, 43565, nil, nil) -- 20330 Durable Nerubhide Cape
+lib:AddRecipe(165, nil, 50966, 38372, 50902, 3326) -- 20331 Nerubian Leg Armor
+lib:AddRecipe(165, nil, 50964, 38371, 50901, 3325) -- 20332 Jormungar Leg Armor
+lib:AddRecipe(165, 44509, 50970, 38399, nil, nil) -- 20334 Trapper's Traveling Pack
+lib:AddRecipe(165, 44510, 50971, 38347, nil, nil) -- 20335 Mammoth Mining Bag
+lib:AddRecipe(165, nil, 60643, 44446, nil, nil) -- 20336 Pack of Endless Pockets
+lib:AddRecipe(165, 44511, 60645, 44447, nil, nil) -- 20337 Dragonscale Ammo Pouch
+lib:AddRecipe(165, 44512, 60647, 44448, nil, nil) -- 20338 Nerubian Reinforced Quiver
+lib:AddRecipe(165, nil, 60649, 43129, nil, nil) -- 20339 Razorstrike Breastplate
+lib:AddRecipe(165, nil, 60651, 43130, nil, nil) -- 20340 Virulent Spaulders
+lib:AddRecipe(165, nil, 60652, 43131, nil, nil) -- 20341 Eaglebane Bracers
+lib:AddRecipe(165, nil, 60655, 43132, nil, nil) -- 20342 Nightshock Hood
+lib:AddRecipe(165, nil, 60658, 43133, nil, nil) -- 20343 Nightshock Girdle
+lib:AddRecipe(165, nil, 60660, 42731, nil, nil) -- 20344 Leggings of Visceral Strikes
+lib:AddRecipe(165, nil, 60665, 43255, nil, nil) -- 20345 Seafoam Gauntlets
+lib:AddRecipe(165, nil, 60666, 43256, nil, nil) -- 20346 Jormscale Footpads
+lib:AddRecipe(165, nil, 60669, 43257, nil, nil) -- 20347 Wildscale Breastplate
+lib:AddRecipe(165, nil, 60671, 43258, nil, nil) -- 20348 Purehorn Spaulders
+lib:AddRecipe(165, 44513, 60697, 43260, nil, nil) -- 20349 Eviscerator's Facemask
+lib:AddRecipe(165, 44514, 60702, 43433, nil, nil) -- 20350 Eviscerator's Shoulderpads
+lib:AddRecipe(165, 44515, 60703, 43434, nil, nil) -- 20351 Eviscerator's Chestguard
+lib:AddRecipe(165, 44516, 60704, 43435, nil, nil) -- 20352 Eviscerator's Bindings
+lib:AddRecipe(165, 44517, 60705, 43436, nil, nil) -- 20353 Eviscerator's Gauntlets
+lib:AddRecipe(165, 44518, 60706, 43437, nil, nil) -- 20354 Eviscerator's Waistguard
+lib:AddRecipe(165, 44519, 60711, 43438, nil, nil) -- 20355 Eviscerator's Legguards
+lib:AddRecipe(165, 44520, 60712, 43439, nil, nil) -- 20356 Eviscerator's Treads
+lib:AddRecipe(165, 44521, 60715, 43261, nil, nil) -- 20357 Overcast Headguard
+lib:AddRecipe(165, 44522, 60716, 43262, nil, nil) -- 20358 Overcast Spaulders
+lib:AddRecipe(165, 44523, 60718, 43263, nil, nil) -- 20359 Overcast Chestguard
+lib:AddRecipe(165, 44524, 60720, 43264, nil, nil) -- 20360 Overcast Bracers
+lib:AddRecipe(165, 44525, 60721, 43265, nil, nil) -- 20361 Overcast Handwraps
+lib:AddRecipe(165, 44526, 60723, 43266, nil, nil) -- 20362 Overcast Belt
+lib:AddRecipe(165, 44527, 60725, 43271, nil, nil) -- 20363 Overcast Leggings
+lib:AddRecipe(165, 44528, 60727, 43273, nil, nil) -- 20364 Overcast Boots
+lib:AddRecipe(165, 44530, 60728, 43447, nil, nil) -- 20365 Swiftarrow Helm
+lib:AddRecipe(165, 44531, 60729, 43449, nil, nil) -- 20366 Swiftarrow Shoulderguards
+lib:AddRecipe(165, 44532, 60730, 43445, nil, nil) -- 20367 Swiftarrow Hauberk
+lib:AddRecipe(165, 44533, 60731, 43444, nil, nil) -- 20368 Swiftarrow Bracers
+lib:AddRecipe(165, 44534, 60732, 43446, nil, nil) -- 20369 Swiftarrow Gauntlets
+lib:AddRecipe(165, 44535, 60734, 43442, nil, nil) -- 20370 Swiftarrow Belt
+lib:AddRecipe(165, 44536, 60735, 43448, nil, nil) -- 20371 Swiftarrow Leggings
+lib:AddRecipe(165, 44537, 60737, 43443, nil, nil) -- 20372 Swiftarrow Boots
+lib:AddRecipe(165, 44538, 60743, 43455, nil, nil) -- 20373 Stormhide Crown
+lib:AddRecipe(165, 44539, 60746, 43457, nil, nil) -- 20374 Stormhide Shoulders
+lib:AddRecipe(165, 44540, 60747, 43453, nil, nil) -- 20375 Stormhide Hauberk
+lib:AddRecipe(165, 44541, 60748, 43452, nil, nil) -- 20376 Stormhide Wristguards
+lib:AddRecipe(165, 44542, 60749, 43454, nil, nil) -- 20377 Stormhide Grips
+lib:AddRecipe(165, 44543, 60750, 43450, nil, nil) -- 20378 Stormhide Belt
+lib:AddRecipe(165, 44544, 60751, 43456, nil, nil) -- 20379 Stormhide Legguards
+lib:AddRecipe(165, 44545, 60752, 43451, nil, nil) -- 20380 Stormhide Stompers
+lib:AddRecipe(165, 44546, 60754, 43458, nil, nil) -- 20382 Giantmaim Legguards
+lib:AddRecipe(165, 44547, 60755, 43459, nil, nil) -- 20383 Giantmaim Bracers
+lib:AddRecipe(165, 44548, 60756, 43461, nil, nil) -- 20384 Revenant's Breastplate
+lib:AddRecipe(165, 44549, 60757, 43469, nil, nil) -- 20385 Revenant's Treads
+lib:AddRecipe(165, 44550, 60758, 43481, nil, nil) -- 20386 Trollwoven Spaulders
+lib:AddRecipe(165, 44551, 60759, 43484, nil, nil) -- 20387 Trollwoven Girdle
+lib:AddRecipe(165, 44553, 60761, 43502, nil, nil) -- 20388 Earthgiving Boots
+lib:AddRecipe(165, 44552, 60760, 43495, nil, nil) -- 20389 Earthgiving Legguards
+lib:AddRecipe(197, nil, 60969, 44554, 61451, nil) -- 20391 Flying Carpet
+lib:AddRecipe(197, nil, 60971, 44558, 61309, nil) -- 20392 Magnificent Flying Carpet
+lib:AddRecipe(197, nil, 60993, 43583, nil, nil) -- 20397 Glacial Robe
+lib:AddRecipe(197, nil, 60994, 43585, nil, nil) -- 20398 Glacial Slippers
+lib:AddRecipe(197, nil, 60990, 43584, nil, nil) -- 20399 Glacial Waistband
+lib:AddRecipe(165, 44586, 60998, 43592, nil, nil) -- 20400 Polar Boots
+lib:AddRecipe(165, 44585, 60997, 43591, nil, nil) -- 20401 Polar Cord
+lib:AddRecipe(165, 44584, 60996, 43590, nil, nil) -- 20402 Polar Vest
+lib:AddRecipe(165, 44588, 61000, 43594, nil, nil) -- 20403 Icy Scale Belt
+lib:AddRecipe(165, 44589, 61002, 43595, nil, nil) -- 20404 Icy Scale Boots
+lib:AddRecipe(165, 44587, 60999, 43593, nil, nil) -- 20405 Icy Scale Chestguard
+lib:AddRecipe(164, nil, 61008, 43586, nil, nil) -- 20408 Icebane Chestguard
+lib:AddRecipe(164, nil, 61009, 43587, nil, nil) -- 20409 Icebane Girdle
+lib:AddRecipe(164, nil, 61010, 43588, nil, nil) -- 20410 Icebane Treads
+lib:AddEnchantmentRecipe(773, nil, 61117, 3835) -- 20421 Master's Inscription of the Axe
+lib:AddEnchantmentRecipe(773, nil, 61119, 3837) -- 20422 Master's Inscription of the Pinnacle
+lib:AddEnchantmentRecipe(773, nil, 61120, 3838) -- 20423 Master's Inscription of the Storm
+lib:AddEnchantmentRecipe(773, nil, 61118, 3836) -- 20424 Master's Inscription of the Crag
+lib:AddEnchantmentRecipe(333, nil, 60609, 3825) -- 20425 Enchant Cloak - Speed
+lib:AddEnchantmentRecipe(333, nil, 60616, 1600) -- 20426 Enchant Bracers - Striking
+lib:AddEnchantmentRecipe(333, nil, 60606, 3824) -- 20427 Enchant Boots - Assault
+lib:AddEnchantmentRecipe(333, nil, 60621, 1606) -- 20429 Enchant Weapon - Greater Potency
+lib:AddEnchantmentRecipe(333, nil, 60623, 3826) -- 20430 Enchant Boots - Icewalker
+lib:AddEnchantmentRecipe(333, nil, 60653, 1128) -- 20431 Enchant Shield - Greater Intellect
+lib:AddEnchantmentRecipe(333, nil, 59636, 3791) -- 20432 Enchant Ring - Stamina
+lib:AddEnchantmentRecipe(333, nil, 60663, 1099) -- 20433 Enchant Cloak - Major Agility
+lib:AddEnchantmentRecipe(333, nil, 47900, 3297) -- 20434 Enchant Chest - Super Health
+lib:AddEnchantmentRecipe(333, nil, 60668, 1603) -- 20435 Enchant Gloves - Crusher
+lib:AddRecipe(333, nil, 60619, 44452, nil, nil) -- 20436 Runed Titanium Rod
+lib:AddEnchantmentRecipe(333, 44483, 60691, 3827) -- 20437 Enchant 2H Weapon - Massacre
+lib:AddEnchantmentRecipe(333, 44486, 60707, 3833) -- 20438 Enchant Weapon - Superior Potency
+lib:AddEnchantmentRecipe(333, 44487, 60714, 3834) -- 20439 Enchant Weapon - Mighty Spellpower
+lib:AddEnchantmentRecipe(333, 44489, 60692, 3832) -- 20440 Enchant Chest - Powerful Stats
+lib:AddEnchantmentRecipe(333, 44490, 60763, 1597) -- 20441 Enchant Boots - Greater Assault
+lib:AddEnchantmentRecipe(333, 44492, 59621, 3789) -- 20442 Enchant Weapon - Berserking
+lib:AddEnchantmentRecipe(333, 44495, 59625, 3790) -- 20443 Enchant Weapon - Black Magic
+lib:AddEnchantmentRecipe(333, 44496, 59619, 3788) -- 20444 Enchant Weapon - Accuracy
+lib:AddEnchantmentRecipe(333, 44498, 60767, 2332) -- 20445 Enchant Bracers - Superior Spellpower
+lib:AddRecipe(773, nil, 58296, 43335, 58159, nil) -- 20514 Glyph of the Wild
+lib:AddRecipe(773, nil, 58289, 43332, 58163, nil) -- 20515 Glyph of Thorns
+lib:AddRecipe(773, nil, 58299, 43338, 58186, nil) -- 20516 Glyph of Revive Pet
+lib:AddRecipe(773, nil, 58301, 43350, 58188, nil) -- 20517 Glyph of Mend Pet
+lib:AddRecipe(773, nil, 58298, 43356, 58234, nil) -- 20518 Glyph of Scare Beast
+lib:AddRecipe(773, nil, 58300, 43354, 58233, nil) -- 20519 Glyph of Possessed Strength
+lib:AddRecipe(773, nil, 58303, 43339, 58235, nil) -- 20520 Glyph of Arcane Intellect
+lib:AddRecipe(773, nil, 58306, 43359, 58238, nil) -- 20521 Glyph of Frost Armor
+lib:AddRecipe(773, nil, 58310, 43361, 58239, nil) -- 20523 Glyph of the Penguin
+lib:AddRecipe(773, nil, 58308, 43364, 58241, nil) -- 20524 Glyph of Slow Fall
+lib:AddRecipe(773, nil, 58314, 43340, 58243, nil) -- 20525 Glyph of Blessing of Might
+lib:AddRecipe(773, nil, 58313, 43367, 58245, nil) -- 20526 Glyph of Lay on Hands
+lib:AddRecipe(773, nil, 58312, 43366, 58244, nil) -- 20527 Glyph of Blessing of Wisdom
+lib:AddRecipe(773, nil, 58318, 43371, 58250, nil) -- 20528 Glyph of Fortitude
+lib:AddRecipe(773, nil, 58317, 43342, 58248, nil) -- 20529 Glyph of Fading
+lib:AddRecipe(773, nil, 58326, 43343, 58256, nil) -- 20530 Glyph of Pick Pocket
+lib:AddRecipe(773, nil, 58323, 43379, 58258, nil) -- 20531 Glyph of Blurred Speed
+lib:AddRecipe(773, nil, 58337, 43390, 58271, nil) -- 20532 Glyph of Drain Soul
+lib:AddRecipe(773, nil, 58342, 43395, 58276, nil) -- 20533 Glyph of Battle
+lib:AddRecipe(773, nil, 58344, 43397, 58278, nil) -- 20534 Glyph of Charge
+lib:AddRecipe(773, nil, 58346, 43399, 58280, nil) -- 20535 Glyph of Thunder Clap
+lib:AddRecipe(773, nil, 58343, 43396, 58277, nil) -- 20536 Glyph of Bloodrage
+lib:AddRecipe(773, nil, 58286, 43316, 58140, nil) -- 20537 Glyph of Aquatic Form
+lib:AddRecipe(773, nil, 58288, 43331, 58161, nil) -- 20538 Glyph of Unburdened Rebirth
+lib:AddRecipe(773, nil, 58305, 43357, 58236, nil) -- 20539 Glyph of Fire Ward
+lib:AddRecipe(773, nil, 58311, 43365, 58242, nil) -- 20540 Glyph of Blessing of Kings
+lib:AddRecipe(773, nil, 58315, 43368, 58246, nil) -- 20541 Glyph of Sense Undead
+lib:AddRecipe(773, nil, 58320, 43373, 58251, nil) -- 20542 Glyph of Shackle Undead
+lib:AddRecipe(773, nil, 58325, 43377, 58255, nil) -- 20543 Glyph of Pick Lock
+lib:AddRecipe(773, nil, 58332, 43386, 58266, nil) -- 20544 Glyph of Water Shield
+lib:AddRecipe(773, nil, 59326, 43725, 59287, nil) -- 20545 Glyph of Ghost Wolf
+lib:AddRecipe(773, nil, 58336, 43389, 58267, nil) -- 20546 Glyph of Unending Breath
+lib:AddRecipe(773, nil, 58345, 43398, 58279, nil) -- 20547 Glyph of Mocking Blow
+lib:AddRecipe(773, nil, 58307, 43360, 58237, nil) -- 20548 Glyph of Frost Ward
+lib:AddRecipe(773, nil, 58324, 43376, 58254, nil) -- 20549 Glyph of Distract
+lib:AddRecipe(773, nil, 58328, 43380, 58259, nil) -- 20550 Glyph of Vanish
+lib:AddRecipe(773, nil, 58331, 43344, 58264, nil) -- 20551 Glyph of Water Breathing
+lib:AddRecipe(773, nil, 58340, 43391, 58272, nil) -- 20552 Glyph of Kilrogg
+lib:AddRecipe(773, nil, 59315, 43674, 59218, nil) -- 20553 Glyph of Dash
+lib:AddRecipe(773, nil, 58287, 43334, 58158, nil) -- 20554 Glyph of Challenging Roar
+lib:AddRecipe(773, nil, 58302, 43351, 58229, nil) -- 20555 Glyph of Feign Death
+lib:AddRecipe(773, nil, 58316, 43369, 58247, nil) -- 20556 Glyph of the Wise
+lib:AddRecipe(773, nil, 58321, 43372, 58252, nil) -- 20557 Glyph of Shadow Protection
+lib:AddRecipe(773, nil, 58333, 43388, 58265, nil) -- 20558 Glyph of Water Walking
+lib:AddRecipe(773, nil, 58329, 43381, 58260, nil) -- 20559 Glyph of Astral Recall
+lib:AddRecipe(773, nil, 58330, 43385, 58263, nil) -- 20560 Glyph of Renewed Life
+lib:AddRecipe(773, nil, 58338, 43392, 58273, nil) -- 20561 Glyph of Curse of Exhaustion
+lib:AddRecipe(773, nil, 58339, 43393, 58274, nil) -- 20562 Glyph of Subjugate Demon
+lib:AddRecipe(773, nil, 58319, 43370, 58249, nil) -- 20563 Glyph of Levitate
+lib:AddRecipe(773, nil, 58297, 43355, 58232, nil) -- 20564 Glyph of the Pack
+lib:AddRecipe(773, nil, 58327, 43378, 58257, nil) -- 20565 Glyph of Safe Fall
+lib:AddRecipe(773, nil, 58347, 43400, 58281, nil) -- 20566 Glyph of Enduring Victory
+lib:AddRecipe(773, nil, 58322, 43374, 58253, nil) -- 20567 Glyph of Shadowfiend
+lib:AddRecipe(773, nil, 58341, 43394, 58275, nil) -- 20568 Glyph of Souls
+lib:AddRecipe(773, nil, 57162, 43413, 58409, nil) -- 20569 Glyph of Rapid Charge
+lib:AddRecipe(773, nil, 57158, 43418, 58403, nil) -- 20570 Glyph of Heroic Strike
+lib:AddRecipe(773, nil, 59475, 43654, nil, nil) -- 20571 Tome of the Dawn
+lib:AddRecipe(773, nil, 59478, 43655, nil, nil) -- 20572 Book of Survival
+lib:AddRecipe(773, nil, 57163, 43423, 58399, nil) -- 20573 Glyph of Rending
+lib:AddRecipe(773, nil, 57157, 43417, 58404, nil) -- 20574 Glyph of Hamstring
+lib:AddRecipe(773, nil, 57167, 43427, 58395, nil) -- 20575 Glyph of Sunder Armor
+lib:AddRecipe(773, nil, 59484, 43656, 59191, nil) -- 20576 Tome of Kings
+lib:AddRecipe(773, nil, 59486, 43657, 59195, nil) -- 20577 Royal Guide of Escape Routes
+lib:AddRecipe(773, nil, 57161, 43422, 58400, nil) -- 20578 Glyph of Overpower
+lib:AddRecipe(773, nil, 57165, 43424, 58398, nil) -- 20579 Glyph of Revenge
+lib:AddRecipe(773, nil, 59499, 37602, nil, nil) -- 20580 Armor Vellum II
+lib:AddRecipe(773, nil, 59387, 43850, 59385, nil) -- 20581 Certificate of Ownership
+lib:AddRecipe(773, nil, 60336, 44314, 60320, nil) -- 20582 Scroll of Recall II
+lib:AddRecipe(773, nil, 59489, 43660, 59197, nil) -- 20583 Fire Eater's Guide
+lib:AddRecipe(773, nil, 59490, 43661, 59198, nil) -- 20584 Book of Stars
+lib:AddRecipe(773, nil, 59488, 39350, nil, nil) -- 20585 Weapon Vellum II
+lib:AddRecipe(773, nil, 57151, 43420, 58401, nil) -- 20586 Glyph of Barbaric Insults
+lib:AddRecipe(773, nil, 57154, 43414, 58407, nil) -- 20587 Glyph of Cleaving
+lib:AddRecipe(773, nil, 59493, 43663, 59199, nil) -- 20588 Stormbound Tome
+lib:AddRecipe(773, nil, 59494, 43664, 60060, nil) -- 20589 Manual of Clouds
+lib:AddRecipe(773, nil, 57156, 43416, 58405, nil) -- 20590 Glyph of Execution
+lib:AddRecipe(773, nil, 59495, 43666, nil, nil) -- 20591 Hellfire Tome
+lib:AddRecipe(773, nil, 59496, 43667, 59202, nil) -- 20592 Book of Clever Tricks
+lib:AddRecipe(773, nil, 59338, 43825, 59328, nil) -- 20593 Glyph of Rune Tap
+lib:AddRecipe(773, nil, 57168, 43428, 58394, nil) -- 20594 Glyph of Sweeping Strikes
+lib:AddRecipe(773, nil, 59339, 43826, 59333, nil) -- 20595 Glyph of Blood Strike
+lib:AddRecipe(773, nil, 59340, 43827, 59337, nil) -- 20596 Glyph of Death Strike
+lib:AddRecipe(773, nil, 57172, 43432, 58390, nil) -- 20597 Glyph of Whirlwind
+lib:AddRecipe(773, nil, 60337, 44315, 60321, nil) -- 20598 Scroll of Recall III
+lib:AddRecipe(773, nil, 59497, 38322, nil, nil) -- 20599 Iron-bound Tome
+lib:AddRecipe(773, nil, 59498, 44210, nil, nil) -- 20600 Faces of Doom
+lib:AddRecipe(773, nil, 59500, 43145, nil, nil) -- 20601 Armor Vellum III
+lib:AddRecipe(773, nil, 59501, 43146, nil, nil) -- 20602 Weapon Vellum III
+lib:AddRecipe(773, nil, 57159, 43419, 58402, nil) -- 20603 Glyph of Intervene
+lib:AddRecipe(773, nil, 57170, 43431, 58391, nil) -- 20604 Glyph of Victory Rush
+lib:AddRecipe(773, nil, 57152, 43425, 58397, nil) -- 20605 Glyph of Blocking
+lib:AddRecipe(773, nil, 57169, 43429, 58393, nil) -- 20606 Glyph of Taunt
+lib:AddRecipe(773, nil, 57160, 43421, 58389, nil) -- 20607 Glyph of Mortal Strike
+lib:AddRecipe(773, nil, 57166, 43426, 58396, nil) -- 20608 Glyph of Last Stand
+lib:AddRecipe(773, nil, 59559, 43867, 59427, nil) -- 20609 Glyph of Holy Wrath
+lib:AddRecipe(773, nil, 57155, 43415, 58406, nil) -- 20610 Glyph of Devastate
+lib:AddRecipe(773, nil, 59561, 43869, 59429, nil) -- 20611 Glyph of Seal of Vengeance
+lib:AddRecipe(773, nil, 57153, 43412, 58408, nil) -- 20612 Glyph of Bloodthirst
+lib:AddRecipe(773, nil, 57164, 43430, 58392, nil) -- 20614 Glyph of Resonating Power
+lib:AddRecipe(773, nil, 59560, 43868, 59428, nil) -- 20615 Glyph of Seal of Righteousness
+lib:AddRecipe(202, nil, 61471, 44739, 61468, 3843) -- 20650 Diamond-cut Refractor Scope
+lib:AddRecipe(202, nil, 61481, 44740, nil, nil) -- 20653 Mechanized Snow Goggles
+lib:AddRecipe(202, nil, 61482, 44741, nil, nil) -- 20654 Mechanized Snow Goggles
+lib:AddRecipe(202, nil, 61483, 44742, nil, nil) -- 20655 Mechanized Snow Goggles
+lib:AddRecipe(186, 44956, 22967, 17771, nil, nil) -- 20659 Smelt Elementium
+lib:AddRecipe(773, nil, 57014, 42917, 56889, nil) -- 20660 Glyph of Wyvern Sting
+lib:AddRecipe(773, nil, 61677, 44684, 61206, nil) -- 20669 Glyph of Frostfire
+lib:AddRecipe(129, nil, 18630, 14530, 18610, nil) -- 20720 Heavy Runecloth Bandage
+lib:AddRecipe(185, 44861, 62045, 44838, 65422, nil) -- 20734 Slow-Roasted Turkey
+lib:AddRecipe(185, 44862, 62044, 44836, 65421, nil) -- 20735 Pumpkin Pie
+lib:AddRecipe(185, 44859, 62051, 44839, 65418, nil) -- 20737 Candied Sweet Potato
+lib:AddRecipe(185, 44860, 62050, 44837, 65419, nil) -- 20738 Spice Bread Stuffing
+lib:AddRecipe(185, 44858, 62049, 44840, 65420, nil) -- 20739 Cranberry Chutney
+lib:AddRecipe(773, nil, 56990, 44920, 62127, nil) -- 20744 Glyph of Blast Wave
+lib:AddRecipe(773, nil, 57253, 44923, 62133, nil) -- 20745 Glyph of Thunderstorm
+lib:AddRecipe(773, nil, 56965, 44922, 62134, nil) -- 20746 Glyph of Typhoon
+lib:AddRecipe(773, nil, 62162, 44928, 62161, nil) -- 20749 Glyph of Focus
+lib:AddRecipe(165, 44932, 62176, 44930, nil, nil) -- 20750 Windripper Boots
+lib:AddRecipe(165, 44933, 62177, 44931, nil, nil) -- 20751 Windripper Leggings
+lib:AddRecipe(164, 44937, 62202, 44936, 62201, 3849) -- 20752 Titanium Plating
+lib:AddRecipe(164, 44938, 62202, 44936, 62201, 3849) -- 20752 Titanium Plating
+lib:AddRecipe(171, nil, 62213, 44939, 62380, nil) -- 20753 Lesser Flask of Resistance
+lib:AddRecipe(755, nil, 62242, 44943, nil, nil) -- 20754 Icy Prism
+lib:AddEnchantmentRecipe(333, 44944, 62256, 3850) -- 20755 Enchant Bracers - Major Stamina
+lib:AddEnchantmentRecipe(333, 44945, 62257, 3851) -- 20756 Enchant Weapon - Titanguard
+lib:AddRecipe(202, nil, 62271, 44949, 12883, nil) -- 20759 Unbreakable Healing Amplifiers
+lib:AddRecipe(185, 44954, 62350, 44953, 57359, nil) -- 20760 Worg Tartare
+lib:AddRecipe(773, nil, 56991, 44955, 62353, nil) -- 20761 Glyph of Arcane Blast
+lib:AddRecipe(171, nil, 62409, 44958, 62408, nil) -- 20768 Ethereal Oil
+lib:AddRecipe(171, nil, 62410, 8827, 11319, nil) -- 20769 Elixir of Water Walking
+lib:AddRecipe(165, nil, 62448, 44963, 62447, 3853) -- 20770 Earthen Leg Armor
+lib:AddRecipe(755, nil, 62941, 45054, nil, nil) -- 20806 Prismatic Black Diamond
+lib:AddEnchantmentRecipe(333, 45059, 62948, 3854) -- 20807 Enchant Staff - Greater Spellpower
+lib:AddEnchantmentRecipe(333, nil, 62959, 3855) -- 20808 Enchant Staff - Spellpower
+lib:AddRecipe(164, nil, 63182, 45085, nil, nil) -- 20815 Titansteel Spellblade
+lib:AddRecipe(164, 45091, 63190, 45561, nil, nil) -- 20816 Treads of Destiny
+lib:AddRecipe(164, 45092, 63191, 45551, nil, nil) -- 20817 Indestructible Plate Girdle
+lib:AddRecipe(164, 45090, 63189, 45552, nil, nil) -- 20818 Plate Girdle of Righteousness
+lib:AddRecipe(164, 45088, 63187, 45550, nil, nil) -- 20819 Belt of the Titans
+lib:AddRecipe(164, 45089, 63188, 45559, nil, nil) -- 20820 Battlelord's Plate Boots
+lib:AddRecipe(164, 45093, 63192, 45560, nil, nil) -- 20821 Spiked Deathdealers
+lib:AddRecipe(165, 45094, 63194, 45553, nil, nil) -- 20822 Belt of Dragons
+lib:AddRecipe(165, 45095, 63195, 45562, nil, nil) -- 20823 Boots of Living Scale
+lib:AddRecipe(165, 45096, 63196, 45554, nil, nil) -- 20824 Blue Belt of Chaos
+lib:AddRecipe(165, 45101, 63201, 45565, nil, nil) -- 20825 Boots of Wintry Endurance
+lib:AddRecipe(165, 45098, 63198, 45555, nil, nil) -- 20826 Death-warmed Belt
+lib:AddRecipe(165, 45099, 63199, 45564, nil, nil) -- 20827 Footpads of Silence
+lib:AddRecipe(165, 45100, 63200, 45556, nil, nil) -- 20828 Belt of Arctic Life
+lib:AddRecipe(165, 45097, 63197, 45563, nil, nil) -- 20829 Lightning Grounded Boots
+lib:AddRecipe(171, nil, 63732, 45621, 63729, nil) -- 20870 Elixir of Minor Accuracy
+lib:AddRecipe(197, nil, 63742, 45626, nil, nil) -- 20877 Spidersilk Drape
+lib:AddRecipe(755, nil, 63743, 45627, nil, nil) -- 20878 Amulet of Truesight
+lib:AddEnchantmentRecipe(333, nil, 63746, 3858) -- 20879 Enchant Boots - Lesser Accuracy
+lib:AddRecipe(202, nil, 63750, 45631, 25823, nil) -- 20880 High-powered Flashlight
+lib:AddEnchantmentRecipe(202, nil, 63765, 3859) -- 20881 Springy Arachnoweave
+lib:AddEnchantmentRecipe(202, nil, 63770, 3860) -- 20882 Reticulated Armor Webbing
+lib:AddRecipe(197, 45774, 63924, 45773, nil, nil) -- 20886 Emerald Bag
+lib:AddRecipe(773, 46108, 64051, 45854, 64052, nil) -- 20911 Rituals of the New Moon
+lib:AddRecipe(773, nil, 64053, 45849, nil, nil) -- 20912 Twilight Tome
+lib:AddRecipe(185, nil, 64054, 33004, 64056, nil) -- 20914 Clamlette Magnifique
+lib:AddRecipe(773, nil, 64248, 45785, 63941, nil) -- 20924 Glyph of Life Tap
+lib:AddRecipe(773, nil, 64246, 45735, 63858, nil) -- 20925 Glyph of Raptor Strike
+lib:AddRecipe(773, nil, 64247, 45778, 63929, nil) -- 20926 Glyph of Stoneclaw Totem
+lib:AddRecipe(773, nil, 64249, 45734, 63857, nil) -- 20927 Glyph of Scatter Shot
+lib:AddRecipe(773, nil, 64250, 45789, 63943, nil) -- 20928 Glyph of Soul Link
+lib:AddRecipe(773, nil, 64251, 45747, 63871, nil) -- 20929 Glyph of Salvation
+lib:AddRecipe(773, nil, 64252, 45797, 63952, nil) -- 20930 Glyph of Shield Wall
+lib:AddRecipe(773, nil, 64253, 45733, 63856, nil) -- 20931 Glyph of Explosive Trap
+lib:AddRecipe(773, nil, 64254, 45746, 63870, nil) -- 20932 Glyph of Holy Shock
+lib:AddRecipe(773, nil, 64255, 45793, 63949, nil) -- 20933 Glyph of Vigilance
+lib:AddRecipe(773, nil, 64256, 45623, 63740, nil) -- 20934 Glyph of Barkskin
+lib:AddRecipe(773, nil, 64257, 45740, 63864, nil) -- 20935 Glyph of Ice Barrier
+lib:AddRecipe(773, nil, 64261, 45775, 63925, nil) -- 20936 Glyph of Earth Shield
+lib:AddRecipe(773, nil, 64258, 45622, 63739, nil) -- 20937 Glyph of Monsoon
+lib:AddRecipe(773, nil, 64260, 45768, 63899, nil) -- 20938 Glyph of Mutilate
+lib:AddRecipe(773, nil, 64259, 45760, 63877, nil) -- 20939 Glyph of Pain Suppression
+lib:AddRecipe(773, nil, 64262, 45776, 63926, nil) -- 20940 Glyph of Totem of Wrath
+lib:AddRecipe(773, nil, 64266, 45804, 63958, nil) -- 20941 Glyph of Dark Death
+lib:AddRecipe(773, nil, 64267, 45805, 63959, nil) -- 20942 Glyph of Disease
+lib:AddRecipe(773, nil, 64276, 45738, 63862, nil) -- 20943 Glyph of Arcane Barrage
+lib:AddRecipe(773, nil, 64277, 45741, 63865, nil) -- 20944 Glyph of Beacon of Light
+lib:AddRecipe(773, nil, 64268, 45601, 63714, nil) -- 20945 Glyph of Berserk
+lib:AddRecipe(773, nil, 64295, 45790, 63945, nil) -- 20946 Glyph of Bladestorm
+lib:AddRecipe(773, nil, 64294, 45781, 63933, nil) -- 20947 Glyph of Chaos Bolt
+lib:AddRecipe(773, nil, 64271, 45625, 63741, nil) -- 20948 Glyph of Chimera Shot
+lib:AddRecipe(773, nil, 64297, 45799, 63953, nil) -- 20949 Glyph of Dancing Rune Weapon
+lib:AddRecipe(773, nil, 64274, 45736, 63859, nil) -- 20950 Glyph of Deep Freeze
+lib:AddRecipe(773, nil, 64280, 45753, 63872, nil) -- 20951 Glyph of Dispersion
+lib:AddRecipe(773, nil, 64279, 45743, 63867, nil) -- 20952 Glyph of Divine Storm
+lib:AddRecipe(773, nil, 64273, 45731, 63854, nil) -- 20953 Glyph of Explosive Shot
+lib:AddRecipe(773, nil, 64288, 45771, 63903, nil) -- 20954 Glyph of Feral Spirit
+lib:AddRecipe(773, nil, 64281, 45755, 63873, nil) -- 20955 Glyph of Guardian Spirit
+lib:AddRecipe(773, nil, 64278, 45742, 63866, nil) -- 20956 Glyph of Hammer of the Righteous
+lib:AddRecipe(773, nil, 64291, 45779, 63930, nil) -- 20957 Glyph of Haunt
+lib:AddRecipe(773, nil, 64300, 45806, 63961, nil) -- 20958 Glyph of Howling Blast
+lib:AddRecipe(773, nil, 64284, 45761, 63878, nil) -- 20959 Glyph of Hunger for Blood
+lib:AddRecipe(773, nil, 64298, 45800, 63954, nil) -- 20960 Glyph of Hungering Cold
+lib:AddRecipe(773, nil, 64283, 45758, 63876, nil) -- 20961 Glyph of Hymn of Hope
+lib:AddRecipe(773, nil, 64285, 45762, 63879, nil) -- 20962 Glyph of Killing Spree
+lib:AddRecipe(773, nil, 64275, 45737, 63860, nil) -- 20963 Glyph of Living Bomb
+lib:AddRecipe(773, nil, 64318, 45780, 63932, nil) -- 20964 Glyph of Metamorphosis
+lib:AddRecipe(773, nil, 64282, 45756, 63874, nil) -- 20965 Glyph of Penance
+lib:AddRecipe(773, nil, 64289, 45772, 63904, nil) -- 20966 Glyph of Riptide
+lib:AddRecipe(773, nil, 64286, 45764, 63880, nil) -- 20967 Glyph of Shadow Dance
+lib:AddRecipe(773, nil, 64296, 45792, 63948, nil) -- 20968 Glyph of Shockwave
+lib:AddRecipe(773, nil, 64287, 45770, 63902, nil) -- 20969 Glyph of Thunder
+lib:AddRecipe(773, nil, 64299, 45803, 63955, nil) -- 20970 Glyph of Unholy Blight
+lib:AddRecipe(773, nil, 64270, 45602, 63715, nil) -- 20971 Glyph of Wild Growth
+lib:AddRecipe(773, nil, 64302, 45795, 63951, nil) -- 20973 Glyph of Spell Reflection
+lib:AddRecipe(773, nil, 64303, 45769, 63901, nil) -- 20974 Glyph of Cloak of Shadows
+lib:AddRecipe(773, nil, 64305, 45745, 63869, nil) -- 20975 Glyph of Divine Plea
+lib:AddRecipe(773, nil, 64304, 45732, 63855, nil) -- 20976 Glyph of Kill Shot
+lib:AddRecipe(773, nil, 64312, 45794, 63950, nil) -- 20977 Glyph of Enraged Regeneration
+lib:AddRecipe(773, nil, 64309, 45757, 63875, nil) -- 20978 Glyph of Mind Sear
+lib:AddRecipe(773, nil, 64307, 45604, 63718, nil) -- 20979 Glyph of Savage Roar
+lib:AddRecipe(773, nil, 64311, 45783, 63938, nil) -- 20980 Glyph of Shadowflame
+lib:AddRecipe(773, nil, 64308, 45744, 63868, nil) -- 20981 Glyph of Shield of Righteousness
+lib:AddRecipe(773, nil, 64310, 45767, 63898, nil) -- 20982 Glyph of Tricks of the Trade
+lib:AddRecipe(773, nil, 64317, 45782, 63937, nil) -- 20983 Glyph of Demonic Circle
+lib:AddRecipe(773, nil, 64315, 45766, 63897, nil) -- 20984 Glyph of Fan of Knives
+lib:AddRecipe(773, nil, 64316, 45777, 63927, nil) -- 20985 Glyph of Hex
+lib:AddRecipe(773, nil, 64314, 45739, 63863, nil) -- 20986 Glyph of Mirror Image
+lib:AddRecipe(773, nil, 64313, 45603, 63717, nil) -- 20987 Glyph of Nourish
+lib:AddRecipe(185, nil, 64358, 45932, 64354, nil) -- 20993 Black Jelly
+lib:AddEnchantmentRecipe(333, 46027, 64441, 3869) -- 20996 Enchant Weapon - Blade Ward
+lib:AddEnchantmentRecipe(333, 46348, 64579, 3870) -- 21004 Enchant Weapon - Blood Draining
+lib:AddRecipe(165, nil, 64661, 33568, nil, nil) -- 21009 Borean Leather
+lib:AddRecipe(197, 45105, 63206, 45567, nil, nil) -- 21010 Savior's Slippers
+lib:AddRecipe(197, 45104, 63205, 45558, nil, nil) -- 21011 Cord of the White Dawn
+lib:AddRecipe(197, 45103, 63204, 45566, nil, nil) -- 21012 Spellslinger's Slippers
+lib:AddRecipe(197, 45102, 63203, 45557, nil, nil) -- 21013 Sash of Ancient Power
+lib:AddRecipe(755, nil, 64725, 45812, nil, nil) -- 21014 Emerald Choker
+lib:AddRecipe(755, nil, 64726, 45813, nil, nil) -- 21015 Sky Sapphire Amulet
+lib:AddRecipe(755, nil, 64727, 45808, nil, nil) -- 21016 Runed Mana Band
+lib:AddRecipe(755, nil, 64728, 45809, nil, nil) -- 21017 Scarlet Signet
+lib:AddRecipe(197, nil, 64729, 45811, nil, nil) -- 21018 Frostguard Drape
+lib:AddRecipe(197, nil, 64730, 45810, nil, nil) -- 21019 Cloak of Crimson Snow
+lib:AddRecipe(773, nil, 65245, 46372, 65244, nil) -- 21043 Glyph of Survival Instincts
+lib:AddRecipe(185, 46710, 65454, 46691, 24869, nil) -- 21048 Bread of the Dead
+lib:AddRecipe(185, 46806, 66034, 44839, 65418, nil) -- 21066 Candied Sweet Potato
+lib:AddRecipe(185, 46805, 66035, 44840, 65420, nil) -- 21067 Cranberry Chutney
+lib:AddRecipe(185, 46804, 66036, 44836, 65421, nil) -- 21068 Pumpkin Pie
+lib:AddRecipe(185, 46807, 66037, 44838, 65422, nil) -- 21069 Slow-Roasted Turkey
+lib:AddRecipe(185, 46803, 66038, 44837, 65419, nil) -- 21070 Spice Bread Stuffing
+lib:AddRecipe(755, 46898, 66428, 40168, nil, nil) -- 21103 Steady Eye of Zul
+lib:AddRecipe(755, 46899, 66429, 40166, nil, nil) -- 21104 Vivid Eye of Zul
+lib:AddRecipe(755, 46900, 66430, 40175, nil, nil) -- 21105 Dazzling Eye of Zul
+lib:AddRecipe(755, 46901, 66431, 40165, nil, nil) -- 21106 Jagged Eye of Zul
+lib:AddRecipe(755, 46902, 66432, 40164, nil, nil) -- 21107 Timeless Eye of Zul
+lib:AddRecipe(755, 46903, 66433, 40170, nil, nil) -- 21108 Seer's Eye of Zul
+lib:AddRecipe(755, 46904, 66434, 40169, nil, nil) -- 21109 Forceful Eye of Zul
+lib:AddRecipe(755, 46905, 66435, 40171, nil, nil) -- 21110 Misty Eye of Zul
+lib:AddRecipe(755, 46906, 66436, 40176, nil, nil) -- 21111 Sundered Eye of Zul
+lib:AddRecipe(755, 46907, 66437, 40172, nil, nil) -- 21112 Shining Eye of Zul
+lib:AddRecipe(755, 46908, 66438, 40181, nil, nil) -- 21113 Tense Eye of Zul
+lib:AddRecipe(755, 46909, 66439, 40177, nil, nil) -- 21114 Lambent Eye of Zul
+lib:AddRecipe(755, 46910, 66440, 40174, nil, nil) -- 21115 Intricate Eye of Zul
+lib:AddRecipe(755, 46911, 66441, 40180, nil, nil) -- 21116 Radiant Eye of Zul
+lib:AddRecipe(755, 46912, 66442, 40179, nil, nil) -- 21117 Energized Eye of Zul
+lib:AddRecipe(755, 46913, 66443, 40182, nil, nil) -- 21118 Shattered Eye of Zul
+lib:AddRecipe(755, 46914, 66444, 40178, nil, nil) -- 21119 Opaque Eye of Zul
+lib:AddRecipe(755, 46915, 66445, 40173, nil, nil) -- 21120 Turbid Eye of Zul
+lib:AddRecipe(755, 46916, 66446, 40113, nil, nil) -- 21121 Runed Cardinal Ruby
+lib:AddRecipe(755, 46917, 66447, 40111, nil, nil) -- 21122 Bold Cardinal Ruby
+lib:AddRecipe(755, 46918, 66448, 40112, nil, nil) -- 21123 Delicate Cardinal Ruby
+lib:AddRecipe(755, 46919, 66449, 40114, nil, nil) -- 21124 Bright Cardinal Ruby
+lib:AddRecipe(755, 46920, 66450, 40118, nil, nil) -- 21125 Precise Cardinal Ruby
+lib:AddRecipe(755, 46921, 66451, 40117, nil, nil) -- 21126 Fractured Cardinal Ruby
+lib:AddRecipe(755, 46922, 66452, 40115, nil, nil) -- 21127 Subtle Cardinal Ruby
+lib:AddRecipe(755, 46923, 66453, 40116, nil, nil) -- 21128 Flashing Cardinal Ruby
+lib:AddRecipe(755, 46924, 66497, 40119, nil, nil) -- 21129 Solid Majestic Zircon
+lib:AddRecipe(755, 46925, 66498, 40120, nil, nil) -- 21130 Sparkling Majestic Zircon
+lib:AddRecipe(755, 46926, 66499, 40122, nil, nil) -- 21131 Stormy Majestic Zircon
+lib:AddRecipe(755, 46927, 66500, 40121, nil, nil) -- 21132 Lustrous Majestic Zircon
+lib:AddRecipe(755, 46928, 66501, 40125, nil, nil) -- 21133 Rigid King's Amber
+lib:AddRecipe(755, 46929, 66502, 40124, nil, nil) -- 21134 Smooth King's Amber
+lib:AddRecipe(755, 46930, 66503, 40123, nil, nil) -- 21135 Brilliant King's Amber
+lib:AddRecipe(755, 46931, 66504, 40126, nil, nil) -- 21136 Thick King's Amber
+lib:AddRecipe(755, 46932, 66505, 40127, nil, nil) -- 21137 Mystic King's Amber
+lib:AddRecipe(755, 46933, 66506, 40128, nil, nil) -- 21138 Quick King's Amber
+lib:AddRecipe(755, 46934, 66553, 40136, nil, nil) -- 21139 Balanced Dreadstone
+lib:AddRecipe(755, 46935, 66554, 40129, nil, nil) -- 21140 Sovereign Dreadstone
+lib:AddRecipe(755, 46936, 66555, 40132, nil, nil) -- 21141 Glowing Dreadstone
+lib:AddRecipe(755, 46937, 66556, 40133, nil, nil) -- 21142 Purified Dreadstone
+lib:AddRecipe(755, 46938, 66557, 40130, nil, nil) -- 21143 Shifting Dreadstone
+lib:AddRecipe(755, 46939, 66558, 40134, nil, nil) -- 21144 Royal Dreadstone
+lib:AddRecipe(755, 46940, 66559, 40138, nil, nil) -- 21145 Regal Dreadstone
+lib:AddRecipe(755, 46941, 66560, 40139, nil, nil) -- 21146 Defender's Dreadstone
+lib:AddRecipe(755, 46942, 66561, 40141, nil, nil) -- 21147 Guardian's Dreadstone
+lib:AddRecipe(755, 46943, 66562, 40135, nil, nil) -- 21148 Mysterious Dreadstone
+lib:AddRecipe(755, 46944, 66563, 40140, nil, nil) -- 21149 Puissant Dreadstone
+lib:AddRecipe(755, 46945, 66564, 40137, nil, nil) -- 21150 Infused Dreadstone
+lib:AddRecipe(755, 46946, 66565, 40131, nil, nil) -- 21151 Tenuous Dreadstone
+lib:AddRecipe(755, 46947, 66566, 40151, nil, nil) -- 21152 Luminous Ametrine
+lib:AddRecipe(755, 46948, 66567, 40142, nil, nil) -- 21153 Inscribed Ametrine
+lib:AddRecipe(755, 46949, 66568, 40147, nil, nil) -- 21154 Deadly Ametrine
+lib:AddRecipe(755, 46950, 66569, 40152, nil, nil) -- 21155 Potent Ametrine
+lib:AddRecipe(755, 46951, 66570, 40153, nil, nil) -- 21156 Veiled Ametrine
+lib:AddRecipe(755, 46952, 66571, 40154, nil, nil) -- 21157 Durable Ametrine
+lib:AddRecipe(755, 46953, 66572, 40143, nil, nil) -- 21158 Etched Ametrine
+lib:AddRecipe(755, 46956, 66573, 40157, nil, nil) -- 21159 Pristine Ametrine
+lib:AddRecipe(755, 47007, 66574, 40155, nil, nil) -- 21160 Reckless Ametrine
+lib:AddRecipe(755, 47008, 66575, 40148, nil, nil) -- 21161 Glinting Ametrine
+lib:AddRecipe(755, 47010, 66576, 40162, nil, nil) -- 21162 Accurate Ametrine
+lib:AddRecipe(755, 47011, 66577, 40156, nil, nil) -- 21163 Wicked Ametrine
+lib:AddRecipe(755, 47012, 66578, 40161, nil, nil) -- 21164 Glimmering Ametrine
+lib:AddRecipe(755, 47015, 66579, 40144, nil, nil) -- 21165 Champion's Ametrine
+lib:AddRecipe(755, 47016, 66580, 40158, nil, nil) -- 21166 Empowered Ametrine
+lib:AddRecipe(755, 47017, 66581, 40160, nil, nil) -- 21167 Stalwart Ametrine
+lib:AddRecipe(755, 47018, 66582, 40145, nil, nil) -- 21168 Resplendent Ametrine
+lib:AddRecipe(755, 47019, 66583, 40146, nil, nil) -- 21169 Fierce Ametrine
+lib:AddRecipe(755, 47020, 66584, 40150, nil, nil) -- 21170 Deft Ametrine
+lib:AddRecipe(755, 47021, 66585, 40149, nil, nil) -- 21171 Lucent Ametrine
+lib:AddRecipe(755, 47022, 66586, 40163, nil, nil) -- 21172 Resolute Ametrine
+lib:AddRecipe(755, 47023, 66587, 40159, nil, nil) -- 21173 Stark Ametrine
+lib:AddRecipe(755, 46897, 66338, 40167, nil, nil) -- 21175 Enduring Eye of Zul
+lib:AddRecipe(171, nil, 66664, 36934, nil, nil) -- 21176 Transmute: Eye of Zul
+lib:AddRecipe(171, nil, 66658, 36931, nil, nil) -- 21177 Transmute: Ametrine
+lib:AddRecipe(171, nil, 66659, 36919, nil, nil) -- 21178 Transmute: Cardinal Ruby
+lib:AddRecipe(171, nil, 66660, 36922, nil, nil) -- 21179 Transmute: King's Amber
+lib:AddRecipe(171, nil, 66662, 36928, nil, nil) -- 21180 Transmute: Dreadstone
+lib:AddRecipe(171, nil, 66663, 36925, nil, nil) -- 21181 Transmute: Majestic Zircon
+lib:AddRecipe(171, 47507, 67025, 47499, 67019, nil) -- 21196 Flask of the North
+lib:AddRecipe(164, 47622, 67091, 47591, nil, nil) -- 21197 Breastplate of the White Knight
+lib:AddRecipe(164, 47623, 67092, 47570, nil, nil) -- 21198 Saronite Swordbreakers
+lib:AddRecipe(164, 47624, 67093, 47589, nil, nil) -- 21199 Titanium Razorplate
+lib:AddRecipe(164, 47625, 67094, 47572, nil, nil) -- 21200 Titanium Spikeguards
+lib:AddRecipe(164, 47626, 67095, 47593, nil, nil) -- 21201 Sunforged Breastplate
+lib:AddRecipe(164, 47627, 67096, 47574, nil, nil) -- 21202 Sunforged Bracers
+lib:AddRecipe(164, 47641, 67131, 47571, nil, nil) -- 21203 Saronite Swordbreakers
+lib:AddRecipe(164, 47644, 67132, 47590, nil, nil) -- 21204 Titanium Razorplate
+lib:AddRecipe(164, 47645, 67133, 47573, nil, nil) -- 21205 Titanium Spikeguards
+lib:AddRecipe(164, 47643, 67134, 47594, nil, nil) -- 21206 Sunforged Breastplate
+lib:AddRecipe(164, 47642, 67135, 47575, nil, nil) -- 21207 Sunforged Bracers
+lib:AddRecipe(164, 47640, 67130, 47592, nil, nil) -- 21208 Breastplate of the White Knight
+lib:AddRecipe(165, 47628, 67080, 47597, nil, nil) -- 21209 Ensorcelled Nerubian Breastplate
+lib:AddRecipe(165, 47629, 67081, 47579, nil, nil) -- 21210 Black Chitin Bracers
+lib:AddRecipe(165, 47635, 67087, 47581, nil, nil) -- 21211 Bracers of Swift Death
+lib:AddRecipe(165, 47634, 67086, 47599, nil, nil) -- 21212 Knightbane Carapace
+lib:AddRecipe(165, 47633, 67085, 47583, nil, nil) -- 21213 Moonshadow Armguards
+lib:AddRecipe(165, 47632, 67084, 47602, nil, nil) -- 21214 Lunar Eclipse Robes
+lib:AddRecipe(165, 47631, 67083, 47576, nil, nil) -- 21215 Crusader's Dragonscale Bracers
+lib:AddRecipe(165, 47630, 67082, 47595, nil, nil) -- 21216 Crusader's Dragonscale Breastplate
+lib:AddRecipe(165, 47650, 67136, 47598, nil, nil) -- 21217 Ensorcelled Nerubian Breastplate
+lib:AddRecipe(165, 47651, 67142, 47600, nil, nil) -- 21218 Knightbane Carapace
+lib:AddRecipe(165, 47653, 67141, 47584, nil, nil) -- 21219 Moonshadow Armguards
+lib:AddRecipe(165, 47652, 67140, 47601, nil, nil) -- 21220 Lunar Eclipse Robes
+lib:AddRecipe(165, 47647, 67139, 47582, nil, nil) -- 21221 Bracers of Swift Death
+lib:AddRecipe(165, 47649, 67138, 47596, nil, nil) -- 21222 Crusader's Dragonscale Breastplate
+lib:AddRecipe(165, 47646, 67137, 47580, nil, nil) -- 21223 Black Chitin Bracers
+lib:AddRecipe(165, 47648, 67143, 47577, nil, nil) -- 21224 Crusader's Dragonscale Bracers
+lib:AddRecipe(197, 47657, 67064, 47605, nil, nil) -- 21225 Royal Moonshroud Robe
+lib:AddRecipe(197, 47656, 67065, 47587, nil, nil) -- 21226 Royal Moonshroud Bracers
+lib:AddRecipe(197, 47655, 67066, 47603, nil, nil) -- 21227 Merlin's Robe
+lib:AddRecipe(197, 47654, 67079, 47585, nil, nil) -- 21228 Bejeweled Wizard's Bracers
+lib:AddRecipe(197, 47636, 67144, 47606, nil, nil) -- 21229 Royal Moonshroud Robe
+lib:AddRecipe(197, 47639, 67145, 47586, nil, nil) -- 21230 Bejeweled Wizard's Bracers
+lib:AddRecipe(197, 47638, 67146, 47604, nil, nil) -- 21231 Merlin's Robe
+lib:AddRecipe(197, 47637, 67147, 47588, nil, nil) -- 21232 Royal Moonshroud Bracers
+lib:AddRecipe(202, nil, 67326, 47828, 67324, nil) -- 21233 Goblin Beam Welder
+lib:AddRecipe(773, nil, 67600, 48720, 67599, nil) -- 21246 Glyph of Claw
+lib:AddRecipe(202, nil, 67790, 48933, nil, nil) -- 21247 Dimensional Folder: K3
+lib:AddRecipe(202, nil, 67920, 48933, 67833, nil) -- 21251 Wormhole Generator: Northrend
+lib:AddRecipe(202, 49050, 68067, 49040, 67826, nil) -- 21254 Jeeves
+lib:AddRecipe(773, nil, 68166, 49084, 68163, nil) -- 21255 Glyph of Command
+lib:AddEnchantmentRecipe(202, nil, 67839, 3878) -- 21258 Mind Amplification Dish
+lib:AddRecipe(755, 49112, 68253, 49110, nil, nil) -- 21259 Nightmare Tear
+lib:AddRecipe(165, nil, 69386, 49633, 69378, nil) -- 21315 Drums of Forgotten Kings
+lib:AddRecipe(165, nil, 69388, 49634, 69381, nil) -- 21316 Drums of the Wild
+lib:AddRecipe(773, nil, 69385, 49632, 69377, nil) -- 21317 Runescroll of Fortitude
+lib:AddRecipe(333, nil, 69412, 206759, nil, nil) -- 21320 Abyssal Shatter
+lib:AddRecipe(186, nil, 70524, 12655, nil, nil) -- 21342 Enchanted Thorium
+lib:AddRecipe(164, 49969, 70562, 49902, nil, nil) -- 21348 Puresteel Legplates
+lib:AddRecipe(164, 49970, 70563, 49905, nil, nil) -- 21349 Protectors of Life
+lib:AddRecipe(164, 49971, 70565, 49903, nil, nil) -- 21350 Legplates of Painful Death
+lib:AddRecipe(164, 49973, 70567, 49904, nil, nil) -- 21352 Pillars of Might
+lib:AddRecipe(164, 49974, 70568, 49907, nil, nil) -- 21353 Boots of Kingly Upheaval
+lib:AddRecipe(164, 49972, 70566, 49906, nil, nil) -- 21354 Hellfrozen Bonegrinders
+lib:AddRecipe(165, 49957, 70554, 49898, nil, nil) -- 21355 Legwraps of Unleashed Nature
+lib:AddRecipe(165, 49958, 70555, 49894, nil, nil) -- 21356 Blessed Cenarion Boots
+lib:AddRecipe(165, 49959, 70556, 49899, nil, nil) -- 21357 Bladeborn Leggings
+lib:AddRecipe(165, 49961, 70557, 49895, nil, nil) -- 21358 Footpads of Impending Death
+lib:AddRecipe(165, 49962, 70558, 49900, nil, nil) -- 21359 Lightning-Infused Leggings
+lib:AddRecipe(165, 49963, 70559, 49896, nil, nil) -- 21360 Earthsoul Boots
+lib:AddRecipe(165, 49965, 70560, 49901, nil, nil) -- 21361 Draconic Bonesplinter Legguards
+lib:AddRecipe(165, 49966, 70561, 49897, nil, nil) -- 21362 Rock-Steady Treads
+lib:AddRecipe(197, 49953, 70550, 49891, nil, nil) -- 21363 Leggings of Woven Death
+lib:AddRecipe(197, 49954, 70551, 49890, nil, nil) -- 21364 Deathfrost Boots
+lib:AddRecipe(197, 49955, 70552, 49892, nil, nil) -- 21365 Lightweave Leggings
+lib:AddRecipe(197, 49956, 70553, 49893, nil, nil) -- 21366 Sandals of Consecration
+lib:AddEnchantmentRecipe(333, 50406, 71692, 846) -- 21373 Enchant Gloves - Angler
+lib:AddRecipe(773, 50166, 71101, 50045, 70938, nil) -- 21377 Glyph of Eternal Water
+lib:AddRecipe(773, 50168, 71102, 50077, 70948, nil) -- 21378 Glyph of Quick Decay
+lib:AddRecipe(773, 50167, 71015, 50125, 71014, nil) -- 21379 Glyph of Rapid Rejuvenation
+lib:AddRecipe(202, 52022, 72952, 52020, nil, nil) -- 21386 Shatter Rounds
+lib:AddRecipe(202, 52023, 72953, 52021, nil, nil) -- 21387 Iceblade Arrow
+lib:AddRecipe(197, 54798, 75597, 54797, 75596, nil) -- 21729 Frosty Flying Carpet
 lib:AddRecipe(165, 185922, 351766, 185852, 351360, nil) -- 46055 Greater Drums of War
 lib:AddRecipe(165, 185923, 351768, 185851, 351359, nil) -- 46056 Greater Drums of Speed
 lib:AddRecipe(165, 187049, 351768, 185851, 351359, nil) -- 46056 Greater Drums of Speed
@@ -2312,3 +3744,6 @@ lib:AddRecipe(165, 185924, 351769, 185850, 351358, nil) -- 46057 Greater Drums o
 lib:AddRecipe(165, 187048, 351769, 185850, 351358, nil) -- 46057 Greater Drums of Restoration
 lib:AddRecipe(165, 185925, 351770, 185849, 351357, nil) -- 46058 Greater Drums of Panic
 lib:AddRecipe(165, 185926, 351771, 185848, 351355, nil) -- 46059 Greater Drums of Battle
+lib:AddRecipe(773, nil, 405005, 204385, 405003, nil) -- 48447 Glyph of Reckoning
+lib:AddRecipe(773, nil, 413897, 206580, 413898, nil) -- 48777 Glyph of Omen of Clarity
+lib:AddRecipe(773, nil, 414814, 206953, 414813, nil) -- 48796 Glyph of Shattering Throw

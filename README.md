@@ -14,7 +14,7 @@ For library usages in your TOC file:
   * Retail: `Libs\LibTradeSkillRecipes\lib-retail.xml`  
 
 Then reference via LibStub with  
-`local LibTradeSkillRecipes = LibStub("LibTradeSkillRecipes")`
+`local LibTradeSkillRecipes = LibStub("LibTradeSkillRecipes-1")`
 
 ## API
 
@@ -36,37 +36,30 @@ Then reference via LibStub with
 ---@return table all the categories  
 **lib:GetCategories()**
 
+---@class TradeSkillInfo  
+---@field categoryId number trade skill category id for the item or effect  
+---@field expansionId number original expansion for the item or effect (0 based)  
+---@field recipeIds (number)[] list of the all recipe ids to learn the trade skill  
+---@field spellId number spell used to create the item or effect  
+---@field itemId? number item that is created from the spell  
+---@field spellEffectId? number effect provided by the spell or using the item, e.g. an enchantment  
+---@field salvageId? number items received from salving, currently has no lookup  
+---@field craftingDataId? number crafting elements created from the spell  
+**lib:TradeSkillInfo  
+
 ---Given an recipe id, returns associated information for crafting.  
 ---@param recipeId number  
----@return number id of the category  
----@return number expansion  
----@return table list of ids for recipes  
----@return number id of the spell to create the item or effect  
----@return number id of the item, may be nil  
----@return number id of the item if it creates a spell, may be nil  
----@return number id of the effect of the spell or item spell, may be nil  
-**lib:GetInfoByRecipeId(recipeId)**
+---@return table TradeSkillInfo  
+**lib:GetInfoByRecipeId(recipeId)**  
 
 ---Given an item id, returns associated information for crafting.  
 ---@param itemId number  
----@return number id of the category  
----@return number expansion  
----@return table list of ids for recipes  
----@return number id of the spell to create the item or effect  
----@return number id of the item, may be nil  
----@return number id of the item if it creates a spell, may be nil  
----@return number id of the effect of the spell or item spell, may be nil  
+---@return table TradeSkillInfos items can have multiple spells if there are different levels created  
 **lib:GetInfoByItemId(itemId)**
 
 ---Given a spellId id, returns associated information for crafting.  
 ---@param spellId number  
----@return number id of the category  
----@return number expansion  
----@return table list of ids for recipes  
----@return number id of the spell to create the item or effect  
----@return number id of the item, may be nil  
----@return number id of the item if it creates a spell, may be nil  
----@return number id of the effect of the spell or item spell, may be nil  
+---@return table TradeSkillInfo  
 **lib:GetInfoBySpellId(spellId)**
 
 Note: Expansion is a value `0` to `9`, e.g. Wotlk is `2`, Retail is `9`. While versions are represented `1-10` for tables, 

@@ -1,5 +1,5 @@
-local MAJOR = "LibTradeSkillRecipes"
-local MINOR = 4
+local MAJOR = "LibTradeSkillRecipes-1"
+local MINOR = 1
 assert(LibStub, MAJOR .. " requires LibStub")
 
 local lib = LibStub:NewLibrary(MAJOR, MINOR)
@@ -27,6 +27,8 @@ lib.spellEffects = lib.spellEffects or {}
 lib.effects = lib.effects or {}
 lib.expansions = lib.expansions or {}
 lib.expansionSpells = lib.expansionSpells or {}
+lib.salvageIds = lib.salvageIds or {}
+lib.craftingDataIds = lib.craftingDataIds or {}
 
 ---Adds the expansion a spell was added.
 ---@param spellId number 
@@ -53,6 +55,16 @@ function lib:AddEnchantmentRecipe(categoryId, recipeId, spellId, effectId)
     self:AddRecipe(categoryId, recipeId, spellId, nil, nil, effectId)
 end
 
+function lib:AddCraftingDataRecipe(categoryId, recipeId, spellId, craftingDataId)
+    self:AddRecipe(categoryId, recipeId, spellId, nil, nil, nil)
+    lib.craftingDataIds[spellId] = craftingDataId
+end
+
+function lib:AddSalvageRecipe(categoryId, recipeId, spellId, salvageId)
+    self:AddRecipe(categoryId, recipeId, spellId, nil, nil, nil)
+    lib.salvageIds[spellId] = salvageId
+end
+
 ---Adds a recipe.
 ---@param categoryId number
 ---@param recipeId number|nil
@@ -76,7 +88,10 @@ function lib:AddRecipe(categoryId, recipeId, spellId, itemId, itemSpellId, effec
     lib.spells[spellId] = itemId
 
     if itemId then
-        lib.items[itemId] = spellId
+        if not lib.items[itemId] then
+            lib.items[itemId] = {}
+        end
+        table.insert(lib.items[itemId], spellId)
 
         if itemSpellId then
             if lib.itemSpells[itemId] then
@@ -138,13 +153,7 @@ end
 
 ---Given an recipe id, returns associated information for crafting.  
 ---@param recipeId number  
----@return number id of the category  
----@return number expansion  
----@return table list of ids for recipes  
----@return number id of the spell to create the item or effect  
----@return number id of the item, may be nil  
----@return number id of the item if it creates a spell, may be nil  
----@return number id of the effect of the spell or item spell, may be nil  
+---@return table TradeSkillInfo  
 function lib:GetInfoByRecipeId(recipeId)
     local spellId = lib.recipeSpells[recipeId]
     return lib:GetInfoBySpellId(spellId)
@@ -152,34 +161,42 @@ end
 
 ---Given an item id, returns associated information for crafting.  
 ---@param itemId number  
----@return number id of the category  
----@return number expansion  
----@return table list of ids for recipes  
----@return number id of the spell to create the item or effect  
----@return number id of the item, may be nil  
----@return number id of the item if it creates a spell, may be nil  
----@return number id of the effect of the spell or item spell, may be nil  
+---@return table TradeSkillInfos items can have multiple spells if there are different levels created  
 function lib:GetInfoByItemId(itemId)
-    local spellId = lib.items[itemId]
-    return lib:GetInfoBySpellId(spellId)
+    local spellIds = lib.items[itemId]
+    local infos = {}
+    for _, spellId in pairs(spellIds) do
+        table.insert(infos, lib:GetInfoBySpellId(spellId))
+    end
+    return infos
 end
 
 ---Given a spellId id, returns associated information for crafting.  
 ---@param spellId number  
----@return number id of the category  
----@return number expansion  
----@return table list of ids for recipes  
----@return number id of the spell to create the item or effect  
----@return number id of the item, may be nil  
----@return number id of the item if it creates a spell, may be nil  
----@return number id of the effect of the spell or item spell, may be nil  
+---@return table TradeSkillInfo  
 function lib:GetInfoBySpellId(spellId)
     local itemId = lib.spells[spellId]
-
-    local category = lib.categorySpells[spellId]
-    local expansion = lib.expansionSpells[spellId]
-    local recipes =  lib.recipes[spellId] or {}
     local itemSpell = lib.itemSpells[itemId]
-    local spellEffect = lib.spellEffects[itemSpell or spellId]
-    return category, expansion, recipes, spellId, itemId, itemSpell, spellEffect
+
+    return {
+        ["categoryId"] = lib.categorySpells[spellId],
+        ["expansionId"] = lib.expansionSpells[spellId],
+        ["spellId"] = spellId,
+        ["itemId"] = itemId,
+        ["recipeIds"] = lib.recipes[spellId] or {},
+        ["itemSpellId"] = itemSpell,
+        ["spellEffectId"] = lib.spellEffects[itemSpell or spellId],
+        ["salvageId"] = lib.salvageIds[spellId],
+        ["craftingDataId"] = lib.craftingDataIds[spellId],
+    }
 end
+
+---@class TradeSkillInfo
+---@field categoryId number trade skill category id for the item or effect 
+---@field expansionId number original expansion for the item or effect (0 based)
+---@field recipeIds (number)[] list of the all recipe ids to learn the trade skill
+---@field spellId number spell used to create the item or effect
+---@field itemId? number item that is created from the spell 
+---@field spellEffectId? number effect provided by the spell or using the item, e.g. an enchantment
+---@field salvageId? number items received from salving, currently has no lookup
+---@field craftingDataId? number crafting elements created from the spell

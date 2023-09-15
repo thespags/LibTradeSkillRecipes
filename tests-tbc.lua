@@ -7,7 +7,7 @@ loadfile("recipes/expansions.lua")()
 loadfile("recipes/2/items.lua")()
 loadfile("recipes/2/enchantments.lua")()
 
-local LibTradeSkillRecipes = LibStub("LibTradeSkillRecipes")
+local LibTradeSkillRecipes = LibStub("LibTradeSkillRecipes-1")
 
 assert(LibTradeSkillRecipes)
 print("Tests Passed!")
