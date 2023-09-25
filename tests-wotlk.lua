@@ -3,9 +3,9 @@ strmatch = string.match
 
 loadfile("Libs/LibStub/LibStub.lua")()
 loadfile("LibTradeSkillRecipes.lua")()
-loadfile("recipes/expansions.lua")()
 loadfile("recipes/3/items.lua")()
 loadfile("recipes/3/enchantments.lua")()
+loadfile("recipes/expansions.lua")()
 loadfile("asserts.lua")()
 
 local LibTradeSkillRecipes = LibStub("LibTradeSkillRecipes-1")

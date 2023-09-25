@@ -16,27 +16,24 @@ local function getOrCreate(tOfT, key)
     return t
 end
 
+local tInsertUnique = tInsertUnique or table.insert
 lib.categories = lib.categories or {}
-lib.categorySpells = lib.categorySpells or {}
 lib.recipes = lib.recipes or {}
-lib.recipeSpells = lib.recipeSpells or {}
 lib.spells = lib.spells or {}
 lib.items = lib.items or {}
-lib.itemSpells = lib.itemSpells or {}
-lib.spellEffects = lib.spellEffects or {}
 lib.effects = lib.effects or {}
 lib.expansions = lib.expansions or {}
-lib.expansionSpells = lib.expansionSpells or {}
-lib.salvageIds = lib.salvageIds or {}
-lib.craftingDataIds = lib.craftingDataIds or {}
 
 ---Adds the expansion a spell was added.
 ---@param spellId number 
----@param expansion number
-function lib:AddExpansion(spellId, expansion)
-    local expansions = getOrCreate(lib.expansions, expansion)
-    table.insert(expansions, expansion)
-    lib.expansionSpells[spellId] = expansion
+---@param expansionId number
+function lib:AddExpansion(spellId, expansionId)
+    local info = lib.spells[spellId]
+    if info then
+        info.expansionId = expansionId
+        local expansions = getOrCreate(lib.expansions, expansionId)
+        table.insert(expansions, info)
+    end
 end
 
 ---Adds the name of the enchantment.
@@ -56,13 +53,13 @@ function lib:AddEnchantmentRecipe(categoryId, recipeId, spellId, effectId)
 end
 
 function lib:AddCraftingDataRecipe(categoryId, recipeId, spellId, craftingDataId)
-    self:AddRecipe(categoryId, recipeId, spellId, nil, nil, nil)
-    lib.craftingDataIds[spellId] = craftingDataId
+    local info = self:AddRecipe(categoryId, recipeId, spellId, nil, nil, nil)
+    info.craftingDataId = craftingDataId
 end
 
 function lib:AddSalvageRecipe(categoryId, recipeId, spellId, salvageId)
-    self:AddRecipe(categoryId, recipeId, spellId, nil, nil, nil)
-    lib.salvageIds[spellId] = salvageId
+    local info = self:AddRecipe(categoryId, recipeId, spellId, nil, nil, nil)
+    info.salvageId = salvageId
 end
 
 ---Adds a recipe.
@@ -73,50 +70,54 @@ end
 ---@param itemSpellId number|nil
 ---@param effectId number|nil
 function lib:AddRecipe(categoryId, recipeId, spellId, itemId, itemSpellId, effectId)
+    local info = lib.spells[spellId] or { spellId = spellId }
+    lib.spells[spellId] = info
     local categories = getOrCreate(lib.categories, categoryId)
-    table.insert(categories, spellId)
-    lib.categorySpells[spellId] = categoryId
+    tInsertUnique(categories, info)
 
+    if info.categoryId then
+        -- Currently not sure how retail works, but this works for classic.
+        -- assert(info.categoryId == categoryId, "Duplicate spellId doesn't match categoryId: " .. spellId)
+    end
+    info.categoryId = categoryId
+
+    info.recipeIds = info.recipeIds or {}
     if recipeId then
-        local recipes = getOrCreate(lib.recipes, spellId)
-        table.insert(recipes, recipeId)
-        lib.recipeSpells[recipeId] = spellId
+        lib.recipes[recipeId] = info
+
+        tInsertUnique(info.recipeIds, recipeId)
     end
-    if lib.spells[spellId] then
-        assert(itemId == lib.spells[spellId], "Duplicate spellId doesn't match item: " .. spellId)
-    end
-    lib.spells[spellId] = itemId
 
     if itemId then
-        if not lib.items[itemId] then
-            lib.items[itemId] = {}
-        end
-        table.insert(lib.items[itemId], spellId)
+        local items = getOrCreate(lib.items, itemId)
+        tInsertUnique(items, info)
 
+        if info.itemId then
+            assert(info.itemId == itemId, "Duplicate spellId doesn't match itemId: " .. spellId)
+        end
+        info.itemId = itemId
         if itemSpellId then
-            if lib.itemSpells[itemId] then
-                assert(lib.itemSpells[itemId] == itemSpellId, "Duplicate spellId doesn't match itemSpellId: " .. spellId)
+            if info.itemSpellId then
+                assert(info.itemSpellId == itemSpellId, "Duplicate spellId doesn't match itemSpellId: " .. spellId)
             end
-            lib.itemSpells[itemId] = itemSpellId
+            info.itemSpellId = itemSpellId
         end
     end
 
     if effectId then
-        local spellEffectId = itemSpellId or spellId
-        if lib.spellEffects[spellEffectId] then
-            assert(lib.spellEffects[spellEffectId] == effectId, "Duplicate spellId doesn't match effectId:" .. spellId)
+        if info.spellEffectId then
+            assert(info.spellEffectId == effectId, "Duplicate spellId doesn't match effectId:" .. spellId)
         end
-        -- If this is an item that creates an effect (e.g. a sharpening stone).
-        -- Or simply an enchantment.
-        lib.spellEffects[spellEffectId] = effectId
+        info.spellEffectId = effectId
     end
+    return info
 end
 
 ---Gets the name of the effect.
----@param effectId number id of the effect
+---@param effectId string|number id of the effect
 ---@return string name of the effect
 function lib:GetEffect(effectId)
-    return lib.effects[effectId]
+    return lib.effects[tonumber(effectId)]
 end
 
 ---Gets all effects, id to name.
@@ -126,23 +127,23 @@ function lib:GetEffects()
 end
 
 ---Gets all the associated spells to the given category.
----@param categoryId number id of the category
+---@param categoryId string|number id of the category
 ---@return table spell ids associated to the category
 function lib:GetCategorySpells(categoryId)
-    return lib.categories[categoryId]
+    return lib.categories[tonumber(categoryId)]
 end
 
 ---Gets all trade categories, id to a table of all the info.
----@return table all the categories
+---@return table TradeSkillInfos the categories
 function lib:GetCategories()
     return lib.categories
 end
 
 ---Gets all the associated spells to the given expansion.
----@param expansion number
----@return table all sppells for that expansion
+---@param expansion string|number
+---@return table TradeSkillInfos all skills for that expansion
 function lib:GetExpansionSpells(expansion)
-    return lib.expansions[expansion]
+    return lib.expansions[tonumber(expansion)]
 end
 
 ---Gets all expansions, id to a table of all the spells
@@ -152,49 +153,30 @@ function lib:GetExpansions()
 end
 
 ---Given an recipe id, returns associated information for crafting.  
----@param recipeId number  
+---@param recipeId string|number  
 ---@return table? TradeSkillInfo  
 function lib:GetInfoByRecipeId(recipeId)
-    local spellId = lib.recipeSpells[recipeId]
-    return lib:GetInfoBySpellId(spellId)
+    ---@diagnostic disable-next-line: cast-local-type
+    recipeId = tonumber(recipeId)
+    return lib.recipes[recipeId]
 end
 
 ---Given an item id, returns associated information for crafting.  
----@param itemId number  
+---@param itemId string|number  
 ---@return table? TradeSkillInfos items can have multiple spells if there are different levels created  
 function lib:GetInfoByItemId(itemId)
-    local spellIds = lib.items[itemId]
-    if not spellIds then
-        return nil
-    end
-    local infos = {}
-    for _, spellId in pairs(spellIds) do
-        table.insert(infos, lib:GetInfoBySpellId(spellId))
-    end
-    return infos
+    ---@diagnostic disable-next-line: cast-local-type
+    itemId = tonumber(itemId)
+    return lib.items[itemId]
 end
 
 ---Given a spellId id, returns associated information for crafting.  
----@param spellId number  
+---@param spellId string|number  
 ---@return table? TradeSkillInfo  
 function lib:GetInfoBySpellId(spellId)
-    if not lib.categorySpells[spellId] then
-        return nil
-    end
-    local itemId = lib.spells[spellId]
-    local itemSpell = lib.itemSpells[itemId]
-
-    return {
-        ["categoryId"] = lib.categorySpells[spellId],
-        ["expansionId"] = lib.expansionSpells[spellId],
-        ["spellId"] = spellId,
-        ["itemId"] = itemId,
-        ["recipeIds"] = lib.recipes[spellId] or {},
-        ["itemSpellId"] = itemSpell,
-        ["spellEffectId"] = lib.spellEffects[itemSpell or spellId],
-        ["salvageId"] = lib.salvageIds[spellId],
-        ["craftingDataId"] = lib.craftingDataIds[spellId],
-    }
+    ---@diagnostic disable-next-line: cast-local-type
+    spellId = tonumber(spellId)
+    return lib.spells[spellId]
 end
 
 ---@class TradeSkillInfo
