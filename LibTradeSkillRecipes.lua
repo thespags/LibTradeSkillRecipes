@@ -25,8 +25,9 @@ lib.effects = lib.effects or {}
 lib.expansions = lib.expansions or {}
 lib.skillLines = lib.skillLines or {}
 
-function lib:AddSkillLine(categoryId, name, spells)
-    lib.skillLines[categoryId] = { name = name, spells = spells}
+function lib:AddSkillLine(skillLineId, name, category, spells)
+    local hasRecipes = skillLineId ~= 182 and skillLineId ~= 356 and skillLineId ~= 393
+    lib.skillLines[skillLineId] = { name = name, isSecondary = category == 9, hasRecipes = hasRecipes, spells = spells}
 end
 
 function lib:GetSkillLines()
