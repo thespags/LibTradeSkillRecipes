@@ -2,5 +2,6 @@
   <Script file="LibTradeSkillRecipes.lua"/>
   <Script file="recipes\3\items.lua"/>
   <Script file="recipes\3\enchantments.lua"/>
+  <Script file="recipes\3\skill_lines.lua"/>
   <Script file="recipes\expansions.lua"/>
 </Ui>

@@ -23,6 +23,15 @@ lib.spells = lib.spells or {}
 lib.items = lib.items or {}
 lib.effects = lib.effects or {}
 lib.expansions = lib.expansions or {}
+lib.skillLines = lib.skillLines or {}
+
+function lib:AddSkillLine(categoryId, name, spells)
+    lib.skillLines[categoryId] = { name = name, spells = spells}
+end
+
+function lib:GetSkillLines()
+    return lib.skillLines
+end
 
 ---Adds the expansion a spell was added.
 ---@param spellId number 

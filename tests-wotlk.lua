@@ -5,6 +5,7 @@ loadfile("Libs/LibStub/LibStub.lua")()
 loadfile("LibTradeSkillRecipes.lua")()
 loadfile("recipes/3/items.lua")()
 loadfile("recipes/3/enchantments.lua")()
+loadfile("recipes/3/skill_lines.lua")()
 loadfile("recipes/expansions.lua")()
 loadfile("asserts.lua")()
 
