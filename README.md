@@ -45,7 +45,7 @@ Then reference via LibStub with
 ---@field spellEffectId? number effect provided by the spell or using the item, e.g. an enchantment  
 ---@field salvageId? number items received from salving, currently has no lookup  
 ---@field craftingDataId? number crafting elements created from the spell  
-**lib:TradeSkillInfo  
+**lib:TradeSkillInfo**
 
 ---Given an recipe id, returns associated information for crafting.  
 ---@param recipeId number  
