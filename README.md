@@ -7,11 +7,7 @@ If a trade skill is taught strictly by an NPC then there is no recipe. In some v
 hence we use a table of recipes, although in general the result is an empty table or singleton. 
 
 ## Usage
-For library usages in your TOC file:  
-  * Classic: `Libs\LibTradeSkillRecipes\lib-classic.xml`  
-  * TBC: `Libs\LibTradeSkillRecipes\lib-tbc.xml`  
-  * Wotlk: `Libs\LibTradeSkillRecipes\lib-wotlk.xml`  
-  * Retail: `Libs\LibTradeSkillRecipes\lib-retail.xml`  
+For library usages in your TOC file `Libs\LibTradeSkillRecipes\lib.xml`
 
 Then reference via LibStub with  
 `local LibTradeSkillRecipes = LibStub("LibTradeSkillRecipes-1")`
