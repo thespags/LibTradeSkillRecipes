@@ -153,8 +153,6 @@ end
 ---@param slotId string|number id of the slot
 ---@return number id of the spell
 function lib:GetEnchantment(effectId, slotId)
-    print(effectId)
-    print(slotId)
     local slots = lib.enchantments[tonumber(effectId)] or {}
     return slots[tonumber(slotId)]
 end

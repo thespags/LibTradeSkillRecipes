@@ -3,8 +3,6 @@ local lib = LibStub("LibTradeSkillRecipes-1")
 if 0 ~= LE_EXPANSION_LEVEL_CURRENT then
 	return
 end
-print("hello")
-print(lib.AddEnchantment)
 lib:AddEnchantment(2605, 1, {16}) -- Rockbiter 3
 lib:AddEnchantment(2831, 15, {5,7,8,10}) -- Reinforced Armor +8
 lib:AddEnchantment(2832, 16, {5,7,8,10}) -- Reinforced Armor +16
