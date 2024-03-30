@@ -1,5 +1,5 @@
 local MAJOR = "LibTradeSkillRecipes-1"
-local MINOR = 4
+local MINOR = 5
 assert(LibStub, MAJOR .. " requires LibStub")
 
 local lib = LibStub:NewLibrary(MAJOR, MINOR)
@@ -21,6 +21,7 @@ lib.categories = lib.categories or {}
 lib.recipes = lib.recipes or {}
 lib.spells = lib.spells or {}
 lib.items = lib.items or {}
+lib.enchantments = lib.enchantments or {}
 lib.effects = lib.effects or {}
 lib.expansions = lib.expansions or {}
 lib.skillLines = lib.skillLines or {}
@@ -49,7 +50,7 @@ end
 ---Adds the name of the enchantment.
 ---@param id number 
 ---@param name string
-function lib:AddEnchantment(id, name)
+function lib:AddEffect(id, name)
     lib.effects[id] = name
 end
 
@@ -134,6 +135,32 @@ end
 ---@return table all the effects
 function lib:GetEffects()
     return lib.effects
+end
+
+---Maps the effect and slot to the spell.
+---@param spellId number id of the spell
+---@param effectId number id of the effect
+---@param slotIds number[] slots this effect can be applied
+function lib:AddEnchantment(spellId, effectId, slotIds)
+    for _, slotId in ipairs(slotIds) do
+        lib.enchantments[effectId] = lib.enchantments[effectId] or {}
+        lib.enchantments[effectId][slotId] = spellId
+    end
+end
+
+---Gets the spell for the effect and slot if it exists.
+---@param effectId string|number id of the effect
+---@param slotId string|number id of the slot
+---@return number id of the spell
+function lib:GetEnchantment(effectId, slotId)
+    print(effectId)
+    print(slotId)
+    local slots = lib.enchantments[tonumber(effectId)] or {}
+    return slots[tonumber(slotId)]
+end
+
+function lib:GetEnchantments()
+    return lib.enchantments
 end
 
 ---Gets all the associated spells to the given category.
